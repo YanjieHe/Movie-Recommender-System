@@ -5,6 +5,7 @@ import org.scalajs.dom.ext.Ajax
 import util._
 import org.scalajs.dom.ext._
 import scala.scalajs.concurrent.JSExecutionContext.Implicits.runNow
+
 case class Movie(movieId: Int, movies: List[Int])
 
 object TutorialApp {

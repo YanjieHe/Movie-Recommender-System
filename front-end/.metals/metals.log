@@ -353,3 +353,24 @@ shutdown request received: build/shutdown
 [0m[31m[E][0m BSP server cancelled, closing socket...
 Client in /home/yanjie/Documents/GitHub/Movie-Recommender-System/scalajs-tutorial/.bloop triggered cancellation. Cancelling tasks...
 INFO  bloop exit: 0
+INFO  time: initialize in 0.51s
+INFO  running embedded 'bloop bsp --protocol local --socket /tmp/bsp3124519161536201206/-13ce7vlnlh1rf.socket'
+INFO  skipping build import with status 'Installed'
+The server is listening for incoming connections at local:///tmp/bsp3124519161536201206/-13ce7vlnlh1rf.socket...
+Accepted incoming BSP client connection at local:///tmp/bsp3124519161536201206/-13ce7vlnlh1rf.socket
+INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/yanjie/.cache/metals/bsp.trace.json
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/front-end/src/main/scala/tutorial/webapp/TutorialApp.scala
+request received: build/initialize
+INFO  time: connected to build server in 7.27s
+BSP initialization handshake complete.
+INFO  time: imported build in 0.13s
+INFO  time: indexed workspace in 0.42s
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/front-end/src/main/scala/tutorial/webapp/TutorialApp.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/front-end/src/test/scala/tutorial/webapp/TutorialTest.scala
+INFO  no build target: using presentation compiler with only scala-library
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/front-end/src/test/scala/tutorial/webapp/TutorialTest.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/front-end/src/test/scala/tutorial/webapp/TutorialTest.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/front-end/src/main/scala/tutorial/webapp/TutorialApp.scala
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/front-end/src/main/scala/tutorial/webapp/TutorialApp.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/front-end/src/main/scala/tutorial/webapp/TutorialApp.scala' because it doesn't belong to a build target.
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/front-end/build.sbt
