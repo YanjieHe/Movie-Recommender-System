@@ -1107,3 +1107,17 @@ BSP initialization handshake complete.
 INFO  time: imported build in 0.39s
 INFO  time: indexed workspace in 4.35s
 WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scalajs/build.sbt
+WARN  unsupported Scala 2.12.5
+INFO  compiling sharedjvm (1 scala source)
+INFO  Non-compiled module 'compiler-bridge_2.12' for Scala 2.12.5. Compiling...
+INFO    Compilation completed in 21.677s.
+INFO  time: compiled sharedJVM in 24s
+INFO  compiling server (9 scala sources and 2 java sources)
+INFO  time: compiled server in 3.57s
+WARN  unsupported Scala 2.12.5
+WARN  unsupported Scala 2.12.5
+INFO  shutting down Metals
+shutdown request received: build/shutdown
+[0m[31m[E][0m BSP server cancelled, closing socket...
+Client in /home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scalajs/.bloop triggered cancellation. Cancelling tasks...
+INFO  bloop exit: 0

@@ -1,0 +1,375 @@
+INFO  time: initialize in 0.5s
+INFO  running '/usr/lib/jvm/java-8-jre/jre/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals7469656976782139666/sbt-launch.jar metalsEnable bloopInstall'
+INFO  [info] Loading settings for project global-plugins from metals.sbt ...
+INFO  [info] Loading global plugins from /home/yanjie/.sbt/1.0/plugins
+INFO  [info] Updating ProjectRef(uri("file:/home/yanjie/.sbt/1.0/plugins/"), "global-plugins")...
+INFO  [info] downloading https://repo1.maven.org/maven2/io/circe/circe-derivation_2.12/0.9.0-M3/circe-derivation_2.12-0.9.0-M3.jar ...
+INFO  [info] downloading https://repo1.maven.org/maven2/ch/epfl/scala/bloop-config_2.12/1.3.2/bloop-config_2.12-1.3.2.jar ...
+INFO  [info] downloading https://repo1.maven.org/maven2/io/circe/circe-parser_2.12/0.9.3/circe-parser_2.12-0.9.3.jar ...
+INFO  [info] downloading https://repo1.maven.org/maven2/org/scalameta/sbt-metals_2.12_1.0/0.7.0/sbt-metals-0.7.0.jar ...
+INFO  [info] downloading https://repo1.maven.org/maven2/ch/epfl/scala/sbt-bloop_2.12_1.0/1.3.2/sbt-bloop-1.3.2.jar ...
+INFO  [info] downloading https://repo1.maven.org/maven2/io/circe/circe-jawn_2.12/0.9.3/circe-jawn_2.12-0.9.3.jar ...
+INFO  [info] 	[SUCCESSFUL ] io.circe#circe-derivation_2.12;0.9.0-M3!circe-derivation_2.12.jar (387ms)
+INFO  [info] downloading https://repo1.maven.org/maven2/io/circe/circe-core_2.12/0.9.3/circe-core_2.12-0.9.3.jar ...
+INFO  [info] 	[SUCCESSFUL ] org.scalameta#sbt-metals;0.7.0!sbt-metals.jar (413ms)
+INFO  [info] downloading https://repo1.maven.org/maven2/org/spire-math/jawn-parser_2.12/0.11.1/jawn-parser_2.12-0.11.1.jar ...
+INFO  [info] 	[SUCCESSFUL ] io.circe#circe-parser_2.12;0.9.3!circe-parser_2.12.jar (501ms)
+INFO  [info] downloading https://repo1.maven.org/maven2/io/circe/circe-numbers_2.12/0.9.3/circe-numbers_2.12-0.9.3.jar ...
+INFO  [info] 	[SUCCESSFUL ] io.circe#circe-jawn_2.12;0.9.3!circe-jawn_2.12.jar (439ms)
+INFO  [info] downloading https://repo1.maven.org/maven2/org/typelevel/cats-core_2.12/1.0.1/cats-core_2.12-1.0.1.jar ...
+INFO  [info] 	[SUCCESSFUL ] org.spire-math#jawn-parser_2.12;0.11.1!jawn-parser_2.12.jar (274ms)
+INFO  [info] downloading https://repo1.maven.org/maven2/org/typelevel/cats-macros_2.12/1.0.1/cats-macros_2.12-1.0.1.jar ...
+INFO  [info] 	[SUCCESSFUL ] io.circe#circe-numbers_2.12;0.9.3!circe-numbers_2.12.jar (215ms)
+INFO  [info] downloading https://repo1.maven.org/maven2/org/typelevel/cats-kernel_2.12/1.0.1/cats-kernel_2.12-1.0.1.jar ...
+INFO  [info] 	[SUCCESSFUL ] ch.epfl.scala#sbt-bloop;1.3.2!sbt-bloop.jar (734ms)
+INFO  [info] 	[SUCCESSFUL ] ch.epfl.scala#bloop-config_2.12;1.3.2!bloop-config_2.12.jar (732ms)
+INFO  [info] downloading https://repo1.maven.org/maven2/org/typelevel/machinist_2.12/0.6.2/machinist_2.12-0.6.2.jar ...
+INFO  [info] 	[SUCCESSFUL ] io.circe#circe-core_2.12;0.9.3!circe-core_2.12.jar (528ms)
+INFO  [info] 	[SUCCESSFUL ] org.typelevel#cats-macros_2.12;1.0.1!cats-macros_2.12.jar (253ms)
+INFO  [info] 	[SUCCESSFUL ] org.typelevel#machinist_2.12;0.6.2!machinist_2.12.jar (263ms)
+INFO  [info] 	[SUCCESSFUL ] org.typelevel#cats-core_2.12;1.0.1!cats-core_2.12.jar (1105ms)
+INFO  [info] 	[SUCCESSFUL ] org.typelevel#cats-kernel_2.12;1.0.1!cats-kernel_2.12.jar (1412ms)
+INFO  [info] Done updating.
+INFO  [info] Loading settings for project play-scala-rest-api-example-build from plugins.sbt ...
+INFO  [info] Loading project definition from /home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/project
+INFO  [info] Updating ProjectRef(uri("file:/home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/project/"), "play-scala-rest-api-example-build")...
+INFO  [info] Done updating.
+INFO  [warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
+INFO  [info] Compiling 1 Scala source to /home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/project/target/scala-2.12/sbt-1.0/classes ...
+INFO  [info] Non-compiled module 'compiler-bridge_2.12' for Scala 2.12.7. Compiling...
+INFO  shutting down Metals
+INFO  build tool exit: 143
+INFO  time: ran 'sbt bloopInstall' in 1m20s
+ERROR sbt command failed: /usr/lib/jvm/java-8-jre/jre/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals7469656976782139666/sbt-launch.jar metalsEnable bloopInstall
+INFO  time: initialize in 0.64s
+INFO  skipping build import with status 'Started'
+INFO  shutting down Metals
+INFO  time: initialize in 1.1s
+INFO  skipping build import with status 'Started'
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostController.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostResourceHandler.scala
+INFO  no build target: using presentation compiler with only scala-library
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostResourceHandler.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostResourceHandler.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostResourceHandler.scala
+Jul 23, 2019 3:30:51 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 158
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostResourceHandler.scala
+something's wrong: no file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostResourceHandler.scala in List[<error>]RangePosition(file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostResourceHandler.scala, 545, 545, 559)
+something's wrong: no file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostResourceHandler.scala in List[<error>]RangePosition(file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostResourceHandler.scala, 545, 545, 552)
+something's wrong: no file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostResourceHandler.scala in List[<error>]RangePosition(file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostResourceHandler.scala, 545, 545, 553)
+something's wrong: no file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostResourceHandler.scala in List[<error>]RangePosition(file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostResourceHandler.scala, 545, 545, 554)
+something's wrong: no file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostResourceHandler.scala in List[<error>]RangePosition(file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostResourceHandler.scala, 545, 545, 555)
+something's wrong: no file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostResourceHandler.scala in List[<error>]RangePosition(file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostResourceHandler.scala, 545, 545, 556)
+something's wrong: no file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostResourceHandler.scala in List[v1.post.Rating]RangePosition(file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostResourceHandler.scala, 545, 545, 557)
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostResourceHandler.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostResourceHandler.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostResourceHandler.scala
+something's wrong: no file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostResourceHandler.scala in List[<error>]RangePosition(file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostResourceHandler.scala, 626, 626, 640)
+something's wrong: no file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostResourceHandler.scala in List[<error>]RangePosition(file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostResourceHandler.scala, 626, 626, 633)
+something's wrong: no file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostResourceHandler.scala in List[<error>]RangePosition(file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostResourceHandler.scala, 626, 626, 634)
+something's wrong: no file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostResourceHandler.scala in List[Int]RangePosition(file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostResourceHandler.scala, 626, 626, 635)
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostResourceHandler.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostResourceHandler.scala
+Jul 23, 2019 3:32:35 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Jul 23, 2019 3:32:35 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: implicit class <error> extends  (of class scala.reflect.internal.Trees$ClassDef)
+scala.MatchError: implicit class <error> extends  (of class scala.reflect.internal.Trees$ClassDef)
+	at scala.tools.nsc.typechecker.Unapplies.constrParamss(Unapplies.scala:64)
+	at scala.tools.nsc.typechecker.Unapplies.factoryMeth(Unapplies.scala:141)
+	at scala.tools.nsc.typechecker.Unapplies.factoryMeth$(Unapplies.scala:138)
+	at scala.meta.internal.pc.MetalsGlobal$$anon$1.factoryMeth(MetalsGlobal.scala:40)
+	at scala.tools.nsc.typechecker.MethodSynthesis$MethodSynth.enterImplicitWrapper(MethodSynthesis.scala:231)
+	at scala.tools.nsc.typechecker.MethodSynthesis$MethodSynth.enterImplicitWrapper$(MethodSynthesis.scala:230)
+	at scala.tools.nsc.typechecker.Namers$Namer.enterImplicitWrapper(Namers.scala:58)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$InteractiveNamer.enterExistingSym(Global.scala:94)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$InteractiveNamer.enterExistingSym$(Global.scala:80)
+	at scala.tools.nsc.interactive.InteractiveAnalyzer$$anon$2.enterExistingSym(Global.scala:51)
+	at scala.tools.nsc.typechecker.Namers$Namer.standardEnterSym(Namers.scala:294)
+	at scala.tools.nsc.typechecker.AnalyzerPlugins.pluginsEnterSym(AnalyzerPlugins.scala:461)
+	at scala.tools.nsc.typechecker.AnalyzerPlugins.pluginsEnterSym$(AnalyzerPlugins.scala:460)
+	at scala.meta.internal.pc.MetalsGlobal$$anon$1.pluginsEnterSym(MetalsGlobal.scala:40)
+	at scala.tools.nsc.typechecker.Namers$Namer.enterSym(Namers.scala:268)
+	at scala.tools.nsc.typechecker.Typers$Typer.enterSym(Typers.scala:1946)
+	at scala.tools.nsc.typechecker.Typers$Typer.$anonfun$enterSyms$1(Typers.scala:1941)
+	at scala.tools.nsc.typechecker.Typers$Typer.enterSyms(Typers.scala:1941)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedTemplate(Typers.scala:2003)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedModuleDef(Typers.scala:1896)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5647)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5726)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStat$1(Typers.scala:5790)
+	at scala.tools.nsc.typechecker.Typers$Typer.$anonfun$typedStats$10(Typers.scala:3373)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedStats(Typers.scala:3373)
+	at scala.tools.nsc.typechecker.Typers$Typer.typedPackageDef$1(Typers.scala:5356)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed1(Typers.scala:5649)
+	at scala.tools.nsc.typechecker.Typers$Typer.typed(Typers.scala:5726)
+	at scala.tools.nsc.typechecker.Analyzer$typerFactory$TyperPhase.apply(Analyzer.scala:114)
+	at scala.tools.nsc.Global$GlobalPhase.applyPhase(Global.scala:448)
+	at scala.tools.nsc.interactive.Global$TyperRun.$anonfun$applyPhase$1(Global.scala:1340)
+	at scala.tools.nsc.interactive.Global$TyperRun.applyPhase(Global.scala:1340)
+	at scala.tools.nsc.interactive.Global$TyperRun.typeCheck(Global.scala:1333)
+	at scala.tools.nsc.interactive.Global.typeCheck(Global.scala:665)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:814)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1225)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:356)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:47)
+
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostResourceHandler.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostController.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostController.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostController.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostController.scala
+Exception in thread "pool-1-thread-11" java.lang.Error: java.lang.InterruptedException
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1155)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:20)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionCancelChecker.isCancelled(MtagsEnrichments.scala:340)
+	at scala.meta.internal.metals.FormattingProvider.$anonfun$isCancelled$1(FormattingProvider.scala:59)
+	at scala.meta.internal.metals.FormattingProvider.$anonfun$isCancelled$1$adapted(FormattingProvider.scala:59)
+	at scala.Option.exists(Option.scala:257)
+	at scala.meta.internal.metals.FormattingProvider.isCancelled(FormattingProvider.scala:59)
+	at scala.meta.internal.metals.FormattingProvider.$anonfun$handleMissingFile$1(FormattingProvider.scala:171)
+	at scala.meta.internal.metals.FormattingProvider.$anonfun$handleMissingFile$1$adapted(FormattingProvider.scala:164)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	... 2 more
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalafmt-cli_2.12/2.0.0-RC4/scalafmt-cli_2.12-2.0.0-RC4.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalafmt-cli_2.12/2.0.0-RC4/scalafmt-cli_2.12-2.0.0-RC4.pom.sha1
+Downloading https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.8/
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalafmt-cli_2.12/2.0.0-RC4/scalafmt-cli_2.12-2.0.0-RC4.pom.sha1
+Downloaded https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.8/
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalafmt-cli_2.12/2.0.0-RC4/scalafmt-cli_2.12-2.0.0-RC4.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalafmt-cli_2.12/2.0.0-RC4/
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalafmt-cli_2.12/2.0.0-RC4/
+Downloading https://repo1.maven.org/maven2/com/martiansoftware/nailgun-server/0.9.1/nailgun-server-0.9.1.pom
+Downloading https://repo1.maven.org/maven2/com/martiansoftware/nailgun-server/0.9.1/nailgun-server-0.9.1.pom.sha1
+Downloading https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.8/
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalafmt-core_2.12/2.0.0-RC4/scalafmt-core_2.12-2.0.0-RC4.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalafmt-core_2.12/2.0.0-RC4/scalafmt-core_2.12-2.0.0-RC4.pom.sha1
+Downloaded https://repo1.maven.org/maven2/com/martiansoftware/nailgun-server/0.9.1/nailgun-server-0.9.1.pom
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalafmt-core_2.12/2.0.0-RC4/scalafmt-core_2.12-2.0.0-RC4.pom.sha1
+Downloading https://repo1.maven.org/maven2/com/github/scopt/scopt_2.12/3.5.0/scopt_2.12-3.5.0.pom
+Downloading https://repo1.maven.org/maven2/com/github/scopt/scopt_2.12/3.5.0/scopt_2.12-3.5.0.pom.sha1
+Downloaded https://repo1.maven.org/maven2/com/martiansoftware/nailgun-server/0.9.1/nailgun-server-0.9.1.pom.sha1
+Downloading https://repo1.maven.org/maven2/com/martiansoftware/nailgun-server/0.9.1/
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalafmt-interfaces/2.0.0-RC4/
+Downloaded https://repo1.maven.org/maven2/com/github/scopt/scopt_2.12/3.5.0/scopt_2.12-3.5.0.pom
+Downloaded https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.8/
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalafmt-core_2.12/2.0.0-RC4/scalafmt-core_2.12-2.0.0-RC4.pom
+Downloaded https://repo1.maven.org/maven2/com/github/scopt/scopt_2.12/3.5.0/scopt_2.12-3.5.0.pom.sha1
+Downloading https://repo1.maven.org/maven2/com/googlecode/java-diff-utils/diffutils/1.3.0/
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalafmt-core_2.12/2.0.0-RC4/
+Downloading https://repo1.maven.org/maven2/com/github/scopt/scopt_2.12/3.5.0/
+Downloaded https://repo1.maven.org/maven2/com/googlecode/java-diff-utils/diffutils/1.3.0/
+Downloaded https://repo1.maven.org/maven2/com/martiansoftware/nailgun-server/0.9.1/
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalafmt-interfaces/2.0.0-RC4/
+Downloaded https://repo1.maven.org/maven2/com/github/scopt/scopt_2.12/3.5.0/
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalafmt-core_2.12/2.0.0-RC4/
+Downloading https://repo1.maven.org/maven2/com/martiansoftware/nailgun-all/0.9.1/nailgun-all-0.9.1.pom
+Downloading https://repo1.maven.org/maven2/com/martiansoftware/nailgun-all/0.9.1/nailgun-all-0.9.1.pom.sha1
+Downloading https://repo1.maven.org/maven2/org/sonatype/oss/oss-parent/7/
+Downloaded https://repo1.maven.org/maven2/org/sonatype/oss/oss-parent/7/
+Downloaded https://repo1.maven.org/maven2/com/martiansoftware/nailgun-all/0.9.1/nailgun-all-0.9.1.pom.sha1
+Downloaded https://repo1.maven.org/maven2/com/martiansoftware/nailgun-all/0.9.1/nailgun-all-0.9.1.pom
+Downloading https://repo1.maven.org/maven2/com/martiansoftware/nailgun-all/0.9.1/
+Downloaded https://repo1.maven.org/maven2/com/martiansoftware/nailgun-all/0.9.1/
+Downloading https://repo1.maven.org/maven2/com/geirsson/metaconfig-core_2.12/0.8.3/metaconfig-core_2.12-0.8.3.pom
+Downloading https://repo1.maven.org/maven2/com/geirsson/metaconfig-core_2.12/0.8.3/metaconfig-core_2.12-0.8.3.pom.sha1
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalameta_2.12/4.0.0/scalameta_2.12-4.0.0.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalameta_2.12/4.0.0/scalameta_2.12-4.0.0.pom.sha1
+Downloaded https://repo1.maven.org/maven2/com/geirsson/metaconfig-core_2.12/0.8.3/metaconfig-core_2.12-0.8.3.pom.sha1
+Downloaded https://repo1.maven.org/maven2/com/geirsson/metaconfig-core_2.12/0.8.3/metaconfig-core_2.12-0.8.3.pom
+Downloading https://repo1.maven.org/maven2/com/geirsson/metaconfig-core_2.12/0.8.3/
+Downloading https://repo1.maven.org/maven2/com/geirsson/metaconfig-typesafe-config_2.12/0.8.3/metaconfig-typesafe-config_2.12-0.8.3.pom
+Downloading https://repo1.maven.org/maven2/com/geirsson/metaconfig-typesafe-config_2.12/0.8.3/metaconfig-typesafe-config_2.12-0.8.3.pom.sha1
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalameta_2.12/4.0.0/scalameta_2.12-4.0.0.pom.sha1
+Downloaded https://repo1.maven.org/maven2/com/geirsson/metaconfig-core_2.12/0.8.3/
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalameta_2.12/4.0.0/scalameta_2.12-4.0.0.pom
+Downloaded https://repo1.maven.org/maven2/com/geirsson/metaconfig-typesafe-config_2.12/0.8.3/metaconfig-typesafe-config_2.12-0.8.3.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalameta_2.12/4.0.0/
+Downloaded https://repo1.maven.org/maven2/com/geirsson/metaconfig-typesafe-config_2.12/0.8.3/metaconfig-typesafe-config_2.12-0.8.3.pom.sha1
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalameta_2.12/4.0.0/
+Downloading https://repo1.maven.org/maven2/com/geirsson/metaconfig-typesafe-config_2.12/0.8.3/
+Downloaded https://repo1.maven.org/maven2/com/geirsson/metaconfig-typesafe-config_2.12/0.8.3/
+Downloading https://repo1.maven.org/maven2/com/typesafe/config/1.2.1/config-1.2.1.pom
+Downloading https://repo1.maven.org/maven2/com/typesafe/config/1.2.1/config-1.2.1.pom.sha1
+Downloaded https://repo1.maven.org/maven2/com/typesafe/config/1.2.1/config-1.2.1.pom
+Downloaded https://repo1.maven.org/maven2/com/typesafe/config/1.2.1/config-1.2.1.pom.sha1
+Downloading https://repo1.maven.org/maven2/org/scalameta/common_2.12/4.0.0/common_2.12-4.0.0.pom.sha1
+Downloading https://repo1.maven.org/maven2/org/scalameta/parsers_2.12/4.0.0/parsers_2.12-4.0.0.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/parsers_2.12/4.0.0/parsers_2.12-4.0.0.pom.sha1
+Downloading https://repo1.maven.org/maven2/org/scalameta/io_2.12/4.0.0/io_2.12-4.0.0.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/io_2.12/4.0.0/io_2.12-4.0.0.pom.sha1
+Downloading https://repo1.maven.org/maven2/org/typelevel/paiges-core_2.12/0.2.0/paiges-core_2.12-0.2.0.pom.sha1
+Downloaded https://repo1.maven.org/maven2/org/scalameta/common_2.12/4.0.0/common_2.12-4.0.0.pom.sha1
+Downloading https://repo1.maven.org/maven2/org/typelevel/paiges-core_2.12/0.2.0/paiges-core_2.12-0.2.0.pom
+Downloaded https://repo1.maven.org/maven2/org/scalameta/parsers_2.12/4.0.0/parsers_2.12-4.0.0.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/tokenizers_2.12/4.0.0/tokenizers_2.12-4.0.0.pom.sha1
+Downloaded https://repo1.maven.org/maven2/org/scalameta/parsers_2.12/4.0.0/parsers_2.12-4.0.0.pom.sha1
+Downloading https://repo1.maven.org/maven2/org/scalameta/transversers_2.12/4.0.0/transversers_2.12-4.0.0.pom
+Downloaded https://repo1.maven.org/maven2/org/typelevel/paiges-core_2.12/0.2.0/paiges-core_2.12-0.2.0.pom.sha1
+Downloading https://repo1.maven.org/maven2/org/scalameta/transversers_2.12/4.0.0/transversers_2.12-4.0.0.pom.sha1
+Downloaded https://repo1.maven.org/maven2/org/scalameta/io_2.12/4.0.0/io_2.12-4.0.0.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/dialects_2.12/4.0.0/dialects_2.12-4.0.0.pom
+Downloaded https://repo1.maven.org/maven2/org/typelevel/paiges-core_2.12/0.2.0/paiges-core_2.12-0.2.0.pom
+Downloaded https://repo1.maven.org/maven2/org/scalameta/tokenizers_2.12/4.0.0/tokenizers_2.12-4.0.0.pom.sha1
+Downloading https://repo1.maven.org/maven2/org/scalameta/tokenizers_2.12/4.0.0/tokenizers_2.12-4.0.0.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/dialects_2.12/4.0.0/dialects_2.12-4.0.0.pom.sha1
+Downloaded https://repo1.maven.org/maven2/org/scalameta/transversers_2.12/4.0.0/transversers_2.12-4.0.0.pom.sha1
+Downloading https://repo1.maven.org/maven2/org/scalameta/common_2.12/4.0.0/common_2.12-4.0.0.pom
+Downloaded https://repo1.maven.org/maven2/org/scalameta/transversers_2.12/4.0.0/transversers_2.12-4.0.0.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/quasiquotes_2.12/4.0.0/quasiquotes_2.12-4.0.0.pom
+Downloaded https://repo1.maven.org/maven2/org/scalameta/dialects_2.12/4.0.0/dialects_2.12-4.0.0.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/quasiquotes_2.12/4.0.0/quasiquotes_2.12-4.0.0.pom.sha1
+Downloaded https://repo1.maven.org/maven2/org/scalameta/dialects_2.12/4.0.0/dialects_2.12-4.0.0.pom.sha1
+Downloading https://repo1.maven.org/maven2/org/scalameta/trees_2.12/4.0.0/trees_2.12-4.0.0.pom
+Downloaded https://repo1.maven.org/maven2/org/scalameta/common_2.12/4.0.0/common_2.12-4.0.0.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/trees_2.12/4.0.0/trees_2.12-4.0.0.pom.sha1
+Downloaded https://repo1.maven.org/maven2/org/scalameta/tokenizers_2.12/4.0.0/tokenizers_2.12-4.0.0.pom
+Downloaded https://repo1.maven.org/maven2/org/scalameta/io_2.12/4.0.0/io_2.12-4.0.0.pom.sha1
+Downloading https://repo1.maven.org/maven2/com/typesafe/config/1.2.1/
+Downloaded https://repo1.maven.org/maven2/org/scalameta/trees_2.12/4.0.0/trees_2.12-4.0.0.pom.sha1
+Downloading https://repo1.maven.org/maven2/com/lihaoyi/pprint_2.12/0.5.3/pprint_2.12-0.5.3.pom
+Downloaded https://repo1.maven.org/maven2/org/scalameta/trees_2.12/4.0.0/trees_2.12-4.0.0.pom
+Downloaded https://repo1.maven.org/maven2/org/scalameta/quasiquotes_2.12/4.0.0/quasiquotes_2.12-4.0.0.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/inputs_2.12/4.0.0/inputs_2.12-4.0.0.pom
+Downloaded https://repo1.maven.org/maven2/com/typesafe/config/1.2.1/
+Downloading https://repo1.maven.org/maven2/org/scalameta/inputs_2.12/4.0.0/inputs_2.12-4.0.0.pom.sha1
+Downloading https://repo1.maven.org/maven2/com/lihaoyi/pprint_2.12/0.5.3/pprint_2.12-0.5.3.pom.sha1
+Downloaded https://repo1.maven.org/maven2/com/lihaoyi/pprint_2.12/0.5.3/pprint_2.12-0.5.3.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/io_2.12/4.0.0/
+Downloaded https://repo1.maven.org/maven2/org/scalameta/quasiquotes_2.12/4.0.0/quasiquotes_2.12-4.0.0.pom.sha1
+Downloading https://repo1.maven.org/maven2/org/scalameta/transversers_2.12/4.0.0/
+Downloaded https://repo1.maven.org/maven2/com/lihaoyi/pprint_2.12/0.5.3/pprint_2.12-0.5.3.pom.sha1
+Downloading https://repo1.maven.org/maven2/org/scalameta/dialects_2.12/4.0.0/
+Downloading https://repo1.maven.org/maven2/org/scalameta/parsers_2.12/4.0.0/
+Downloaded https://repo1.maven.org/maven2/org/scalameta/inputs_2.12/4.0.0/inputs_2.12-4.0.0.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/common_2.12/4.0.0/
+Downloaded https://repo1.maven.org/maven2/org/scalameta/inputs_2.12/4.0.0/inputs_2.12-4.0.0.pom.sha1
+Downloading https://repo1.maven.org/maven2/org/typelevel/paiges-core_2.12/0.2.0/
+Downloaded https://repo1.maven.org/maven2/org/scalameta/io_2.12/4.0.0/
+Downloading https://repo1.maven.org/maven2/org/scalameta/tokenizers_2.12/4.0.0/
+Downloaded https://repo1.maven.org/maven2/org/typelevel/paiges-core_2.12/0.2.0/
+Downloading https://repo1.maven.org/maven2/org/scalameta/trees_2.12/4.0.0/
+Downloaded https://repo1.maven.org/maven2/org/scalameta/parsers_2.12/4.0.0/
+Downloaded https://repo1.maven.org/maven2/org/scalameta/transversers_2.12/4.0.0/
+Downloading https://repo1.maven.org/maven2/com/lihaoyi/pprint_2.12/0.5.3/
+Downloaded https://repo1.maven.org/maven2/org/scalameta/tokenizers_2.12/4.0.0/
+Downloading https://repo1.maven.org/maven2/org/scalameta/quasiquotes_2.12/4.0.0/
+Downloaded https://repo1.maven.org/maven2/org/scalameta/common_2.12/4.0.0/
+Downloaded https://repo1.maven.org/maven2/org/scalameta/dialects_2.12/4.0.0/
+Downloaded https://repo1.maven.org/maven2/org/scalameta/trees_2.12/4.0.0/
+Downloading https://repo1.maven.org/maven2/org/scalameta/inputs_2.12/4.0.0/
+Downloaded https://repo1.maven.org/maven2/com/lihaoyi/pprint_2.12/0.5.3/
+Downloaded https://repo1.maven.org/maven2/org/scalameta/quasiquotes_2.12/4.0.0/
+Downloaded https://repo1.maven.org/maven2/org/scalameta/inputs_2.12/4.0.0/
+Downloading https://repo1.maven.org/maven2/org/scalameta/semanticdb_2.12/4.0.0/semanticdb_2.12-4.0.0.pom.sha1
+Downloading https://repo1.maven.org/maven2/org/scalameta/semanticdb_2.12/4.0.0/semanticdb_2.12-4.0.0.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/tokens_2.12/4.0.0/tokens_2.12-4.0.0.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/tokens_2.12/4.0.0/tokens_2.12-4.0.0.pom.sha1
+Downloading https://repo1.maven.org/maven2/com/lihaoyi/fansi_2.12/0.2.5/fansi_2.12-0.2.5.pom
+Downloading https://repo1.maven.org/maven2/com/lihaoyi/fansi_2.12/0.2.5/fansi_2.12-0.2.5.pom.sha1
+Downloaded https://repo1.maven.org/maven2/org/scalameta/semanticdb_2.12/4.0.0/semanticdb_2.12-4.0.0.pom.sha1
+Downloaded https://repo1.maven.org/maven2/org/scalameta/tokens_2.12/4.0.0/tokens_2.12-4.0.0.pom
+Downloading https://repo1.maven.org/maven2/com/lihaoyi/fastparse_2.12/1.0.0/fastparse_2.12-1.0.0.pom
+Downloading https://repo1.maven.org/maven2/com/lihaoyi/fastparse_2.12/1.0.0/fastparse_2.12-1.0.0.pom.sha1
+Downloaded https://repo1.maven.org/maven2/org/scalameta/semanticdb_2.12/4.0.0/semanticdb_2.12-4.0.0.pom
+Downloaded https://repo1.maven.org/maven2/com/lihaoyi/fansi_2.12/0.2.5/fansi_2.12-0.2.5.pom
+Downloaded https://repo1.maven.org/maven2/org/scalameta/tokens_2.12/4.0.0/tokens_2.12-4.0.0.pom.sha1
+Downloading https://repo1.maven.org/maven2/com/lihaoyi/sourcecode_2.12/0.1.4/sourcecode_2.12-0.1.4.pom
+Downloading https://repo1.maven.org/maven2/com/lihaoyi/sourcecode_2.12/0.1.4/sourcecode_2.12-0.1.4.pom.sha1
+Downloading https://repo1.maven.org/maven2/org/scalameta/tokens_2.12/4.0.0/
+Downloaded https://repo1.maven.org/maven2/com/lihaoyi/fastparse_2.12/1.0.0/fastparse_2.12-1.0.0.pom.sha1
+Downloading https://repo1.maven.org/maven2/org/scalameta/semanticdb_2.12/4.0.0/
+Downloaded https://repo1.maven.org/maven2/com/lihaoyi/fastparse_2.12/1.0.0/fastparse_2.12-1.0.0.pom
+Downloading https://repo1.maven.org/maven2/com/lihaoyi/fastparse_2.12/1.0.0/
+Downloaded https://repo1.maven.org/maven2/com/lihaoyi/sourcecode_2.12/0.1.4/sourcecode_2.12-0.1.4.pom.sha1
+Downloaded https://repo1.maven.org/maven2/org/scalameta/tokens_2.12/4.0.0/
+Downloaded https://repo1.maven.org/maven2/com/lihaoyi/sourcecode_2.12/0.1.4/sourcecode_2.12-0.1.4.pom
+Downloaded https://repo1.maven.org/maven2/com/lihaoyi/fansi_2.12/0.2.5/fansi_2.12-0.2.5.pom.sha1
+Downloading https://repo1.maven.org/maven2/com/lihaoyi/sourcecode_2.12/0.1.4/
+Downloading https://repo1.maven.org/maven2/com/lihaoyi/fansi_2.12/0.2.5/
+Downloaded https://repo1.maven.org/maven2/org/scalameta/semanticdb_2.12/4.0.0/
+Downloaded https://repo1.maven.org/maven2/com/lihaoyi/fastparse_2.12/1.0.0/
+Downloaded https://repo1.maven.org/maven2/com/lihaoyi/sourcecode_2.12/0.1.4/
+Downloaded https://repo1.maven.org/maven2/com/lihaoyi/fansi_2.12/0.2.5/
+Downloading https://repo1.maven.org/maven2/com/lihaoyi/fastparse-utils_2.12/1.0.0/fastparse-utils_2.12-1.0.0.pom
+Downloading https://repo1.maven.org/maven2/com/lihaoyi/fastparse-utils_2.12/1.0.0/fastparse-utils_2.12-1.0.0.pom.sha1
+Downloaded https://repo1.maven.org/maven2/com/lihaoyi/fastparse-utils_2.12/1.0.0/fastparse-utils_2.12-1.0.0.pom
+Downloaded https://repo1.maven.org/maven2/com/lihaoyi/fastparse-utils_2.12/1.0.0/fastparse-utils_2.12-1.0.0.pom.sha1
+Downloading https://repo1.maven.org/maven2/com/lihaoyi/fastparse-utils_2.12/1.0.0/
+Downloaded https://repo1.maven.org/maven2/com/lihaoyi/fastparse-utils_2.12/1.0.0/
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostController.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostController.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostController.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostController.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostController.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostController.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostRepository.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostRouter.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostRouter.scala
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostRouter.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostRouter.scala' because it doesn't belong to a build target.
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostRepository.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostController.scala
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostController.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostController.scala' because it doesn't belong to a build target.
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostController.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostController.scala
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostController.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostController.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostRouter.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostRouter.scala' because it doesn't belong to a build target.
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostRouter.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostRouter.scala
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostRouter.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostRouter.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostRouter.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/v1/post/PostRouter.scala' because it doesn't belong to a build target.
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/post/PostRouter.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/post/PostRouter.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/post/PostActionBuilder.scala
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/post/PostActionBuilder.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/post/PostActionBuilder.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/post/PostActionBuilder.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/post/PostActionBuilder.scala' because it doesn't belong to a build target.
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/post/PostActionBuilder.scala
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/post/PostActionBuilder.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/post/PostActionBuilder.scala' because it doesn't belong to a build target.
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/post/PostController.scala
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/post/PostController.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/post/PostController.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/post/PostController.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/post/PostController.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/post/PostController.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/post/PostController.scala' because it doesn't belong to a build target.
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/post/PostController.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/post/PostRepository.scala
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/post/PostRepository.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/post/PostRepository.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/post/PostRepository.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/post/PostRepository.scala' because it doesn't belong to a build target.
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/post/PostRepository.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/post/PostResourceHandler.scala
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/post/PostResourceHandler.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/post/PostResourceHandler.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/post/PostResourceHandler.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/post/PostResourceHandler.scala' because it doesn't belong to a build target.
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/post/PostResourceHandler.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/post/PostRouter.scala
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/post/PostRouter.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/post/PostRouter.scala' because it doesn't belong to a build target.
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/post/PostRouter.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/Module.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/play-scala-rest-api-example/app/Module.scala
+INFO  shutting down Metals
+INFO  time: initialize in 2.31s
+INFO  skipping build import with status 'Started'
