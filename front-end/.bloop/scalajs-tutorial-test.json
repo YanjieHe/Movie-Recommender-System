@@ -1,0 +1,271 @@
+{
+    "version" : "1.1.2",
+    "project" : {
+        "name" : "scalajs-tutorial-test",
+        "directory" : "/home/yanjie/Documents/GitHub/Movie-Recommender-System/scalajs-tutorial",
+        "sources" : [
+            "/home/yanjie/Documents/GitHub/Movie-Recommender-System/scalajs-tutorial/src/test/scala-2.12",
+            "/home/yanjie/Documents/GitHub/Movie-Recommender-System/scalajs-tutorial/src/test/scala",
+            "/home/yanjie/Documents/GitHub/Movie-Recommender-System/scalajs-tutorial/src/test/java",
+            "/home/yanjie/Documents/GitHub/Movie-Recommender-System/scalajs-tutorial/target/scala-2.12/src_managed/test"
+        ],
+        "dependencies" : [
+            "scalajs-tutorial"
+        ],
+        "classpath" : [
+            "/home/yanjie/Documents/GitHub/Movie-Recommender-System/scalajs-tutorial/.bloop/scalajs-tutorial/scala-2.12/classes",
+            "/home/yanjie/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.8.jar",
+            "/home/yanjie/.ivy2/cache/org.webjars/jquery/jars/jquery-2.2.1.jar",
+            "/home/yanjie/.ivy2/cache/org.scala-js/scalajs-library_2.12/jars/scalajs-library_2.12-0.6.28.jar",
+            "/home/yanjie/.ivy2/cache/org.scala-js/scalajs-dom_sjs0.6_2.12/jars/scalajs-dom_sjs0.6_2.12-0.9.7.jar",
+            "/home/yanjie/.ivy2/cache/org.querki/jquery-facade_sjs0.6_2.12/jars/jquery-facade_sjs0.6_2.12-1.2.jar",
+            "/home/yanjie/.ivy2/cache/org.querki/querki-jsext_sjs0.6_2.12/jars/querki-jsext_sjs0.6_2.12-0.8.jar",
+            "/home/yanjie/.ivy2/cache/org.scala-js/scalajs-test-interface_2.12/jars/scalajs-test-interface_2.12-0.6.28.jar",
+            "/home/yanjie/.ivy2/cache/com.lihaoyi/utest_sjs0.6_2.12/jars/utest_sjs0.6_2.12-0.6.3.jar",
+            "/home/yanjie/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.12.8.jar"
+        ],
+        "out" : "/home/yanjie/Documents/GitHub/Movie-Recommender-System/scalajs-tutorial/.bloop/scalajs-tutorial",
+        "classesDir" : "/home/yanjie/Documents/GitHub/Movie-Recommender-System/scalajs-tutorial/.bloop/scalajs-tutorial/scala-2.12/test-classes",
+        "resources" : [
+            "/home/yanjie/Documents/GitHub/Movie-Recommender-System/scalajs-tutorial/src/test/resources",
+            "/home/yanjie/Documents/GitHub/Movie-Recommender-System/scalajs-tutorial/target/scala-2.12/resource_managed/test"
+        ],
+        "scala" : {
+            "organization" : "org.scala-lang",
+            "name" : "scala-compiler",
+            "version" : "2.12.8",
+            "options" : [
+                "-P:semanticdb:synthetics:on",
+                "-P:semanticdb:failures:warning",
+                "-P:semanticdb:sourceroot:/home/yanjie/Documents/GitHub/Movie-Recommender-System/scalajs-tutorial",
+                "-Yrangepos",
+                "-Xplugin-require:semanticdb",
+                "-Xplugin:/home/yanjie/.ivy2/cache/org.scala-js/scalajs-compiler_2.12.8/jars/scalajs-compiler_2.12.8-0.6.28.jar",
+                "-Xplugin:/home/yanjie/.ivy2/cache/org.scalameta/semanticdb-scalac_2.12.8/jars/semanticdb-scalac_2.12.8-4.2.0.jar"
+            ],
+            "jars" : [
+                "/home/yanjie/.ivy2/cache/org.scala-lang/scala-compiler/jars/scala-compiler-2.12.8.jar",
+                "/home/yanjie/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.8.jar",
+                "/home/yanjie/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.12.8.jar",
+                "/home/yanjie/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/bundles/scala-xml_2.12-1.0.6.jar",
+                "/home/yanjie/.ivy2/cache/jline/jline/jars/jline-2.14.6.jar"
+            ],
+            "setup" : {
+                "order" : "mixed",
+                "addLibraryToBootClasspath" : true,
+                "addCompilerToClasspath" : false,
+                "addExtraJarsToClasspath" : false,
+                "manageBootClasspath" : true,
+                "filterLibraryFromClasspath" : true
+            }
+        },
+        "java" : {
+            "options" : [
+            ]
+        },
+        "test" : {
+            "frameworks" : [
+                {
+                    "names" : [
+                        "org.scalacheck.ScalaCheckFramework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "org.specs2.runner.Specs2Framework",
+                        "org.specs2.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "org.specs.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "org.scalatest.tools.Framework",
+                        "org.scalatest.tools.ScalaTestFramework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "com.novocode.junit.JUnitFramework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "utest.runner.Framework"
+                    ]
+                }
+            ],
+            "options" : {
+                "excludes" : [
+                ],
+                "arguments" : [
+                ]
+            }
+        },
+        "platform" : {
+            "name" : "js",
+            "config" : {
+                "version" : "0.6.28",
+                "mode" : "debug",
+                "kind" : "none",
+                "emitSourceMaps" : false,
+                "jsdom" : false,
+                "toolchain" : [
+                ]
+            },
+            "mainClass" : [
+            ]
+        },
+        "resolution" : {
+            "modules" : [
+                {
+                    "organization" : "org.scala-lang",
+                    "name" : "scala-library",
+                    "version" : "2.12.8",
+                    "artifacts" : [
+                        {
+                            "name" : "scala-library",
+                            "path" : "/home/yanjie/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.8.jar"
+                        },
+                        {
+                            "name" : "scala-library",
+                            "classifier" : "sources",
+                            "path" : "/home/yanjie/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.webjars",
+                    "name" : "jquery",
+                    "version" : "2.2.1",
+                    "artifacts" : [
+                        {
+                            "name" : "jquery",
+                            "path" : "/home/yanjie/.ivy2/cache/org.webjars/jquery/jars/jquery-2.2.1.jar"
+                        },
+                        {
+                            "name" : "jquery",
+                            "classifier" : "sources",
+                            "path" : "/home/yanjie/.ivy2/cache/org.webjars/jquery/srcs/jquery-2.2.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.scala-js",
+                    "name" : "scalajs-library_2.12",
+                    "version" : "0.6.28",
+                    "artifacts" : [
+                        {
+                            "name" : "scalajs-library_2.12",
+                            "path" : "/home/yanjie/.ivy2/cache/org.scala-js/scalajs-library_2.12/jars/scalajs-library_2.12-0.6.28.jar"
+                        },
+                        {
+                            "name" : "scalajs-library_2.12",
+                            "classifier" : "sources",
+                            "path" : "/home/yanjie/.ivy2/cache/org.scala-js/scalajs-library_2.12/srcs/scalajs-library_2.12-0.6.28-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.scala-js",
+                    "name" : "scalajs-dom_sjs0.6_2.12",
+                    "version" : "0.9.7",
+                    "artifacts" : [
+                        {
+                            "name" : "scalajs-dom_sjs0.6_2.12",
+                            "path" : "/home/yanjie/.ivy2/cache/org.scala-js/scalajs-dom_sjs0.6_2.12/jars/scalajs-dom_sjs0.6_2.12-0.9.7.jar"
+                        },
+                        {
+                            "name" : "scalajs-dom_sjs0.6_2.12",
+                            "classifier" : "sources",
+                            "path" : "/home/yanjie/.ivy2/cache/org.scala-js/scalajs-dom_sjs0.6_2.12/srcs/scalajs-dom_sjs0.6_2.12-0.9.7-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.querki",
+                    "name" : "jquery-facade_sjs0.6_2.12",
+                    "version" : "1.2",
+                    "artifacts" : [
+                        {
+                            "name" : "jquery-facade_sjs0.6_2.12",
+                            "path" : "/home/yanjie/.ivy2/cache/org.querki/jquery-facade_sjs0.6_2.12/jars/jquery-facade_sjs0.6_2.12-1.2.jar"
+                        },
+                        {
+                            "name" : "jquery-facade_sjs0.6_2.12",
+                            "classifier" : "sources",
+                            "path" : "/home/yanjie/.ivy2/cache/org.querki/jquery-facade_sjs0.6_2.12/srcs/jquery-facade_sjs0.6_2.12-1.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.querki",
+                    "name" : "querki-jsext_sjs0.6_2.12",
+                    "version" : "0.8",
+                    "artifacts" : [
+                        {
+                            "name" : "querki-jsext_sjs0.6_2.12",
+                            "path" : "/home/yanjie/.ivy2/cache/org.querki/querki-jsext_sjs0.6_2.12/jars/querki-jsext_sjs0.6_2.12-0.8.jar"
+                        },
+                        {
+                            "name" : "querki-jsext_sjs0.6_2.12",
+                            "classifier" : "sources",
+                            "path" : "/home/yanjie/.ivy2/cache/org.querki/querki-jsext_sjs0.6_2.12/srcs/querki-jsext_sjs0.6_2.12-0.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.scala-js",
+                    "name" : "scalajs-test-interface_2.12",
+                    "version" : "0.6.28",
+                    "artifacts" : [
+                        {
+                            "name" : "scalajs-test-interface_2.12",
+                            "path" : "/home/yanjie/.ivy2/cache/org.scala-js/scalajs-test-interface_2.12/jars/scalajs-test-interface_2.12-0.6.28.jar"
+                        },
+                        {
+                            "name" : "scalajs-test-interface_2.12",
+                            "classifier" : "sources",
+                            "path" : "/home/yanjie/.ivy2/cache/org.scala-js/scalajs-test-interface_2.12/srcs/scalajs-test-interface_2.12-0.6.28-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.lihaoyi",
+                    "name" : "utest_sjs0.6_2.12",
+                    "version" : "0.6.3",
+                    "artifacts" : [
+                        {
+                            "name" : "utest_sjs0.6_2.12",
+                            "path" : "/home/yanjie/.ivy2/cache/com.lihaoyi/utest_sjs0.6_2.12/jars/utest_sjs0.6_2.12-0.6.3.jar"
+                        },
+                        {
+                            "name" : "utest_sjs0.6_2.12",
+                            "classifier" : "sources",
+                            "path" : "/home/yanjie/.ivy2/cache/com.lihaoyi/utest_sjs0.6_2.12/srcs/utest_sjs0.6_2.12-0.6.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.scala-lang",
+                    "name" : "scala-reflect",
+                    "version" : "2.12.8",
+                    "artifacts" : [
+                        {
+                            "name" : "scala-reflect",
+                            "path" : "/home/yanjie/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.12.8.jar"
+                        },
+                        {
+                            "name" : "scala-reflect",
+                            "classifier" : "sources",
+                            "path" : "/home/yanjie/.ivy2/cache/org.scala-lang/scala-reflect/srcs/scala-reflect-2.12.8-sources.jar"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
