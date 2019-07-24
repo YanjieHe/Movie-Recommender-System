@@ -2,7 +2,7 @@ package scalajsreact.template.pages
 
 import scalacss.Defaults._
 import scalacss.ScalaCssReact._
-import scalajsreact.template.components.LeftNav
+// import scalajsreact.template.components.LeftNav
 import scalajsreact.template.routes.Item
 
 import japgolly.scalajs.react._
@@ -26,8 +26,10 @@ object ItemsPage {
     .render_P { P =>
       <.div(
         Style.container,
-        <.div(Style.nav,
-              LeftNav(LeftNav.Props(Item.menu, P.selectedPage, P.ctrl))),
+        <.div(
+          Style.nav
+          // LeftNav(LeftNav.Props(Item.menu, P.selectedPage, P.ctrl))),
+        ),
         <.div(Style.content, P.selectedPage.render())
       )
     }

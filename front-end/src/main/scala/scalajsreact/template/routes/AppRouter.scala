@@ -1,6 +1,6 @@
 package scalajsreact.template.routes
 
-import scalajsreact.template.components.{Footer, TopNav}
+// import scalajsreact.template.components.{Footer, TopNav}
 import scalajsreact.template.models.Menu
 import scalajsreact.template.pages.HomePage
 
@@ -25,23 +25,27 @@ object AppRouter {
       Item.routes.prefixPath_/("#items").pmap[AppPage](Items) {
         case Items(p) => p
       }
+    // (trimSlashes
+    //   | staticRoute(root, Home) ~> render(HomePage())
+    //   | itemRoutes)
+    //   .notFound(redirectToPage(Home)(Redirect.Replace))
+    //   .renderWith(layout)
     (trimSlashes
-      | staticRoute(root, Home) ~> render(HomePage())
-      | itemRoutes)
-      .notFound(redirectToPage(Home)(Redirect.Replace))
-      .renderWith(layout)
+    | staticRoute(root, Home) ~> render(HomePage()))
+    .notFound(redirectToPage(Home)(Redirect.Replace))
+    .renderWith(layout)
   }
 
   val mainMenu = Vector(
     Menu("Home", Home),
-    Menu("Items", Items(Item.Info))
+    // Menu("Items", Items(Item.Info))
   )
 
   def layout(c: RouterCtl[AppPage], r: Resolution[AppPage]) =
     <.div(
-      TopNav(TopNav.Props(mainMenu, r.page, c)),
+      // TopNav(TopNav.Props(mainMenu, r.page, c)),
       r.render(),
-      Footer()
+      // Footer()
     )
 
   val baseUrl = BaseUrl.fromWindowOrigin / "index.html"
