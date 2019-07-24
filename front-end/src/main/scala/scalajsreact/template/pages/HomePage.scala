@@ -16,6 +16,9 @@ object HomePage {
                         paddingTop(40.px))
   }
 
+  def navigation() = 
+  <.nav(^.cls := "navbar navbar-expand-lg navbar-light bg-light")
+
   val component =
     ScalaComponent.builder
       .static("HomePage")(<.div(Style.content, "Scala js react template"))
