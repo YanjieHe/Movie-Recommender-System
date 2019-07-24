@@ -374,3 +374,8 @@ WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/fr
 WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/front-end/src/main/scala/tutorial/webapp/TutorialApp.scala' because it doesn't belong to a build target.
 WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/front-end/src/main/scala/tutorial/webapp/TutorialApp.scala' because it doesn't belong to a build target.
 WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/front-end/build.sbt
+INFO  shutting down Metals
+shutdown request received: build/shutdown
+[0m[31m[E][0m BSP server cancelled, closing socket...
+Client in /home/yanjie/Documents/GitHub/Movie-Recommender-System/front-end/.bloop triggered cancellation. Cancelling tasks...
+INFO  bloop exit: 0

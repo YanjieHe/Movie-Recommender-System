@@ -1001,3 +1001,8 @@ INFO  time: compiled root in 28s
 INFO  compiling root-test (1 scala source)
 INFO  time: compiled root-test in 0.66s
 ERROR Failed to compile 'root-test'
+INFO  shutting down Metals
+shutdown request received: build/shutdown
+[0m[31m[E][0m BSP server cancelled, closing socket...
+Client in /home/yanjie/Documents/GitHub/Movie-Recommender-System/back-end/.bloop triggered cancellation. Cancelling tasks...
+INFO  bloop exit: 0
