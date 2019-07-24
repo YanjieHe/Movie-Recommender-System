@@ -379,3 +379,16 @@ shutdown request received: build/shutdown
 [0m[31m[E][0m BSP server cancelled, closing socket...
 Client in /home/yanjie/Documents/GitHub/Movie-Recommender-System/front-end/.bloop triggered cancellation. Cancelling tasks...
 INFO  bloop exit: 0
+INFO  time: initialize in 0.54s
+INFO  running embedded 'bloop bsp --protocol local --socket /tmp/bsp1231216086424299148/pd3lxvctixax.socket'
+INFO  skipping build import with status 'Installed'
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/front-end/src/test/scala/tutorial/webapp/TutorialTest.scala
+The server is listening for incoming connections at local:///tmp/bsp1231216086424299148/pd3lxvctixax.socket...
+Accepted incoming BSP client connection at local:///tmp/bsp1231216086424299148/pd3lxvctixax.socket
+INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/yanjie/.cache/metals/bsp.trace.json
+request received: build/initialize
+INFO  time: connected to build server in 8.11s
+BSP initialization handshake complete.
+INFO  time: imported build in 0.16s
+INFO  time: indexed workspace in 0.41s
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/front-end/src/test/scala/tutorial/webapp/TutorialTest.scala
