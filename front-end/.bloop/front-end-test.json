@@ -1,0 +1,437 @@
+{
+    "version" : "1.1.2",
+    "project" : {
+        "name" : "front-end-test",
+        "directory" : "/home/yanjie/Documents/GitHub/Movie-Recommender-System/front-end",
+        "sources" : [
+            "/home/yanjie/Documents/GitHub/Movie-Recommender-System/front-end/src/test/scala-2.12",
+            "/home/yanjie/Documents/GitHub/Movie-Recommender-System/front-end/src/test/scala",
+            "/home/yanjie/Documents/GitHub/Movie-Recommender-System/front-end/src/test/java",
+            "/home/yanjie/Documents/GitHub/Movie-Recommender-System/front-end/target/scala-2.12/src_managed/test"
+        ],
+        "dependencies" : [
+            "front-end"
+        ],
+        "classpath" : [
+            "/home/yanjie/Documents/GitHub/Movie-Recommender-System/front-end/.bloop/front-end/scala-2.12/classes",
+            "/home/yanjie/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.8.jar",
+            "/home/yanjie/.ivy2/cache/org.webjars.npm/react/jars/react-16.8.6.jar",
+            "/home/yanjie/.ivy2/cache/org.webjars.npm/loose-envify/jars/loose-envify-1.4.0.jar",
+            "/home/yanjie/.ivy2/cache/org.webjars.npm/js-tokens/jars/js-tokens-4.0.0.jar",
+            "/home/yanjie/.ivy2/cache/org.webjars.npm/object-assign/jars/object-assign-4.1.1.jar",
+            "/home/yanjie/.ivy2/cache/org.webjars.npm/prop-types/jars/prop-types-15.7.2.jar",
+            "/home/yanjie/.ivy2/cache/org.webjars.npm/react-is/jars/react-is-16.9.0-alpha.0.jar",
+            "/home/yanjie/.ivy2/cache/org.webjars.npm/scheduler/jars/scheduler-0.14.0.jar",
+            "/home/yanjie/.ivy2/cache/org.webjars.npm/react-dom/jars/react-dom-16.8.6.jar",
+            "/home/yanjie/.ivy2/cache/org.scala-js/scalajs-library_2.12/jars/scalajs-library_2.12-0.6.28.jar",
+            "/home/yanjie/.ivy2/cache/org.scala-js/scalajs-dom_sjs0.6_2.12/jars/scalajs-dom_sjs0.6_2.12-0.9.7.jar",
+            "/home/yanjie/.ivy2/cache/com.github.japgolly.scalajs-react/core_sjs0.6_2.12/jars/core_sjs0.6_2.12-1.4.2.jar",
+            "/home/yanjie/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.12.8.jar",
+            "/home/yanjie/.ivy2/cache/com.lihaoyi/sourcecode_sjs0.6_2.12/bundles/sourcecode_sjs0.6_2.12-0.1.6.jar",
+            "/home/yanjie/.ivy2/cache/com.github.japgolly.scalajs-react/extra_sjs0.6_2.12/jars/extra_sjs0.6_2.12-1.4.2.jar",
+            "/home/yanjie/.ivy2/cache/com.github.japgolly.scalacss/core_sjs0.6_2.12/jars/core_sjs0.6_2.12-0.5.6.jar",
+            "/home/yanjie/.ivy2/cache/com.github.japgolly.univeq/univeq_sjs0.6_2.12/jars/univeq_sjs0.6_2.12-1.0.6.jar",
+            "/home/yanjie/.ivy2/cache/com.github.japgolly.scalacss/ext-react_sjs0.6_2.12/jars/ext-react_sjs0.6_2.12-0.5.6.jar",
+            "/home/yanjie/.ivy2/cache/org.scala-js/scalajs-test-interface_2.12/jars/scalajs-test-interface_2.12-0.6.28.jar"
+        ],
+        "out" : "/home/yanjie/Documents/GitHub/Movie-Recommender-System/front-end/.bloop/front-end",
+        "classesDir" : "/home/yanjie/Documents/GitHub/Movie-Recommender-System/front-end/.bloop/front-end/scala-2.12/test-classes",
+        "resources" : [
+            "/home/yanjie/Documents/GitHub/Movie-Recommender-System/front-end/src/test/resources",
+            "/home/yanjie/Documents/GitHub/Movie-Recommender-System/front-end/target/scala-2.12/resource_managed/test"
+        ],
+        "scala" : {
+            "organization" : "org.scala-lang",
+            "name" : "scala-compiler",
+            "version" : "2.12.8",
+            "options" : [
+                "-feature",
+                "-P:semanticdb:synthetics:on",
+                "-P:semanticdb:failures:warning",
+                "-P:semanticdb:sourceroot:/home/yanjie/Documents/GitHub/Movie-Recommender-System/front-end",
+                "-Yrangepos",
+                "-Xplugin-require:semanticdb",
+                "-Xplugin:/home/yanjie/.ivy2/cache/org.scala-js/scalajs-compiler_2.12.8/jars/scalajs-compiler_2.12.8-0.6.28.jar",
+                "-Xplugin:/home/yanjie/.ivy2/cache/org.scalameta/semanticdb-scalac_2.12.8/jars/semanticdb-scalac_2.12.8-4.2.0.jar"
+            ],
+            "jars" : [
+                "/home/yanjie/.ivy2/cache/org.scala-lang/scala-compiler/jars/scala-compiler-2.12.8.jar",
+                "/home/yanjie/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.8.jar",
+                "/home/yanjie/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.12.8.jar",
+                "/home/yanjie/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/bundles/scala-xml_2.12-1.0.6.jar",
+                "/home/yanjie/.ivy2/cache/jline/jline/jars/jline-2.14.6.jar"
+            ],
+            "setup" : {
+                "order" : "mixed",
+                "addLibraryToBootClasspath" : true,
+                "addCompilerToClasspath" : false,
+                "addExtraJarsToClasspath" : false,
+                "manageBootClasspath" : true,
+                "filterLibraryFromClasspath" : true
+            }
+        },
+        "java" : {
+            "options" : [
+            ]
+        },
+        "test" : {
+            "frameworks" : [
+                {
+                    "names" : [
+                        "org.scalacheck.ScalaCheckFramework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "org.specs2.runner.Specs2Framework",
+                        "org.specs2.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "org.specs.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "org.scalatest.tools.Framework",
+                        "org.scalatest.tools.ScalaTestFramework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "com.novocode.junit.JUnitFramework"
+                    ]
+                }
+            ],
+            "options" : {
+                "excludes" : [
+                ],
+                "arguments" : [
+                ]
+            }
+        },
+        "platform" : {
+            "name" : "js",
+            "config" : {
+                "version" : "0.6.28",
+                "mode" : "debug",
+                "kind" : "none",
+                "emitSourceMaps" : false,
+                "jsdom" : false,
+                "toolchain" : [
+                ]
+            },
+            "mainClass" : [
+            ]
+        },
+        "resolution" : {
+            "modules" : [
+                {
+                    "organization" : "org.scala-lang",
+                    "name" : "scala-library",
+                    "version" : "2.12.8",
+                    "artifacts" : [
+                        {
+                            "name" : "scala-library",
+                            "path" : "/home/yanjie/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.8.jar"
+                        },
+                        {
+                            "name" : "scala-library",
+                            "classifier" : "sources",
+                            "path" : "/home/yanjie/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.webjars.npm",
+                    "name" : "react",
+                    "version" : "16.8.6",
+                    "artifacts" : [
+                        {
+                            "name" : "react",
+                            "path" : "/home/yanjie/.ivy2/cache/org.webjars.npm/react/jars/react-16.8.6.jar"
+                        },
+                        {
+                            "name" : "react",
+                            "classifier" : "sources",
+                            "path" : "/home/yanjie/.ivy2/cache/org.webjars.npm/react/srcs/react-16.8.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.webjars.npm",
+                    "name" : "loose-envify",
+                    "version" : "1.4.0",
+                    "artifacts" : [
+                        {
+                            "name" : "loose-envify",
+                            "path" : "/home/yanjie/.ivy2/cache/org.webjars.npm/loose-envify/jars/loose-envify-1.4.0.jar"
+                        },
+                        {
+                            "name" : "loose-envify",
+                            "classifier" : "sources",
+                            "path" : "/home/yanjie/.ivy2/cache/org.webjars.npm/loose-envify/srcs/loose-envify-1.4.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.webjars.npm",
+                    "name" : "js-tokens",
+                    "version" : "4.0.0",
+                    "artifacts" : [
+                        {
+                            "name" : "js-tokens",
+                            "path" : "/home/yanjie/.ivy2/cache/org.webjars.npm/js-tokens/jars/js-tokens-4.0.0.jar"
+                        },
+                        {
+                            "name" : "js-tokens",
+                            "classifier" : "sources",
+                            "path" : "/home/yanjie/.ivy2/cache/org.webjars.npm/js-tokens/srcs/js-tokens-4.0.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.webjars.npm",
+                    "name" : "object-assign",
+                    "version" : "4.1.1",
+                    "artifacts" : [
+                        {
+                            "name" : "object-assign",
+                            "path" : "/home/yanjie/.ivy2/cache/org.webjars.npm/object-assign/jars/object-assign-4.1.1.jar"
+                        },
+                        {
+                            "name" : "object-assign",
+                            "classifier" : "sources",
+                            "path" : "/home/yanjie/.ivy2/cache/org.webjars.npm/object-assign/srcs/object-assign-4.1.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.webjars.npm",
+                    "name" : "prop-types",
+                    "version" : "15.7.2",
+                    "artifacts" : [
+                        {
+                            "name" : "prop-types",
+                            "path" : "/home/yanjie/.ivy2/cache/org.webjars.npm/prop-types/jars/prop-types-15.7.2.jar"
+                        },
+                        {
+                            "name" : "prop-types",
+                            "classifier" : "sources",
+                            "path" : "/home/yanjie/.ivy2/cache/org.webjars.npm/prop-types/srcs/prop-types-15.7.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.webjars.npm",
+                    "name" : "react-is",
+                    "version" : "16.9.0-alpha.0",
+                    "artifacts" : [
+                        {
+                            "name" : "react-is",
+                            "path" : "/home/yanjie/.ivy2/cache/org.webjars.npm/react-is/jars/react-is-16.9.0-alpha.0.jar"
+                        },
+                        {
+                            "name" : "react-is",
+                            "classifier" : "sources",
+                            "path" : "/home/yanjie/.ivy2/cache/org.webjars.npm/react-is/srcs/react-is-16.9.0-alpha.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.webjars.npm",
+                    "name" : "scheduler",
+                    "version" : "0.14.0",
+                    "artifacts" : [
+                        {
+                            "name" : "scheduler",
+                            "path" : "/home/yanjie/.ivy2/cache/org.webjars.npm/scheduler/jars/scheduler-0.14.0.jar"
+                        },
+                        {
+                            "name" : "scheduler",
+                            "classifier" : "sources",
+                            "path" : "/home/yanjie/.ivy2/cache/org.webjars.npm/scheduler/srcs/scheduler-0.14.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.webjars.npm",
+                    "name" : "react-dom",
+                    "version" : "16.8.6",
+                    "artifacts" : [
+                        {
+                            "name" : "react-dom",
+                            "path" : "/home/yanjie/.ivy2/cache/org.webjars.npm/react-dom/jars/react-dom-16.8.6.jar"
+                        },
+                        {
+                            "name" : "react-dom",
+                            "classifier" : "sources",
+                            "path" : "/home/yanjie/.ivy2/cache/org.webjars.npm/react-dom/srcs/react-dom-16.8.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.scala-js",
+                    "name" : "scalajs-library_2.12",
+                    "version" : "0.6.28",
+                    "artifacts" : [
+                        {
+                            "name" : "scalajs-library_2.12",
+                            "path" : "/home/yanjie/.ivy2/cache/org.scala-js/scalajs-library_2.12/jars/scalajs-library_2.12-0.6.28.jar"
+                        },
+                        {
+                            "name" : "scalajs-library_2.12",
+                            "classifier" : "sources",
+                            "path" : "/home/yanjie/.ivy2/cache/org.scala-js/scalajs-library_2.12/srcs/scalajs-library_2.12-0.6.28-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.scala-js",
+                    "name" : "scalajs-dom_sjs0.6_2.12",
+                    "version" : "0.9.7",
+                    "artifacts" : [
+                        {
+                            "name" : "scalajs-dom_sjs0.6_2.12",
+                            "path" : "/home/yanjie/.ivy2/cache/org.scala-js/scalajs-dom_sjs0.6_2.12/jars/scalajs-dom_sjs0.6_2.12-0.9.7.jar"
+                        },
+                        {
+                            "name" : "scalajs-dom_sjs0.6_2.12",
+                            "classifier" : "sources",
+                            "path" : "/home/yanjie/.ivy2/cache/org.scala-js/scalajs-dom_sjs0.6_2.12/srcs/scalajs-dom_sjs0.6_2.12-0.9.7-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.github.japgolly.scalajs-react",
+                    "name" : "core_sjs0.6_2.12",
+                    "version" : "1.4.2",
+                    "artifacts" : [
+                        {
+                            "name" : "core_sjs0.6_2.12",
+                            "path" : "/home/yanjie/.ivy2/cache/com.github.japgolly.scalajs-react/core_sjs0.6_2.12/jars/core_sjs0.6_2.12-1.4.2.jar"
+                        },
+                        {
+                            "name" : "core_sjs0.6_2.12",
+                            "classifier" : "sources",
+                            "path" : "/home/yanjie/.ivy2/cache/com.github.japgolly.scalajs-react/core_sjs0.6_2.12/srcs/core_sjs0.6_2.12-1.4.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.scala-lang",
+                    "name" : "scala-reflect",
+                    "version" : "2.12.8",
+                    "artifacts" : [
+                        {
+                            "name" : "scala-reflect",
+                            "path" : "/home/yanjie/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.12.8.jar"
+                        },
+                        {
+                            "name" : "scala-reflect",
+                            "classifier" : "sources",
+                            "path" : "/home/yanjie/.ivy2/cache/org.scala-lang/scala-reflect/srcs/scala-reflect-2.12.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.lihaoyi",
+                    "name" : "sourcecode_sjs0.6_2.12",
+                    "version" : "0.1.6",
+                    "artifacts" : [
+                        {
+                            "name" : "sourcecode_sjs0.6_2.12",
+                            "path" : "/home/yanjie/.ivy2/cache/com.lihaoyi/sourcecode_sjs0.6_2.12/bundles/sourcecode_sjs0.6_2.12-0.1.6.jar"
+                        },
+                        {
+                            "name" : "sourcecode_sjs0.6_2.12",
+                            "classifier" : "sources",
+                            "path" : "/home/yanjie/.ivy2/cache/com.lihaoyi/sourcecode_sjs0.6_2.12/srcs/sourcecode_sjs0.6_2.12-0.1.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.github.japgolly.scalajs-react",
+                    "name" : "extra_sjs0.6_2.12",
+                    "version" : "1.4.2",
+                    "artifacts" : [
+                        {
+                            "name" : "extra_sjs0.6_2.12",
+                            "path" : "/home/yanjie/.ivy2/cache/com.github.japgolly.scalajs-react/extra_sjs0.6_2.12/jars/extra_sjs0.6_2.12-1.4.2.jar"
+                        },
+                        {
+                            "name" : "extra_sjs0.6_2.12",
+                            "classifier" : "sources",
+                            "path" : "/home/yanjie/.ivy2/cache/com.github.japgolly.scalajs-react/extra_sjs0.6_2.12/srcs/extra_sjs0.6_2.12-1.4.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.github.japgolly.scalacss",
+                    "name" : "core_sjs0.6_2.12",
+                    "version" : "0.5.6",
+                    "artifacts" : [
+                        {
+                            "name" : "core_sjs0.6_2.12",
+                            "path" : "/home/yanjie/.ivy2/cache/com.github.japgolly.scalacss/core_sjs0.6_2.12/jars/core_sjs0.6_2.12-0.5.6.jar"
+                        },
+                        {
+                            "name" : "core_sjs0.6_2.12",
+                            "classifier" : "sources",
+                            "path" : "/home/yanjie/.ivy2/cache/com.github.japgolly.scalacss/core_sjs0.6_2.12/srcs/core_sjs0.6_2.12-0.5.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.github.japgolly.univeq",
+                    "name" : "univeq_sjs0.6_2.12",
+                    "version" : "1.0.6",
+                    "artifacts" : [
+                        {
+                            "name" : "univeq_sjs0.6_2.12",
+                            "path" : "/home/yanjie/.ivy2/cache/com.github.japgolly.univeq/univeq_sjs0.6_2.12/jars/univeq_sjs0.6_2.12-1.0.6.jar"
+                        },
+                        {
+                            "name" : "univeq_sjs0.6_2.12",
+                            "classifier" : "sources",
+                            "path" : "/home/yanjie/.ivy2/cache/com.github.japgolly.univeq/univeq_sjs0.6_2.12/srcs/univeq_sjs0.6_2.12-1.0.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.github.japgolly.scalacss",
+                    "name" : "ext-react_sjs0.6_2.12",
+                    "version" : "0.5.6",
+                    "artifacts" : [
+                        {
+                            "name" : "ext-react_sjs0.6_2.12",
+                            "path" : "/home/yanjie/.ivy2/cache/com.github.japgolly.scalacss/ext-react_sjs0.6_2.12/jars/ext-react_sjs0.6_2.12-0.5.6.jar"
+                        },
+                        {
+                            "name" : "ext-react_sjs0.6_2.12",
+                            "classifier" : "sources",
+                            "path" : "/home/yanjie/.ivy2/cache/com.github.japgolly.scalacss/ext-react_sjs0.6_2.12/srcs/ext-react_sjs0.6_2.12-0.5.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.scala-js",
+                    "name" : "scalajs-test-interface_2.12",
+                    "version" : "0.6.28",
+                    "artifacts" : [
+                        {
+                            "name" : "scalajs-test-interface_2.12",
+                            "path" : "/home/yanjie/.ivy2/cache/org.scala-js/scalajs-test-interface_2.12/jars/scalajs-test-interface_2.12-0.6.28.jar"
+                        },
+                        {
+                            "name" : "scalajs-test-interface_2.12",
+                            "classifier" : "sources",
+                            "path" : "/home/yanjie/.ivy2/cache/org.scala-js/scalajs-test-interface_2.12/srcs/scalajs-test-interface_2.12-0.6.28-sources.jar"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
