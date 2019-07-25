@@ -5,6 +5,7 @@ CREATE TABLE Movies (
     Avg_Rating Float NOT NULL,
     Num_Votes INT NOT NULL,
     Start_Year INT NOT NULL,
+    Runtime_Minutes INT NOT NULL,
     Trailer_Link TEXT,
     Poster_Link TEXT,
     Overview TEXT
@@ -12,32 +13,55 @@ CREATE TABLE Movies (
 
 CREATE TABLE People (
     Name_ID INT PRIMARY KEY,
-    Name_Text VARCHAR(255)
+    Primary_Name VARCHAR(255) NOT NULL,
+    Birth_Year INT,
+    Death_Year INT
 ) CHARSET=UTF8;
 
 CREATE TABLE Crew (
     IMDB_ID INT NOT NULL,
     Name_ID INT NOT NULL,
     Job VARCHAR(255),
-    FOREIGN KEY (IMDB_ID) REFERENCES Movies(IMDB_ID),
-    FOREIGN KEY (Name_ID) REFERENCES People(Name_ID),
+    FOREIGN KEY (IMDB_ID) REFERENCES Movies(IMDB_ID)
+    ON DELETE CASCADE,
+    FOREIGN KEY (Name_ID) REFERENCES People(Name_ID)
+    ON DELETE CASCADE,
     PRIMARY KEY (IMDB_ID, Name_ID, Job)
 ) CHARSET=UTF8;
 
 CREATE TABLE Genres (
     IMDB_ID INT NOT NULL,
     Genre VARCHAR(255) NOT NULL,
-    FOREIGN KEY (IMDB_ID) REFERENCES Movies(IMDB_ID),
+    FOREIGN KEY (IMDB_ID) REFERENCES Movies(IMDB_ID)
+    ON DELETE CASCADE,
     PRIMARY KEY (IMDB_ID, Genre)
 ) CHARSET=UTF8;
 
 CREATE TABLE Recommendations (
-    Movie_1 INT NOT NULL REFERENCES Movies(IMDB_ID),
-    Movie_2 INT NOT NULL REFERENCES Movies(IMDB_ID),
+    Movie_1 INT NOT NULL,
+    Movie_2 INT NOT NULL,
     Ordering TINYINT UNSIGNED NOT NULL,
     FOREIGN KEY (Movie_1) REFERENCES Movies(IMDB_ID)
     ON DELETE CASCADE,
     FOREIGN KEY (Movie_2) REFERENCES Movies(IMDB_ID)
     ON DELETE CASCADE,
     PRIMARY KEY (Movie_1, Movie_2)
+);
+
+CREATE TABLE People_Primary_Profession (
+    Name_ID INT NOT NULL,
+    Profession VARCHAR(255) NOT NULL,
+    FOREIGN KEY (Name_ID) REFERENCES People(Name_ID)
+    ON DELETE CASCADE,
+    PRIMARY KEY (Name_ID, Profession)
+);
+
+CREATE TABLE People_Known_For_Titles (
+    Name_ID INT NOT NULL,
+    IMDB_ID INT NOT NULL,
+    FOREIGN KEY (Name_ID) REFERENCES People(Name_ID)
+    ON DELETE CASCADE,
+    FOREIGN KEY (IMDB_ID) REFERENCES Movies(IMDB_ID)
+    ON DELETE CASCADE,
+    PRIMARY KEY (Name_ID, IMDB_ID)
 );
