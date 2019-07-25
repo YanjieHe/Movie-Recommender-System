@@ -18,12 +18,16 @@ object HomePage {
     )
   }
 
-  def navigation() =
+  def menuBar() =
     <.nav(
       ^.cls := "navbar navbar-expand-lg navbar-dark bg-dark",
       <.div(
         ^.cls := "container",
-        <.a(^.cls := "navbar-brand", ^.href := "#", "Navbar"),
+        <.a(
+          ^.cls := "navbar-brand",
+          ^.href := "#",
+          "Yet Another Movie Recommender"
+        ),
         <.button(
           ^.cls := "navbar-toggler",
           ^.`type` := "button",
@@ -45,6 +49,27 @@ object HomePage {
             <.a(^.cls := "nav-item nav-link", ^.href := "#", "People")
           )
         )
+      )
+    )
+
+  def navigation() =
+    <.ul(
+      ^.cls := "nav nav-fill nav-tabs",
+      <.li(
+        ^.cls := "nav-item",
+        <.a(^.cls := "nav-link active", ^.href := "#", "Recommendations")
+      ),
+      <.li(
+        ^.cls := "nav-item",
+        <.a(^.cls := "nav-link", ^.href := "#", "Reviews")
+      ),
+      <.li(
+        ^.cls := "nav-item",
+        <.a(^.cls := "nav-link", ^.href := "#", "Images")
+      ),
+      <.li(
+        ^.cls := "nav-item",
+        <.a(^.cls := "nav-link", ^.href := "#", "Trailers")
       )
     )
 
@@ -85,6 +110,35 @@ object HomePage {
         <.h5(title)
     }
 
+  def movieCard(title: String, imageLink: String) =
+    <.div(
+      ^.cls := "card",
+      <.img(^.src := imageLink, ^.cls := "card-img-top", ^.alt := "..."),
+      <.div(
+        ^.cls := "card-body",
+        <.p(^.cls := "card-text", <.a(^.href := "#", title))
+      )
+    )
+  case class RecommendedMovie(title: String, imageLink: String)
+
+  def movieCardRows(movies: List[RecommendedMovie]) = {
+    def args(movieList: List[RecommendedMovie]) =
+      movieList.map { movie =>
+        <.div(^.cls := "col-sm", movieCard(movie.title, movie.imageLink))
+      }.toList
+
+    val res = movies
+      .grouped(5)
+      .map { movieList =>
+        <.div(<.div(((^.cls := "row") :: args(movieList)): _*), <.br())
+      }
+      .toList
+    <.div(
+      <.br(),
+      <.div(^.cls := "container", <.div(res: _*))
+    )
+  }
+
   def movieInfo() =
     <.div(
       ^.cls := "container",
@@ -121,7 +175,40 @@ object HomePage {
   val component =
     ScalaComponent.builder
       .static("HomePage")(
-        <.div(navigation(), <.div(^.cls := "container", movieInfo()))
+        <.div(
+          menuBar(),
+          <.br(),
+          <.div(
+            ^.cls := "container",
+            movieInfo(),
+            <.br(),
+            navigation(),
+            movieCardRows(
+              List(
+                new RecommendedMovie(
+                  "Spider-Man: Far from Home",
+                  "https://image.tmdb.org/t/p/w600_and_h900_bestv2/rjbNpRMoVvqHmhmksbokcyCr7wn.jpg"
+                ),
+                new RecommendedMovie(
+                  "Detective Conan: The Fist of Blue Sapphire",
+                  "https://image.tmdb.org/t/p/w600_and_h900_bestv2/1GyvpwvgswOrHvxjnw2FBLNkTyo.jpg"
+                ),
+                new RecommendedMovie(
+                  "Alita: Battle Angel",
+                  "https://image.tmdb.org/t/p/w600_and_h900_bestv2/xRWht48C2V8XNfzvPehyClOvDni.jpg"
+                ),
+                new RecommendedMovie(
+                  "Toy Story 4",
+                  "https://image.tmdb.org/t/p/w600_and_h900_bestv2/w9kR8qbmQ01HwnvK4alvnQ2ca0L.jpg"
+                ),
+                new RecommendedMovie(
+                  "Men in Black: International",
+                  "https://image.tmdb.org/t/p/w600_and_h900_bestv2/dPrUPFcgLfNbmDL8V69vcrTyEfb.jpg"
+                )
+              )
+            )
+          )
+        )
       )
       .build
 
