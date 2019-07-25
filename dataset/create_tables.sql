@@ -1,0 +1,43 @@
+CREATE TABLE Movies (
+    IMDB_ID INT PRIMARY KEY,
+    Primary_Title VARCHAR(255) NOT NULL,
+    Original_Title VARCHAR(255) NOT NULL,
+    Avg_Rating Float NOT NULL,
+    Num_Votes INT NOT NULL,
+    Start_Year INT NOT NULL,
+    Trailer_Link TEXT,
+    Poster_Link TEXT,
+    Overview TEXT
+) CHARSET=UTF8;
+
+CREATE TABLE People (
+    Name_ID INT PRIMARY KEY,
+    Name_Text VARCHAR(255)
+) CHARSET=UTF8;
+
+CREATE TABLE Crew (
+    IMDB_ID INT NOT NULL,
+    Name_ID INT NOT NULL,
+    Job VARCHAR(255),
+    FOREIGN KEY (IMDB_ID) REFERENCES Movies(IMDB_ID),
+    FOREIGN KEY (Name_ID) REFERENCES People(Name_ID),
+    PRIMARY KEY (IMDB_ID, Name_ID, Job)
+) CHARSET=UTF8;
+
+CREATE TABLE Genres (
+    IMDB_ID INT NOT NULL,
+    Genre VARCHAR(255) NOT NULL,
+    FOREIGN KEY (IMDB_ID) REFERENCES Movies(IMDB_ID),
+    PRIMARY KEY (IMDB_ID, Genre)
+) CHARSET=UTF8;
+
+CREATE TABLE Recommendations (
+    Movie_1 INT NOT NULL REFERENCES Movies(IMDB_ID),
+    Movie_2 INT NOT NULL REFERENCES Movies(IMDB_ID),
+    Ordering TINYINT UNSIGNED NOT NULL,
+    FOREIGN KEY (Movie_1) REFERENCES Movies(IMDB_ID)
+    ON DELETE CASCADE,
+    FOREIGN KEY (Movie_2) REFERENCES Movies(IMDB_ID)
+    ON DELETE CASCADE,
+    PRIMARY KEY (Movie_1, Movie_2)
+);
