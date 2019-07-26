@@ -40,15 +40,9 @@ class MovieResourceHandler extends ResourceHandler {
               col("Original_Title"),
               col("Avg_Rating").toFloat,
               col("Num_Votes").toInt,
-              col("Start_Year") match {
-                case null => None
-                case s    => Some(s.toInt)
-              },
+              toOption(col("Start_Year"), year => year.toInt),
               col("Runtime_Minutes").toInt,
-              col("Poster_Link") match {
-                case null => None
-                case link => Some(link)
-              }
+              toOption(col("Poster_Link"), link => link)
             )
           }
         ).head
