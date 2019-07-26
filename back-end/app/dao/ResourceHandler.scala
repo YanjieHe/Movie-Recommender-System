@@ -30,4 +30,14 @@ class ResourceHandler {
     }
     iter(Nil).reverse
   }
+
+  protected def toOption[A](
+      string: String,
+      converter: String => A
+  ): Option[A] = {
+    string match {
+      case null => None
+      case s    => Some(converter(s))
+    }
+  }
 }
