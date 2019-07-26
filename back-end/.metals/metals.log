@@ -748,3 +748,31 @@ WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/ba
 WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/back-end/app/dao/MovieDao.scala
 WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/back-end/app/dao/MovieDao.scala
 WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/back-end/app/dao/MovieDao.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/back-end/app/dao/ResourceHandler.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/back-end/app/dao/ResourceHandler.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/back-end/app/dao/ResourceHandler.scala
+something's wrong: no file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/back-end/app/dao/ResourceHandler.scala in String => <error>RangePosition(file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/back-end/app/dao/ResourceHandler.scala, 818, 825, 838)
+something's wrong: no file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/back-end/app/dao/ResourceHandler.scala in Option[<error>]RangePosition(file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/back-end/app/dao/ResourceHandler.scala, 832, 832, 848)
+something's wrong: no file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/back-end/app/dao/ResourceHandler.scala in Option[A]RangePosition(file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/back-end/app/dao/ResourceHandler.scala, 832, 832, 841)
+something's wrong: no file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/back-end/app/dao/ResourceHandler.scala in Option[A]RangePosition(file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/back-end/app/dao/ResourceHandler.scala, 832, 832, 841)
+something's wrong: no file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/back-end/app/dao/ResourceHandler.scala in Option[A]RangePosition(file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/back-end/app/dao/ResourceHandler.scala, 832, 832, 841)
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/back-end/app/dao/ResourceHandler.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/back-end/app/dao/ResourceHandler.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/back-end/app/dao/MovieDao.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/back-end/app/dao/MovieDao.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/back-end/app/dao/MovieDao.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/back-end/app/dao/MovieDao.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/back-end/app/dao/MovieDao.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/back-end/app/dao/MovieDao.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/back-end/app/dao/MovieDao.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/back-end/app/dao/MovieDao.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/back-end/app/dao/MovieDao.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/back-end/app/dao/MovieDao.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/back-end/app/dao/MovieDao.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/back-end/app/dao/MovieDao.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/back-end/app/dao/MovieDao.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/back-end/app/dao/MovieDao.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/back-end/app/dao/MovieDao.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/back-end/app/dao/MovieDao.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/back-end/app/dao/MovieDao.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/back-end/app/model/Movie.scala
