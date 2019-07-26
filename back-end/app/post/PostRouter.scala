@@ -6,6 +6,8 @@ import play.api.routing.Router.Routes
 import play.api.routing.SimpleRouter
 import play.api.routing.sird._
 
+import controller.MovieController
+
 /**
   * Routes and URLs to the PostResource controller.
   */
@@ -26,7 +28,26 @@ class PostRouter @Inject()(controller: PostController) extends SimpleRouter {
       controller.process
 
     case GET(p"/$id") =>
-      controller.recommend(id)
+      controller.show(id)
+
+    // case POST(p"/movie/$imdbId")=>
+
+  }
+
+}
+
+class MovieRouter @Inject()(controller: MovieController) extends SimpleRouter {
+  val prefix = "/api"
+
+  def link(id: PostId): String = {
+    import com.netaporter.uri.dsl._
+    val url = prefix / id.toString
+    url.toString()
+  }
+
+  override def routes: Routes = {
+    case GET(p"/movie/$imdbId") =>
+      controller.getMovieInfo(imdbId)
   }
 
 }

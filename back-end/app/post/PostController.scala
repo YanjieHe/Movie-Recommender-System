@@ -15,8 +15,8 @@ case class PostFormInput(title: String, body: String)
   * Takes HTTP requests and produces JSON.
   */
 class PostController @Inject()(cc: PostControllerComponents)(
-    implicit ec: ExecutionContext
-) extends PostBaseController(cc) {
+    implicit ec: ExecutionContext)
+    extends PostBaseController(cc) {
 
   private val logger = Logger(getClass)
 
@@ -51,18 +51,8 @@ class PostController @Inject()(cc: PostControllerComponents)(
       }
   }
 
-  def recommend(id: String): Action[AnyContent] = PostAction.async {
-    implicit request =>
-      logger.trace("recommend: ")
-      Future {
-        val movieId = Integer.parseInt(id)
-        Ok(Json.toJson(new Recommendation(movieId, List())))
-      }
-  }
-
   private def processJsonPost[A]()(
-      implicit request: PostRequest[A]
-  ): Future[Result] = {
+      implicit request: PostRequest[A]): Future[Result] = {
     def failure(badForm: Form[PostFormInput]) = {
       Future.successful(BadRequest(badForm.errorsAsJson))
     }

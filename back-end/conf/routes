@@ -1,1 +1,2 @@
 ->         /posts               post.PostRouter
+->         /api                 post.MovieRouter

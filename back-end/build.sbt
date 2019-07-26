@@ -16,7 +16,7 @@ libraryDependencies += "org.scalatestplus.play" %% "scalatestplus-play" % "4.0.1
 libraryDependencies += "io.gatling.highcharts" % "gatling-charts-highcharts" % "3.0.1.1" % Test
 libraryDependencies += "io.gatling" % "gatling-test-framework" % "3.0.1.1" % Test
 
-// libraryDependencies += "com.typesafe.slick" %% "slick" % "3.3.1"
+libraryDependencies += "mysql" % "mysql-connector-java" % "5.1.12"
 
 // The Play project itself
 lazy val root = (project in file("."))

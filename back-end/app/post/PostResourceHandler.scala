@@ -19,16 +19,6 @@ object PostResource {
     implicit val format: Format[PostResource] = Json.format
 }
 
-case class Rating(userId: Int, value: Float, timestamp: Long)
-
-case class Movie(movieId: Int, ratings: List[Rating])
-
-case class Recommendation(movieId: Int, movies: List[Int])
-
-object Recommendation {
-  implicit val format: Format[Recommendation] = Json.format
-}
-
 
 /**
   * Controls access to the backend data, returning [[PostResource]]

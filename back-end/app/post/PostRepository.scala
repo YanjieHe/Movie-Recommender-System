@@ -8,10 +8,6 @@ import play.api.{Logger, MarkerContext}
 
 import scala.concurrent.Future
 
-import java.sql.DriverManager
-import java.sql.Connection
-
-
 final case class PostData(id: PostId, title: String, body: String)
 
 class PostId private (val underlying: Int) extends AnyVal {
