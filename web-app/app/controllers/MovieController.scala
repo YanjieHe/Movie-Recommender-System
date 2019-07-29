@@ -30,10 +30,10 @@ class MovieController @Inject()(
   def render(imdbId: Int) = Action { implicit request: Request[AnyContent] =>
     val movie = movieService.read(imdbId)
     val header = movie.startYear match {
-      case Some(year) => movie.primaryTitle + " (" + movie.startYear + ")"
+      case Some(year) => movie.primaryTitle + " (" + year + ")"
       case None       => movie.primaryTitle
     }
-    val posterLink = "/home/yanjie/Downloads/posters/" + movie.imdbId + ".jpg"
+    val posterLink = "/images/posters/" + movie.imdbId + ".jpg"
     Ok(views.html.movie("movie")(movie)(header)(posterLink)(html""))
   }
 }
