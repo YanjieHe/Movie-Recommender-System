@@ -1,0 +1,87 @@
+@*
+* This template is called from the `index` template. This template
+* handles the rendering of the page header and body tags. It takes
+* two arguments, a `String` for the title of the page and an `Html`
+* object to insert into the body of the page.
+*@
+@(title: String)(movie: Movie)(header: String)(posterLink: String)(content: Html)
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @* Here's where we render the page title `String`. *@
+    <title>@title</title>
+    <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/bootstrap.min.css")">
+    <script src="@routes.Assets.versioned("javascripts/jquery.min.js")" type="text/javascript"/>
+    <script src="@routes.Assets.versioned("javascripts/popper.js")" type="text/javascript"></script>
+    <script src="@routes.Assets.versioned("javascripts/bootstrap.min.js")" type="text/javascript"></script>
+    <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/favicon.png")">
+</head>
+
+
+
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Yet Another Movie Recommender</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#">Home</a>
+                    <a class="nav-item nav-link" href="#">Discover</a>
+                    <a class="nav-item nav-link" href="#">Movies</a>
+                    <a class="nav-item nav-link" href="#">People</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+<br/>
+
+    <div class="container">
+    <div class="container">
+    <div class="row">
+    <div class="col-3">
+    <img src="@posterLink"
+    width="100%"/>
+    </div>
+    <div class="col-9">
+    <h5>@header</h5>
+    Rating: 3.5<br/>
+    <h5>Overview</h5>
+    Simba idolises his father, King Mufasa, and takes to heart his own royal destiny. But not everyone in the kingdom celebrates the new cub's arrival. Scar, Mufasa's brother—and former heir to the throne—has plans of his own. The battle for Pride Rock is ravaged with betrayal, tragedy and drama, ultimately resulting in Simba's exile. With help from a curious pair of newfound friends, Simba will have to figure out how to grow up and take back what is rightfully his.
+    <h5>Featured Crew</h5>
+    new CrewMember("Jonathan Roberts", "Characters"),
+              new CrewMember("Linda Woolverton", "Characters"),
+              new CrewMember("Irene Mecchi", "Characters"),
+              new CrewMember("Jon Favreau", "Director"),
+              new CrewMember("Jeff Nathanson", "Screenplay"),
+              new CrewMember("Brenda Chapman", "Story")
+    </div>
+    </div>
+    </div>
+        <ul class="nav nav-fill nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Recommendations</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Reviews</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Images</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Trailers</a>
+            </li>
+        </ul>
+    </div>
+</body>
+
+
+
+
+</html>

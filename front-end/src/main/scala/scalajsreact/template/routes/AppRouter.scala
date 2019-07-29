@@ -1,8 +1,10 @@
 package scalajsreact.template.routes
 
-// import scalajsreact.template.components.{Footer, TopNav}
 import scalajsreact.template.models.Menu
 import scalajsreact.template.pages.HomePage
+import scalajsreact.template.pages.MoviePage
+import japgolly.scalajs.react._
+import japgolly.scalajs.react.extra.router._
 
 import japgolly.scalajs.react.extra.router.{
   Resolution,
@@ -17,35 +19,23 @@ object AppRouter {
   sealed trait AppPage
 
   case object Home extends AppPage
-  case class Items(p: Item) extends AppPage
+  case class Movie(imdbId: Int) extends AppPage
 
   val config = RouterConfigDsl[AppPage].buildConfig { dsl =>
     import dsl._
-    val itemRoutes: Rule =
-      Item.routes.prefixPath_/("#items").pmap[AppPage](Items) {
-        case Items(p) => p
-      }
-    // (trimSlashes
-    //   | staticRoute(root, Home) ~> render(HomePage())
-    //   | itemRoutes)
-    //   .notFound(redirectToPage(Home)(Redirect.Replace))
-    //   .renderWith(layout)
     (trimSlashes
-    | staticRoute(root, Home) ~> render(HomePage()))
-    .notFound(redirectToPage(Home)(Redirect.Replace))
-    .renderWith(layout)
+      | staticRoute(root, Home) ~> render(HomePage()))
+      .notFound(redirectToPage(Home)(Redirect.Replace))
+      .renderWith(layout)
   }
 
   val mainMenu = Vector(
-    Menu("Home", Home),
-    // Menu("Items", Items(Item.Info))
+    Menu("Home", Home)
   )
 
   def layout(c: RouterCtl[AppPage], r: Resolution[AppPage]) =
     <.div(
-      // TopNav(TopNav.Props(mainMenu, r.page, c)),
-      r.render(),
-      // Footer()
+      r.render()
     )
 
   val baseUrl = BaseUrl.fromWindowOrigin / "index.html"

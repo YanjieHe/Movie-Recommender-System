@@ -777,3 +777,19 @@ WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/ba
 WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/back-end/app/dao/MovieDao.scala
 WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/back-end/app/model/Movie.scala
 INFO  shutting down Metals
+INFO  time: initialize in 1.22s
+INFO  skipping build import with status 'Dismissed'
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/back-end/app/model/Movie.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/back-end/app/post/PostRouter.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/back-end/app/ErrorHandler.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/back-end/app/controller/MovieController.scala
+INFO  no build target: using presentation compiler with only scala-library
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/back-end/app/model/Movie.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/back-end/app/dao/MovieDao.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/back-end/app/post/PostRouter.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/back-end/app/post/PostResourceHandler.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/back-end/app/post/PostRepository.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/back-end/app/post/PostController.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/back-end/app/post/PostActionBuilder.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/back-end/app/dao/ResourceHandler.scala
+INFO  shutting down Metals
