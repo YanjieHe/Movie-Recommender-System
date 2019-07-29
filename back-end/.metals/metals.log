@@ -776,3 +776,4 @@ WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/ba
 WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/back-end/app/dao/MovieDao.scala
 WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/back-end/app/dao/MovieDao.scala
 WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/back-end/app/model/Movie.scala
+INFO  shutting down Metals
