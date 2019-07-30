@@ -8,7 +8,7 @@ import java.sql.ResultSet
 import models.Principals
 
 class PrincipalsDao extends DataAccessObject {
-  def getPrincipalList(imdbId: Int): List[Principals] = {
+  def getPrincipalList(imdbId: Int, limit: Int): List[Principals] = {
 
     var connection: Connection = null
     var result: List[Principals] = List()
@@ -24,7 +24,7 @@ class PrincipalsDao extends DataAccessObject {
         "Job"
       ).mkString(", ")
       val resultSet = statement.executeQuery(
-        s"SELECT $columns FROM Movies WHERE IMDB_ID = $imdbId;"
+        s"SELECT $columns FROM Principals WHERE IMDB_ID = $imdbId ORDER BY Ordering limit $limit;"
       )
       result = collect(
         resultSet,

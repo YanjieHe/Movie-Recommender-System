@@ -23,7 +23,7 @@ class PeopleDao extends DataAccessObject {
         "Death_Year"
       ).mkString(", ")
       val resultSet = statement.executeQuery(
-        s"SELECT $columns FROM Movies WHERE Name_ID = $nameId;"
+        s"SELECT $columns FROM People WHERE Name_ID = $nameId;"
       )
       result = Some(
         collect(
