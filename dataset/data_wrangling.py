@@ -110,9 +110,10 @@ def write_into_people_table():
     people_df["Death_Year"] = process_year(people_df["Death_Year"])
 
     print(str(len(df)) + " rows of data to insert")
-    database.insert_data("People", people_df)
-    database.run_sql("UPDATE People SET Birth_Year = NULL WHERE Birth_Year = -1;")
-    database.run_sql("UPDATE People SET Death_Year = NULL WHERE Death_Year = -1;")
+    people_df.to_csv("people_df.csv", index=False)
+    # database.insert_data("People", people_df)
+    # database.run_sql("UPDATE People SET Birth_Year = NULL WHERE Birth_Year = -1;")
+    # database.run_sql("UPDATE People SET Death_Year = NULL WHERE Death_Year = -1;")
 
 
 # ***************** Crew *****************
@@ -125,19 +126,20 @@ def write_into_crew_table():
         result = []
         for (_, id, directors, writers) in df.itertuples():
             if directors != "\\N":
-                director_list = ast.literal_eval(directors)
+                director_list = directors.split(",")
                 for director in director_list:
                     result.append((id, int(director[2:]), "Director"))
             if writers != "\\N":
-                writer_list = ast.literal_eval(writers)
+                writer_list = writers.split(",")
                 for writer in writer_list:
                     result.append((id, int(writer[2:]), "Writer"))
         return result
 
     rows = get_crew_members(df)
     del df
-    df = pd.DataFrame(result, columns=["IMDB_ID", "Name_ID", "Job"])
-    database.insert_data("Crew", df)
+    df = pd.DataFrame(rows, columns=["IMDB_ID", "Name_ID", "Job"])
+    df.to_csv("Crew.csv", index=False)
+    # database.insert_data("Crew", df)
 
 # ***************** Principals *****************
 def write_into_principals_table():
@@ -158,5 +160,15 @@ def write_into_principals_table():
 
     df = df[["IMDB_ID", "Name_ID", "Ordering", "Category", "Job"]]
     print(str(len(df)) + " rows of data to insert")
-    database.insert_data("Principals", df)
-    database.run_sql("UPDATE Principals SET Job = NULL WHERE Job = \"\\N\";")
+    df.to_csv("Principals.csv", index=False)
+    # database.insert_data("Principals", df)
+    # database.run_sql("UPDATE Principals SET Job = NULL WHERE Job = \"\\N\";")
+
+
+# ***************** Spark Dataset *****************
+def make_spark_dataset():
+    links_df = pd.read_csv("ml-20m/links.csv")
+    ratings_df = pd.read_csv("ml-20m/ratings.csv")
+    df = ratings_df.merge(links_df, left_on="movieId", right_on="movieId", how="inner")
+    df = df[["userId", "imdbId", "rating"]]
+    df.to_csv("imdbId_with_ratings.csv", index=False)
