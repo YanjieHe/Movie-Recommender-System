@@ -110,7 +110,7 @@ def write_into_people_table():
     people_df["Death_Year"] = process_year(people_df["Death_Year"])
 
     print(str(len(df)) + " rows of data to insert")
-    people_df.to_csv("people_df.csv", index=False)
+    people_df.to_csv("People.csv", index=False)
     # database.insert_data("People", people_df)
     # database.run_sql("UPDATE People SET Birth_Year = NULL WHERE Birth_Year = -1;")
     # database.run_sql("UPDATE People SET Death_Year = NULL WHERE Death_Year = -1;")

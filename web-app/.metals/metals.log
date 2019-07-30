@@ -166,3 +166,6 @@ WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/
 WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/controllers/MovieController.scala' because it doesn't belong to a build target.
 WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/controllers/MovieController.scala' because it doesn't belong to a build target.
 WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/controllers/MovieController.scala
+INFO  shutting down Metals
+INFO  time: initialize in 0.87s
+INFO  skipping build import with status 'Requested'

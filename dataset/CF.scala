@@ -9,19 +9,12 @@ def parseRating(str: String): Rating = {
   Rating(fields(0).toInt, fields(1).toInt, fields(2).toFloat)
 }
 
-val ratings = spark.read.textFile("imdbId_with_ratings.csv")
-  .map(parseRating _)
-  .toDF()
+val ratings = spark.read.textFile("imdbId_with_ratings.csv").map(parseRating _).toDF()
 
 val Array(training, test) = ratings.randomSplit(Array(0.8, 0.2))
 
 // Build the recommendation model using ALS on the training data
-val als = new ALS()
-  .setMaxIter(5)
-  .setRegParam(0.01)
-  .setUserCol("userId")
-  .setItemCol("movieId")
-  .setRatingCol("rating")
+val als = new ALS() .setMaxIter(5) .setRegParam(0.01) .setUserCol("userId") .setItemCol("movieId") .setRatingCol("rating")
 
 val model = als.fit(training)
 
@@ -30,10 +23,7 @@ val model = als.fit(training)
 model.setColdStartStrategy("drop")
 val predictions = model.transform(test)
 
-val evaluator = new RegressionEvaluator()
-  .setMetricName("rmse")
-  .setLabelCol("rating")
-  .setPredictionCol("prediction")
+val evaluator = new RegressionEvaluator() .setMetricName("rmse") .setLabelCol("rating") .setPredictionCol("prediction")
 val rmse = evaluator.evaluate(predictions)
 println(s"Root-mean-square error = $rmse")
 
@@ -41,9 +31,3 @@ println(s"Root-mean-square error = $rmse")
 val userRecs = model.recommendForAllUsers(10)
 // Generate top 10 user recommendations for each movie
 val movieRecs = model.recommendForAllItems(10)
-
-
-import java.io._
-val pw = new PrintWriter(new File("movieRecs.txt"))
-movieRecs.foreach{ line => pw.write(pw.toString); pw.write("\n") }
-pw.close
