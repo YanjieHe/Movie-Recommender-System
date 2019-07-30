@@ -1,5 +1,10 @@
 import org.apache.spark.ml.evaluation.RegressionEvaluator
 import org.apache.spark.ml.recommendation.ALS
+import org.apache.spark.sql.DataFrame
+import scala.collection.mutable.WrappedArray
+import org.apache.spark.sql.catalyst.expressions.GenericRowWithSchema
+import org.apache.spark.sql.Row
+import java.io._
 
 case class Rating(userId: Int, movieId: Int, rating: Float)
 
@@ -31,3 +36,27 @@ println(s"Root-mean-square error = $rmse")
 val userRecs = model.recommendForAllUsers(10)
 // Generate top 10 user recommendations for each movie
 val movieRecs = model.recommendForAllItems(10)
+
+def recommendationsToCsv(filePath: String, header: String, recommendations: DataFrame): Unit = {
+    val pw = new PrintWriter(new File(filePath))
+    pw.write(header)
+ def processRow(row: Row): Unit = {
+    val id = row(0).asInstanceOf[Int]
+    val array = row(1).asInstanceOf[WrappedArray[GenericRowWithSchema]]
+    array.foreach {
+        item =>
+        val anotherId = item(0).asInstanceOf[Int]
+        val score = item(1).asInstanceOf[Float]
+        pw.write(id.toString())
+        pw.write(',')
+        pw.write(anotherId.toString())
+        pw.write(',')
+        pw.write(score.toString())
+        pw.write('\n')
+    }
+ }
+ recommendations.rdd.collect.foreach(processRow _)
+ pw.close
+}
+
+recommendationsToCsv("movieRecs.csv", "Movie_1,Movie_2,Score\n", movieRecs)
