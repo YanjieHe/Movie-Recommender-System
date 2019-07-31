@@ -55,4 +55,32 @@ class MovieDao extends DataAccessObject {
     }
     result
   }
+
+  def getSimilarMovies(imdbId: Int, limit: Int): List[Int] = {
+    var connection: Connection = null
+    var result: List[Int] = List()
+    try {
+      connection = connect()
+      val statement = connection.createStatement()
+      val columns = List(
+        "Movie_2"
+      ).mkString(", ")
+      val resultSet = statement.executeQuery(
+        s"SELECT $columns FROM Similiar_Movies WHERE Movie_1 = $imdbId ORDER BY Similarity DESC LIMIT $limit;"
+      )
+      result = collect(
+        resultSet,
+        resultSet => {
+          val col: String => String = resultSet.getString
+          col("Movie_2").toInt
+        }
+      )
+    } catch {
+      case e: Throwable => e.printStackTrace
+    }
+    if (connection != null) {
+      connection.close()
+    }
+    result
+  }
 }

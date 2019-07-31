@@ -50,9 +50,15 @@ class MovieController @Inject()(
     val firstRow = principalsList.take(3)
     val secondRow = principalsList.drop(3)
 
+    val similarMovies = movieService.getSimilarMovies(imdbId, 10)
+    val firstRecsRow = similarMovies.take(5)
+    val secondRecsRow = similarMovies.drop(5)
+
     Ok(
       views.html
-        .movie("movie")(movie)(header)("%1.1f".format(movie.avgRating))(posterLink)(firstRow, secondRow)(html"")
+        .movie("movie")(movie)(header)("%1.1f".format(movie.avgRating))(
+          posterLink
+        )(firstRow, secondRow)(firstRecsRow, secondRecsRow)(html"")
     )
   }
 }

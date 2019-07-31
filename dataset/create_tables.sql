@@ -61,10 +61,10 @@ CREATE TABLE Genres (
     PRIMARY KEY (IMDB_ID, Genre)
 ) CHARSET=UTF8;
 
-CREATE TABLE Recommendations (
+CREATE TABLE Similiar_Movies (
     Movie_1 INT NOT NULL,
     Movie_2 INT NOT NULL,
-    Ordering TINYINT UNSIGNED NOT NULL,
+    Similarity DOUBLE NOT NULL,
     FOREIGN KEY (Movie_1) REFERENCES Movies(IMDB_ID)
     ON DELETE CASCADE,
     FOREIGN KEY (Movie_2) REFERENCES Movies(IMDB_ID)

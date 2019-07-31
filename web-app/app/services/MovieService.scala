@@ -11,4 +11,9 @@ class MovieService @Inject()(movieDao: MovieDao) {
       case None        => throw new Exception("cannot read item")
     }
   }
+
+  def getSimilarMovies(imdbId: Int, limit: Int): List[Movie] = {
+    val idList = movieDao.getSimilarMovies(imdbId, limit)
+    idList.map(read _)
+  }
 }

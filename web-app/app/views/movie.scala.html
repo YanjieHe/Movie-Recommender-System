@@ -4,7 +4,7 @@
 * two arguments, a `String` for the title of the page and an `Html`
 * object to insert into the body of the page.
 *@
-@(title: String)(movie: Movie)(header: String)(rating: String)(posterLink: String)(firstRow: List[(String, String)], secondRow: List[(String, String)])(content: Html)
+@(title: String)(movie: Movie)(header: String)(rating: String)(posterLink: String)(firstRow: List[(String, String)], secondRow: List[(String, String)])(firstRecsRow: List[Movie], secondRecsRow: List[Movie])(content: Html)
 
 <!DOCTYPE html>
 <html lang="en">
@@ -106,37 +106,28 @@
         </ul>
         <br/>
         <div class="card-deck">
+
+  @for(movie <- firstRecsRow) {
   <div class="card">
     <img class="card-img-top" src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/or06FN3Dka5tukK1e9sl16pB3iy.jpg" alt="Card image cap">
     <div class="card-body">
-      <p class="card-text">Avengers: Endgame</p>
+      <p class="card-text">@movie.primaryTitle</p>
     </div>
   </div>
-  <div class="card">
-    <img class="card-img-top" src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/or06FN3Dka5tukK1e9sl16pB3iy.jpg" alt="Card image cap">
-    <div class="card-body">
-      <p class="card-text">Avengers: Endgame</p>
-    </div>
-  </div>
-  <div class="card">
-    <img class="card-img-top" src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/or06FN3Dka5tukK1e9sl16pB3iy.jpg" alt="Card image cap">
-    <div class="card-body">
-      <p class="card-text">Avengers: Endgame</p>
-    </div>
-  </div>
-  <div class="card">
-    <img class="card-img-top" src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/or06FN3Dka5tukK1e9sl16pB3iy.jpg" alt="Card image cap">
-    <div class="card-body">
-      <p class="card-text">Avengers: Endgame</p>
-    </div>
-  </div>
-  <div class="card">
-    <img class="card-img-top" src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/or06FN3Dka5tukK1e9sl16pB3iy.jpg" alt="Card image cap">
-    <div class="card-body">
-      <p class="card-text">Avengers: Endgame</p>
-    </div>
-  </div>
+  }
 </div>
+<br/>
+<div class="card-deck">
+  @for(movie <- secondRecsRow) {
+  <div class="card">
+    <img class="card-img-top" src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/or06FN3Dka5tukK1e9sl16pB3iy.jpg" alt="Card image cap">
+    <div class="card-body">
+      <p class="card-text">@movie.primaryTitle</p>
+    </div>
+  </div>
+  }
+</div>
+
     </div>
 </body>
 
