@@ -1,0 +1,210 @@
+{
+    "version" : "1.1.2",
+    "project" : {
+        "name" : "item-similarity-test",
+        "directory" : "/home/yanjie/Documents/MyCode/Scala/item-similarity",
+        "sources" : [
+            "/home/yanjie/Documents/MyCode/Scala/item-similarity/src/test/scala-2.12",
+            "/home/yanjie/Documents/MyCode/Scala/item-similarity/src/test/scala",
+            "/home/yanjie/Documents/MyCode/Scala/item-similarity/src/test/java",
+            "/home/yanjie/Documents/MyCode/Scala/item-similarity/target/scala-2.12/src_managed/test"
+        ],
+        "dependencies" : [
+            "item-similarity"
+        ],
+        "classpath" : [
+            "/home/yanjie/Documents/MyCode/Scala/item-similarity/.bloop/item-similarity/scala-2.12/classes",
+            "/home/yanjie/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.8.jar",
+            "/home/yanjie/.ivy2/cache/org.typelevel/cats-core_2.12/jars/cats-core_2.12-1.6.0.jar",
+            "/home/yanjie/.ivy2/cache/org.typelevel/cats-macros_2.12/jars/cats-macros_2.12-1.6.0.jar",
+            "/home/yanjie/.ivy2/cache/org.typelevel/machinist_2.12/jars/machinist_2.12-0.6.6.jar",
+            "/home/yanjie/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.12.8.jar",
+            "/home/yanjie/.ivy2/cache/org.typelevel/cats-kernel_2.12/jars/cats-kernel_2.12-1.6.0.jar"
+        ],
+        "out" : "/home/yanjie/Documents/MyCode/Scala/item-similarity/.bloop/item-similarity",
+        "classesDir" : "/home/yanjie/Documents/MyCode/Scala/item-similarity/.bloop/item-similarity/scala-2.12/test-classes",
+        "resources" : [
+            "/home/yanjie/Documents/MyCode/Scala/item-similarity/src/test/resources",
+            "/home/yanjie/Documents/MyCode/Scala/item-similarity/target/scala-2.12/resource_managed/test"
+        ],
+        "scala" : {
+            "organization" : "org.scala-lang",
+            "name" : "scala-compiler",
+            "version" : "2.12.8",
+            "options" : [
+                "-P:semanticdb:synthetics:on",
+                "-P:semanticdb:failures:warning",
+                "-P:semanticdb:sourceroot:/home/yanjie/Documents/MyCode/Scala/item-similarity",
+                "-Yrangepos",
+                "-Xplugin-require:semanticdb",
+                "-Xplugin:/home/yanjie/.ivy2/cache/org.scalameta/semanticdb-scalac_2.12.8/jars/semanticdb-scalac_2.12.8-4.2.0.jar"
+            ],
+            "jars" : [
+                "/home/yanjie/.ivy2/cache/org.scala-lang/scala-compiler/jars/scala-compiler-2.12.8.jar",
+                "/home/yanjie/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.8.jar",
+                "/home/yanjie/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.12.8.jar",
+                "/home/yanjie/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/bundles/scala-xml_2.12-1.0.6.jar",
+                "/home/yanjie/.ivy2/cache/jline/jline/jars/jline-2.14.6.jar"
+            ],
+            "setup" : {
+                "order" : "mixed",
+                "addLibraryToBootClasspath" : true,
+                "addCompilerToClasspath" : false,
+                "addExtraJarsToClasspath" : false,
+                "manageBootClasspath" : true,
+                "filterLibraryFromClasspath" : true
+            }
+        },
+        "java" : {
+            "options" : [
+            ]
+        },
+        "test" : {
+            "frameworks" : [
+                {
+                    "names" : [
+                        "org.scalacheck.ScalaCheckFramework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "org.specs2.runner.Specs2Framework",
+                        "org.specs2.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "org.specs.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "org.scalatest.tools.Framework",
+                        "org.scalatest.tools.ScalaTestFramework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "com.novocode.junit.JUnitFramework"
+                    ]
+                }
+            ],
+            "options" : {
+                "excludes" : [
+                ],
+                "arguments" : [
+                ]
+            }
+        },
+        "platform" : {
+            "name" : "jvm",
+            "config" : {
+                "home" : "/usr/lib/jvm/java-8-openjdk/jre",
+                "options" : [
+                ]
+            },
+            "mainClass" : [
+            ]
+        },
+        "resolution" : {
+            "modules" : [
+                {
+                    "organization" : "org.scala-lang",
+                    "name" : "scala-library",
+                    "version" : "2.12.8",
+                    "artifacts" : [
+                        {
+                            "name" : "scala-library",
+                            "path" : "/home/yanjie/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.8.jar"
+                        },
+                        {
+                            "name" : "scala-library",
+                            "classifier" : "sources",
+                            "path" : "/home/yanjie/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.typelevel",
+                    "name" : "cats-core_2.12",
+                    "version" : "1.6.0",
+                    "artifacts" : [
+                        {
+                            "name" : "cats-core_2.12",
+                            "path" : "/home/yanjie/.ivy2/cache/org.typelevel/cats-core_2.12/jars/cats-core_2.12-1.6.0.jar"
+                        },
+                        {
+                            "name" : "cats-core_2.12",
+                            "classifier" : "sources",
+                            "path" : "/home/yanjie/.ivy2/cache/org.typelevel/cats-core_2.12/srcs/cats-core_2.12-1.6.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.typelevel",
+                    "name" : "cats-macros_2.12",
+                    "version" : "1.6.0",
+                    "artifacts" : [
+                        {
+                            "name" : "cats-macros_2.12",
+                            "path" : "/home/yanjie/.ivy2/cache/org.typelevel/cats-macros_2.12/jars/cats-macros_2.12-1.6.0.jar"
+                        },
+                        {
+                            "name" : "cats-macros_2.12",
+                            "classifier" : "sources",
+                            "path" : "/home/yanjie/.ivy2/cache/org.typelevel/cats-macros_2.12/srcs/cats-macros_2.12-1.6.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.typelevel",
+                    "name" : "machinist_2.12",
+                    "version" : "0.6.6",
+                    "artifacts" : [
+                        {
+                            "name" : "machinist_2.12",
+                            "path" : "/home/yanjie/.ivy2/cache/org.typelevel/machinist_2.12/jars/machinist_2.12-0.6.6.jar"
+                        },
+                        {
+                            "name" : "machinist_2.12",
+                            "classifier" : "sources",
+                            "path" : "/home/yanjie/.ivy2/cache/org.typelevel/machinist_2.12/srcs/machinist_2.12-0.6.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.scala-lang",
+                    "name" : "scala-reflect",
+                    "version" : "2.12.8",
+                    "artifacts" : [
+                        {
+                            "name" : "scala-reflect",
+                            "path" : "/home/yanjie/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.12.8.jar"
+                        },
+                        {
+                            "name" : "scala-reflect",
+                            "classifier" : "sources",
+                            "path" : "/home/yanjie/.ivy2/cache/org.scala-lang/scala-reflect/srcs/scala-reflect-2.12.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.typelevel",
+                    "name" : "cats-kernel_2.12",
+                    "version" : "1.6.0",
+                    "artifacts" : [
+                        {
+                            "name" : "cats-kernel_2.12",
+                            "path" : "/home/yanjie/.ivy2/cache/org.typelevel/cats-kernel_2.12/jars/cats-kernel_2.12-1.6.0.jar"
+                        },
+                        {
+                            "name" : "cats-kernel_2.12",
+                            "classifier" : "sources",
+                            "path" : "/home/yanjie/.ivy2/cache/org.typelevel/cats-kernel_2.12/srcs/cats-kernel_2.12-1.6.0-sources.jar"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

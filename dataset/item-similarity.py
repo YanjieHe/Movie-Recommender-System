@@ -37,7 +37,8 @@ with open("similarity.csv", "w") as f:
             m1 = movies[i]
             m2 = movies[j]
             sim = similarity(table, m1, m2)
-            result[m1][m2] = sim
+            # result[m1][m2] = sim
+            f.write(str(m1) + "," + str(m2) + "," + str(sim) + "\n")
             
             count += 1
             if count % 1000 == 0:

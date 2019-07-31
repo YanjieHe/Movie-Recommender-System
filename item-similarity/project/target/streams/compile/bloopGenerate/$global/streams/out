@@ -1,0 +1,4 @@
+[debug] [item-similarity-build] Classpath dependencies List()
+[debug] [item-similarity-build] Dependencies from configurations List()
+[debug] Bloop wrote the configuration of project 'item-similarity-build' to '/home/yanjie/Documents/MyCode/Scala/item-similarity/project/.bloop/item-similarity-build.json'
+[success] Generated .bloop/item-similarity-build.json

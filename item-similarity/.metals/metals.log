@@ -1,0 +1,851 @@
+INFO  time: initialize in 1.66s
+WARN  no build target: /home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala
+INFO  running '/usr/lib/jvm/java-8-openjdk/jre/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals361513175077953918/sbt-launch.jar metalsEnable bloopInstall'
+INFO  [info] Loading settings for project global-plugins from metals.sbt ...
+INFO  [info] Loading global plugins from /home/yanjie/.sbt/1.0/plugins
+INFO  [info] Updating ProjectRef(uri("file:/home/yanjie/.sbt/1.0/plugins/"), "global-plugins")...
+INFO  [info] Done updating.
+INFO  [info] Loading project definition from /home/yanjie/Documents/MyCode/Scala/item-similarity/project
+WARN  no build target: /home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala
+INFO  [info] Updating ProjectRef(uri("file:/home/yanjie/Documents/MyCode/Scala/item-similarity/project/"), "item-similarity-build")...
+INFO  [info] Done updating.
+INFO  [success] Generated .bloop/item-similarity-build.json
+INFO  [success] Total time: 13 s, completed Jul 31, 2019 9:57:43 AM
+INFO  [info] Updating ProjectRef(uri("file:/home/yanjie/Documents/MyCode/Scala/item-similarity/project/"), "item-similarity-build")...
+INFO  [info] Done updating.
+INFO  no build target: using presentation compiler with only scala-library
+INFO  [info] Loading settings for project item-similarity from build.sbt ...
+INFO  [info] Set current project to hello-world (in build file:/home/yanjie/Documents/MyCode/Scala/item-similarity/)
+INFO  [info] Set current project to hello-world (in build file:/home/yanjie/Documents/MyCode/Scala/item-similarity/)
+INFO  [info] semanticdb-scalac is enabled
+INFO  [info] Updating ...
+WARN  code navigation does not work for the file '/home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala' because it doesn't belong to a build target.
+INFO  [info] Done updating.
+INFO  [info] downloading https://repo1.maven.org/maven2/org/typelevel/machinist_2.12/0.6.6/machinist_2.12-0.6.6-sources.jar ...
+INFO  [info] downloading https://repo1.maven.org/maven2/org/typelevel/cats-core_2.12/1.6.0/cats-core_2.12-1.6.0-sources.jar ...
+INFO  [info] downloading https://repo1.maven.org/maven2/org/typelevel/cats-kernel_2.12/1.6.0/cats-kernel_2.12-1.6.0-sources.jar ...
+INFO  [info] downloading https://repo1.maven.org/maven2/org/typelevel/cats-macros_2.12/1.6.0/cats-macros_2.12-1.6.0-sources.jar ...
+INFO  [info] 	[SUCCESSFUL ] org.typelevel#cats-macros_2.12;1.6.0!cats-macros_2.12.jar(src) (1727ms)
+INFO  [info] 	[SUCCESSFUL ] org.typelevel#machinist_2.12;0.6.6!machinist_2.12.jar(src) (1752ms)
+INFO  [info] 	[SUCCESSFUL ] org.typelevel#cats-kernel_2.12;1.6.0!cats-kernel_2.12.jar(src) (1772ms)
+INFO  [info] 	[SUCCESSFUL ] org.typelevel#cats-core_2.12;1.6.0!cats-core_2.12.jar(src) (1831ms)
+INFO  [success] Generated .bloop/item-similarity.json
+INFO  [success] Generated .bloop/item-similarity-test.json
+INFO  [success] Total time: 4 s, completed Jul 31, 2019 9:58:05 AM
+INFO  build tool exit: 0
+INFO  time: ran 'sbt bloopInstall' in 1m34s
+INFO  running embedded 'bloop bsp --protocol local --socket /tmp/bsp621680671295115709/1tu4phqdygfvx.socket'
+WARN  no build target: /home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala
+The server is listening for incoming connections at local:///tmp/bsp621680671295115709/1tu4phqdygfvx.socket...
+Accepted incoming BSP client connection at local:///tmp/bsp621680671295115709/1tu4phqdygfvx.socketINFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/yanjie/.cache/metals/bsp.trace.json
+
+request received: build/initialize
+INFO  time: connected to build server in 6.55s
+BSP initialization handshake complete.
+INFO  time: imported build in 0.14s
+INFO  time: indexed workspace in 2.61s
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 4.54s
+ERROR Failed to compile 'item-similarity','item-similarity-test'
+INFO  compiling item-similarity (1 scala source)
+Jul 31, 2019 9:58:35 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 29
+INFO  time: compiled item-similarity in 5.88s
+Jul 31, 2019 9:58:43 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 44
+Jul 31, 2019 9:58:43 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 45
+Jul 31, 2019 9:58:44 AM scala.meta.internal.pc.MetalsGlobal inverseSemanticdbSymbols
+SEVERE: invalid SemanticDB symbol: _empty_/Main.ratings.
+illegal cyclic reference involving object Main
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 2.12s
+INFO  compiling item-similarity (1 scala source)
+INFO  Deduplicating compilation of item-similarity from bsp client 'Metals 0.7.0' (since 40.585s)
+INFO  time: compiled item-similarity in 0.14s
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+ERROR code navigation does not work for the file '/home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala' because the build target item-similarity is being compiled. Wait until compilation is finished and try again.
+INFO  time: compiled item-similarity in 36ms
+ERROR Failed to compile 'item-similarity','item-similarity-test'
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.15s
+ERROR Failed to compile 'item-similarity'
+ERROR code navigation does not work for the file '/home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala' because the SemanticDB file '/home/yanjie/Documents/MyCode/Scala/item-similarity/.bloop/item-similarity/scala-2.12/bloop-bsp-clients-classes/classes-Metals-RXUrdaTnRRWoLkfnHPVnEQ==/META-INF/semanticdb/src/main/scala/Main.scala.semanticdb' doesn't exist. There can be many reasons for this error. 
+ERROR code navigation does not work for the file '/home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala' because the SemanticDB file '/home/yanjie/Documents/MyCode/Scala/item-similarity/.bloop/item-similarity/scala-2.12/bloop-bsp-clients-classes/classes-Metals-RXUrdaTnRRWoLkfnHPVnEQ==/META-INF/semanticdb/src/main/scala/Main.scala.semanticdb' doesn't exist. There can be many reasons for this error. 
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 2.18s
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 2.03s
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 2.31s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 1.74s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 1.88s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 6.07s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 3.81s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 1.53s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 1.61s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 2.82s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.76s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.89s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.69s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.61s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 1.55s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 1.89s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 1.5s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 1.27s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 1.34s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 1.25s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 1.29s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.92s
+INFO  compiling item-similarity (1 scala source)
+ERROR code navigation does not work for the file '/home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala' because the build target item-similarity is being compiled. Wait until compilation is finished and try again.
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.37s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.43s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.46s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.48s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.43s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.44s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.62s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.67s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.55s
+ERROR scalafmt: /home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala:35: error: illegal start of simple expression
+    }
+    ^
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.65s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.48s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.49s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.56s
+something's wrong: no file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala in scala.collection.mutable.HashMap[Int,<error>]RangePosition(file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala, 358, 366, 387)
+something's wrong: no file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala in scala.collection.mutable.HashMap[Int,<error>]RangePosition(file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala, 358, 366, 380)
+something's wrong: no file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala in scala.collection.mutable.HashMap[Int,<error>]RangePosition(file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala, 358, 366, 381)
+something's wrong: no file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala in scala.collection.mutable.HashMap[Int,<error>]RangePosition(file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala, 358, 366, 382)
+something's wrong: no file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala in scala.collection.mutable.HashMap[Int,<error>]RangePosition(file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala, 358, 366, 383)
+something's wrong: no file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala in scala.collection.mutable.HashMap[Int,<error>]RangePosition(file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala, 358, 366, 386)
+something's wrong: no file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala in scala.collection.mutable.HashMap[Int,<error>]RangePosition(file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala, 358, 366, 396)
+something's wrong: no file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala in scala.collection.mutable.HashMap[Int,<error>]RangePosition(file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala, 358, 366, 396)
+something's wrong: no file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala in scala.collection.mutable.HashMap[Int,<error>]RangePosition(file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala, 358, 366, 386)
+something's wrong: no file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala in scala.collection.mutable.HashMap[Int,<error>]RangePosition(file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala, 358, 366, 387)
+something's wrong: no file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala in scala.collection.mutable.HashMap[Int,<error>]RangePosition(file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala, 358, 366, 388)
+something's wrong: no file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala in scala.collection.mutable.HashMap[Int,<error>]RangePosition(file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala, 358, 366, 389)
+something's wrong: no file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala in scala.collection.mutable.HashMap[Int,<error>]RangePosition(file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala, 358, 366, 390)
+something's wrong: no file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala in scala.collection.mutable.HashMap[Int,<error>]RangePosition(file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala, 358, 366, 391)
+something's wrong: no file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala in scala.collection.mutable.HashMap[Int,<error>]RangePosition(file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala, 358, 366, 392)
+something's wrong: no file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala in scala.collection.mutable.HashMap[Int,<error>]RangePosition(file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala, 358, 366, 394)
+something's wrong: no file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala in scala.collection.mutable.HashMap[Int,<error>]RangePosition(file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala, 378, 386, 407)
+something's wrong: no file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala in scala.collection.mutable.HashMap[Int,<error>]RangePosition(file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala, 378, 386, 401)
+something's wrong: no file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala in scala.collection.mutable.HashMap[Int,<error>]RangePosition(file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala, 378, 386, 403)
+something's wrong: no file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala in scala.collection.mutable.HashMap[Int,Float]RangePosition(file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala, 378, 386, 404)
+something's wrong: no file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala in scala.collection.mutable.HashMap[Int,Float]RangePosition(file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala, 378, 386, 404)
+something's wrong: no file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala in scala.collection.mutable.HashMap[Int,Float]RangePosition(file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala, 378, 386, 404)
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.49s
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.25s
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.15s
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.2s
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.26s
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.3s
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.17s
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.29s
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.28s
+ERROR Failed to compile 'item-similarity'
+INFO  /home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala:23:13: stale scalac error: not enough arguments for method sum: (implicit num: Numeric[B])B.
+Unspecified value parameter num.
+> users
+>       .map { user =>
+>         val t: Double = r1(user) - r2(user)
+>         t * t
+>       }
+>       .sum()
+INFO  /home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala:23:13: stale scalac error: not enough arguments for method sum: (implicit num: Numeric[B])B.
+Unspecified value parameter num.
+> users
+>       .map { user =>
+>         val t: Double = r1(user) - r2(user)
+>         t * t
+>       }
+>       .sum()
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.25s
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.2s
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.56s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.45s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.43s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.59s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.63s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.63s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.57s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 1.27s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.58s
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.2s
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.19s
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.58s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.44s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.46s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.42s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.43s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.49s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.46s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.5s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.57s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.49s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.41s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.8s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.65s
+INFO  compiling item-similarity (1 scala source)
+ERROR code navigation does not work for the file '/home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala' because the build target item-similarity is being compiled. Wait until compilation is finished and try again.
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 1.66s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.36s
+INFO  compiling item-similarity (1 scala source)
+ERROR code navigation does not work for the file '/home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala' because the build target item-similarity is being compiled. Wait until compilation is finished and try again.
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.43s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.47s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.47s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.63s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.54s
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.16s
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.14s
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.39s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.38s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.51s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.44s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.39s
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 45ms
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 40ms
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.23s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.24s
+Jul 31, 2019 3:10:29 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3575
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.24s
+something's wrong: no file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala in Array[<error>]RangePosition(file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala, 2356, 2356, 2371)
+something's wrong: no file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala in Array[<error>]RangePosition(file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala, 2356, 2356, 2364)
+something's wrong: no file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala in Array[<error>]RangePosition(file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala, 2356, 2356, 2365)
+something's wrong: no file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala in Array[Int]RangePosition(file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala, 2356, 2356, 2366)
+something's wrong: no file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala in Array[<error>]RangePosition(file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala, 2356, 2356, 2365)
+something's wrong: no file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala in Array[<error>]RangePosition(file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala, 2356, 2356, 2364)
+something's wrong: no file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala in Array[<error>]RangePosition(file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala, 2356, 2356, 2371)
+something's wrong: no file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala in Array[<error>]RangePosition(file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala, 2356, 2356, 2364)
+something's wrong: no file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala in Array[<error>]RangePosition(file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala, 2356, 2356, 2366)
+something's wrong: no file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala in Array[<error>]RangePosition(file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala, 2356, 2356, 2367)
+something's wrong: no file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala in Array[Boolean]RangePosition(file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala, 2356, 2356, 2370)
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.13s
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 27ms
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 43ms
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.12s
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.25s
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 85ms
+ERROR Failed to compile 'item-similarity'
+Jul 31, 2019 3:12:39 PM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:948)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:467)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:387)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:23)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:379)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:364)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:23)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:382)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:47)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:87)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:119)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:76)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:191)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:73)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+Jul 31, 2019 3:12:39 PM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:948)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:467)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:387)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:23)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:379)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:364)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:23)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:382)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:47)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:87)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:119)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:76)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:191)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:73)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+Jul 31, 2019 3:12:39 PM scala.meta.internal.pc.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$CompletionPosition$Override.<init>(Completions.scala:948)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:467)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:387)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:23)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:379)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:364)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:23)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:382)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:47)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:87)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:119)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:76)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:191)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:73)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.18s
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.12s
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.5s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.53s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.48s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.41s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.33s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.34s
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.28s
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.16s
+ERROR Failed to compile 'item-similarity'
+ERROR code navigation does not work for the file '/home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala' because the SemanticDB file '/home/yanjie/Documents/MyCode/Scala/item-similarity/.bloop/item-similarity/scala-2.12/bloop-bsp-clients-classes/classes-Metals-RXUrdaTnRRWoLkfnHPVnEQ==/META-INF/semanticdb/src/main/scala/Main.scala.semanticdb' doesn't exist. There can be many reasons for this error. 
+ERROR code navigation does not work for the file '/home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala' because the SemanticDB file '/home/yanjie/Documents/MyCode/Scala/item-similarity/.bloop/item-similarity/scala-2.12/bloop-bsp-clients-classes/classes-Metals-RXUrdaTnRRWoLkfnHPVnEQ==/META-INF/semanticdb/src/main/scala/Main.scala.semanticdb' doesn't exist. There can be many reasons for this error. 
+INFO  compiling item-similarity (1 scala source)
+ERROR code navigation does not work for the file '/home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala' because the build target item-similarity is being compiled. Wait until compilation is finished and try again.
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 1.96s
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.2s
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.18s
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.19s
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.2s
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.2s
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.25s
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.22s
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.21s
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.22s
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.15s
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.16s
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 1.01s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.55s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.44s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.42s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.45s
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.3s
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.28s
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.28s
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.23s
+ERROR Failed to compile 'item-similarity'
+INFO  /home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala:112:18: stale scalac error: overloaded method value join with alternatives:
+  (x$1: CharSequence,x$2: Iterable[_ <: CharSequence])String <and>
+  (x$1: CharSequence,x$2: CharSequence*)String
+ cannot be applied to (String, Array[Any])
+        pw.write(String.join(",", Array(m1, m2, sim)) + "\n")
+                 ^^^^^^^^^^^
+INFO  /home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala:112:18: stale scalac error: overloaded method value join with alternatives:
+  (x$1: CharSequence,x$2: Iterable[_ <: CharSequence])String <and>
+  (x$1: CharSequence,x$2: CharSequence*)String
+ cannot be applied to (String, Array[Any])
+        pw.write(String.join(",", Array(m1, m2, sim)) + "\n")
+                 ^^^^^^^^^^^
+INFO  /home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala:112:18: stale scalac error: overloaded method value join with alternatives:
+  (x$1: CharSequence,x$2: Iterable[_ <: CharSequence])String <and>
+  (x$1: CharSequence,x$2: CharSequence*)String
+ cannot be applied to (String, Array[Any])
+        pw.write(String.join(",", Array(m1, m2, sim)) + "\n")
+                 ^^^^^^^^^^^
+INFO  /home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala:112:18: stale scalac error: overloaded method value join with alternatives:
+  (x$1: CharSequence,x$2: Iterable[_ <: CharSequence])String <and>
+  (x$1: CharSequence,x$2: CharSequence*)String
+ cannot be applied to (String, Array[Any])
+        pw.write(String.join(",", Array(m1, m2, sim)) + "\n")
+                 ^^^^^^^^^^^
+INFO  /home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala:112:18: stale scalac error: overloaded method value join with alternatives:
+  (x$1: CharSequence,x$2: Iterable[_ <: CharSequence])String <and>
+  (x$1: CharSequence,x$2: CharSequence*)String
+ cannot be applied to (String, Array[Any])
+        pw.write(String.join(",", Array(m1, m2, sim)) + "\n")
+                 ^^^^^^^^^^^
+INFO  /home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala:112:18: stale scalac error: overloaded method value join with alternatives:
+  (x$1: CharSequence,x$2: Iterable[_ <: CharSequence])String <and>
+  (x$1: CharSequence,x$2: CharSequence*)String
+ cannot be applied to (String, Array[Any])
+        pw.write(String.join(",", Array(m1, m2, sim)) + "\n")
+                 ^^^^^^^^^^^
+INFO  /home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala:112:18: stale scalac error: overloaded method value join with alternatives:
+  (x$1: CharSequence,x$2: Iterable[_ <: CharSequence])String <and>
+  (x$1: CharSequence,x$2: CharSequence*)String
+ cannot be applied to (String, Array[Any])
+        pw.write(String.join(",", Array(m1, m2, sim)) + "\n")
+                 ^^^^^^^^^^^
+INFO  /home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala:112:18: stale scalac error: overloaded method value join with alternatives:
+  (x$1: CharSequence,x$2: Iterable[_ <: CharSequence])String <and>
+  (x$1: CharSequence,x$2: CharSequence*)String
+ cannot be applied to (String, Array[Any])
+        pw.write(String.join(",", Array(m1, m2, sim)) + "\n")
+                 ^^^^^^^^^^^
+INFO  /home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala:112:18: stale scalac error: overloaded method value join with alternatives:
+  (x$1: CharSequence,x$2: Iterable[_ <: CharSequence])String <and>
+  (x$1: CharSequence,x$2: CharSequence*)String
+ cannot be applied to (String, Array[Any])
+        pw.write(String.join(",", Array(m1, m2, sim)) + "\n")
+                 ^^^^^^^^^^^
+INFO  /home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala:112:18: stale scalac error: overloaded method value join with alternatives:
+  (x$1: CharSequence,x$2: Iterable[_ <: CharSequence])String <and>
+  (x$1: CharSequence,x$2: CharSequence*)String
+ cannot be applied to (String, Array[Any])
+        pw.write(String.join(",", Array(m1, m2, sim)) + "\n")
+                 ^^^^^^^^^^^
+INFO  /home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala:112:18: stale scalac error: overloaded method value join with alternatives:
+  (x$1: CharSequence,x$2: Iterable[_ <: CharSequence])String <and>
+  (x$1: CharSequence,x$2: CharSequence*)String
+ cannot be applied to (String, Array[Any])
+        pw.write(String.join(",", Array(m1, m2, sim)) + "\n")
+                 ^^^^^^^^^^^
+INFO  /home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala:112:18: stale scalac error: overloaded method value join with alternatives:
+  (x$1: CharSequence,x$2: Iterable[_ <: CharSequence])String <and>
+  (x$1: CharSequence,x$2: CharSequence*)String
+ cannot be applied to (String, Array[Any])
+        pw.write(String.join(",", Array(m1, m2, sim)) + "\n")
+                 ^^^^^^^^^^^
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.64s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.48s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.46s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.6s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.43s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.4s
+ERROR code navigation does not work for the file '/home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala' because the SemanticDB file '/home/yanjie/Documents/MyCode/Scala/item-similarity/.bloop/item-similarity/scala-2.12/bloop-bsp-clients-classes/classes-Metals-RXUrdaTnRRWoLkfnHPVnEQ==/META-INF/semanticdb/src/main/scala/Main.scala.semanticdb' doesn't exist. There can be many reasons for this error. 
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.4s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.48s
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.22s
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.21s
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.21s
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.2s
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.62s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.4s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.4s
+ERROR code navigation does not work for the file '/home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala' because the SemanticDB file '/home/yanjie/Documents/MyCode/Scala/item-similarity/.bloop/item-similarity/scala-2.12/bloop-bsp-clients-classes/classes-Metals-RXUrdaTnRRWoLkfnHPVnEQ==/META-INF/semanticdb/src/main/scala/Main.scala.semanticdb' doesn't exist. There can be many reasons for this error. 
+ERROR code navigation does not work for the file '/home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala' because the SemanticDB file '/home/yanjie/Documents/MyCode/Scala/item-similarity/.bloop/item-similarity/scala-2.12/bloop-bsp-clients-classes/classes-Metals-RXUrdaTnRRWoLkfnHPVnEQ==/META-INF/semanticdb/src/main/scala/Main.scala.semanticdb' doesn't exist. There can be many reasons for this error. 
+ERROR code navigation does not work for the file '/home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala' because the SemanticDB file '/home/yanjie/Documents/MyCode/Scala/item-similarity/.bloop/item-similarity/scala-2.12/bloop-bsp-clients-classes/classes-Metals-RXUrdaTnRRWoLkfnHPVnEQ==/META-INF/semanticdb/src/main/scala/Main.scala.semanticdb' doesn't exist. There can be many reasons for this error. 
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.15s
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.19s
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.15s
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.15s
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+ERROR code navigation does not work for the file '/home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala' because the build target item-similarity is being compiled. Wait until compilation is finished and try again.
+INFO  time: compiled item-similarity in 0.18s
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.21s
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.17s
+ERROR Failed to compile 'item-similarity','item-similarity-test'
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.41s
+ERROR Failed to compile 'item-similarity'
+something's wrong: no file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala in scala.collection.mutable.HashMap[Int,Double]RangePosition(file:///home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala, 2599, 2607, 2627)
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.54s
+ERROR scalafmt: /home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala:110: error: ; expected but = found
+     = m1.genres.zip(m2.genres).map { case (x, y) => x * y }.sum
+     ^
+ERROR scalafmt: /home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala:110: error: ; expected but = found
+     = m1.genres.zip(m2.genres).map { case (x, y) => x * y }.sum
+     ^
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.22s
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.21s
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.14s
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.15s
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.14s
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.19s
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.18s
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.2s
+ERROR Failed to compile 'item-similarity'
+Jul 31, 2019 3:34:51 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6678
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.52s
+ERROR code navigation does not work for the file '/home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala' because the SemanticDB file '/home/yanjie/Documents/MyCode/Scala/item-similarity/.bloop/item-similarity/scala-2.12/bloop-bsp-clients-classes/classes-Metals-RXUrdaTnRRWoLkfnHPVnEQ==/META-INF/semanticdb/src/main/scala/Main.scala.semanticdb' doesn't exist. There can be many reasons for this error. 
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.17s
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.26s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 0.16s
+ERROR code navigation does not work for the file '/home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala' because the SemanticDB file '/home/yanjie/Documents/MyCode/Scala/item-similarity/.bloop/item-similarity/scala-2.12/bloop-bsp-clients-classes/classes-Metals-RXUrdaTnRRWoLkfnHPVnEQ==/META-INF/semanticdb/src/main/scala/Main.scala.semanticdb' doesn't exist. There can be many reasons for this error. 
+ERROR code navigation does not work for the file '/home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala' because the SemanticDB file '/home/yanjie/Documents/MyCode/Scala/item-similarity/.bloop/item-similarity/scala-2.12/bloop-bsp-clients-classes/classes-Metals-RXUrdaTnRRWoLkfnHPVnEQ==/META-INF/semanticdb/src/main/scala/Main.scala.semanticdb' doesn't exist. There can be many reasons for this error. 
+ERROR code navigation does not work for the file '/home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala' because the SemanticDB file '/home/yanjie/Documents/MyCode/Scala/item-similarity/.bloop/item-similarity/scala-2.12/bloop-bsp-clients-classes/classes-Metals-RXUrdaTnRRWoLkfnHPVnEQ==/META-INF/semanticdb/src/main/scala/Main.scala.semanticdb' doesn't exist. There can be many reasons for this error. 
+ERROR code navigation does not work for the file '/home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala' because the SemanticDB file '/home/yanjie/Documents/MyCode/Scala/item-similarity/.bloop/item-similarity/scala-2.12/bloop-bsp-clients-classes/classes-Metals-RXUrdaTnRRWoLkfnHPVnEQ==/META-INF/semanticdb/src/main/scala/Main.scala.semanticdb' doesn't exist. There can be many reasons for this error. 
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 88ms
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 61ms
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.15s
+INFO  time: initialize in 1.53s
+INFO  running embedded 'bloop bsp --protocol local --socket /tmp/bsp4209732159391757837/-1l527qicdo8t2.socket'
+INFO  skipping build import with status 'Installed'
+WARN  no build target: /home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala
+INFO  no build target: using presentation compiler with only scala-library
+WARN  code navigation does not work for the file '/home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala' because it doesn't belong to a build target.
+Jul 31, 2019 4:37:40 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2
+Jul 31, 2019 4:37:40 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1
+WARN  no build target: /home/yanjie/Documents/MyCode/Scala/item-similarity/src/main/scala/Main.scala
+The server is listening for incoming connections at local:///tmp/bsp4209732159391757837/-1l527qicdo8t2.socket...
+Accepted incoming BSP client connection at local:///tmp/bsp4209732159391757837/-1l527qicdo8t2.socket
+INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/yanjie/.cache/metals/bsp.trace.json
+request received: build/initialize
+INFO  time: connected to build server in 17s
+BSP initialization handshake complete.
+INFO  time: imported build in 0.43s
+INFO  time: indexed workspace in 1.27s
+INFO  Deduplicating compilation of item-similarity from bsp client 'Metals 0.7.0' (since 2.036s)
+INFO  compiling item-similarity (1 scala source)
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 18s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 4.94s
+Jul 31, 2019 4:38:54 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 124
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 2.11s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 2.27s
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.73s
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+INFO  time: compiled item-similarity in 0.51s
+ERROR Failed to compile 'item-similarity'
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 2.07s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 1.95s
+Jul 31, 2019 4:41:25 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 509
+Jul 31, 2019 4:41:30 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 535
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 1.51s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 2.06s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 1.35s
+INFO  compiling item-similarity (1 scala source)
+WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+INFO  time: compiled item-similarity in 1.35s
+WARN  no build target: /home/yanjie/Documents/MyCode/Scala/item-similarity/process.scala
+WARN  no build target: /home/yanjie/Documents/MyCode/Scala/item-similarity/process.scala
+INFO  skipping build import with status 'Installed'
+INFO  shutting down Metals
+shutdown request received: build/shutdown
+[0m[31m[E][0m BSP server cancelled, closing socket...
+Client in /home/yanjie/Documents/MyCode/Scala/item-similarity/.bloop triggered cancellation. Cancelling tasks...
+INFO  bloop exit: 0
