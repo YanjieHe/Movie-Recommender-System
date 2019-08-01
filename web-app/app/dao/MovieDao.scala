@@ -89,7 +89,8 @@ class MovieDao extends DataAccessObject {
   def filterMovies(
       yearCondition: String,
       sortBy: String,
-      genreCondition: String
+      genreCondition: String,
+      limit:String
   ): List[Movie] = {
     var connection: Connection = null
     var result: List[Movie] = List()
@@ -110,9 +111,9 @@ class MovieDao extends DataAccessObject {
       val quote = "\""
       val genre = quote + genreCondition + quote
       val sql = if (genreCondition == "") {
-        s"SELECT $columns FROM Movies WHERE $yearCondition ORDER BY $sortBy LIMIT 20;"
+        s"SELECT $columns FROM Movies WHERE $yearCondition ORDER BY $sortBy LIMIT $limit;"
       } else {
-        s"SELECT $columns FROM Movies WHERE Movies.IMDB_ID IN (SELECT IMDB_ID FROM Genres WHERE Genre = $genre) AND $yearCondition ORDER BY $sortBy LIMIT 20;"
+        s"SELECT $columns FROM Movies WHERE Movies.IMDB_ID IN (SELECT IMDB_ID FROM Genres WHERE Genre = $genre) AND $yearCondition ORDER BY $sortBy LIMIT $limit;"
       }
       println(sql)
       val resultSet = statement.executeQuery(sql)

@@ -13,4 +13,6 @@ GET   /movies/:imdbId          controllers.MovieController.movie(imdbId: Int)
 
 GET   /leaderboard/user-post            controllers.LeaderboardController.userPost()
 
+GET   /leaderboard/:parameters            controllers.LeaderboardController.query(parameters)
+
 GET   /leaderboard            controllers.LeaderboardController.leaderboard()
