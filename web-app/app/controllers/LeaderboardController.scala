@@ -48,7 +48,7 @@ class LeaderboardController @Inject()(
       "year" -> text,
       "orderBy" -> text,
       "genre" -> text,
-      "page" -> number
+      "page" -> default(number, 1)
     )(LeaderboardFilters.apply)(LeaderboardFilters.unapply)
   )
 
@@ -59,8 +59,10 @@ class LeaderboardController @Inject()(
     "page" -> "1"
   )
   var userData = leaderboardForm.bind(defaultData).get
+
   val userPost = Action(parse.form(leaderboardForm)) { implicit request =>
     userData = request.body
+    println(userData)
     Redirect(routes.LeaderboardController.leaderboard())
   }
 
@@ -79,6 +81,7 @@ class LeaderboardController @Inject()(
       "genre" -> userData.genre,
       "page" -> userData.page.toString()
     )
+    println(currentData)
     def header(movie: Movie): String = movie.startYear match {
       case Some(year) => movie.primaryTitle + " (" + year + ")"
       case None       => movie.primaryTitle
