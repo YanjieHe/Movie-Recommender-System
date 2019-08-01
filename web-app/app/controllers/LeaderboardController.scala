@@ -14,7 +14,8 @@ import play.api.i18n.I18nSupport
 import models.Movie
 
 case class LeaderboardFilters(
-    genres: String,
+    year: String,
+    genre: String,
     orderBy: String
 )
 
@@ -40,14 +41,15 @@ class LeaderboardController @Inject()(cc: ControllerComponents)
 
   val leaderboardForm = Form(
     mapping(
-      "genres" -> text,
+      "year" -> text,
+      "genre" -> text,
       "orderBy" -> text
     )(LeaderboardFilters.apply)(LeaderboardFilters.unapply)
   )
 
   val userPost = Action(parse.form(leaderboardForm)) { implicit request =>
     val userData = request.body
-    println((userData.genres, userData.orderBy))
+    println((userData.year, userData.genre, userData.orderBy))
     Redirect(routes.LeaderboardController.leaderboard())
   }
 
