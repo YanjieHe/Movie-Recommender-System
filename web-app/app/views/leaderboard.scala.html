@@ -4,7 +4,7 @@
 * two arguments, a `String` for the title of the page and an `Html`
 * object to insert into the body of the page.
 *@
-@(movies: List[Movie])
+@(title: String)(leaderboardFilters: Form[LeaderboardFilters])(implicit messages: Messages)
 <!DOCTYPE html>
 <html lang="en">
 
@@ -39,7 +39,46 @@
     <br />
 
     <div class="container">
-        
+        @helper.form(action = routes.LeaderboardController.userPost()) {
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="inputState">State</label>
+                        <select name="genres" id="inputState" class="form-control">
+                            <option selected>All Genres</option>
+                            <option>Action</option>
+                            <option>Adventure</option>
+                            <option>Animation</option>
+                            <option>Children's</option>
+                            <option>Comedy</option>
+                            <option>Crime</option>
+                            <option>Documentary</option>
+                            <option>Drama</option>
+                            <option>Fantasy</option>
+                            <option>Film-Noir</option>
+                            <option>Horror</option>
+                            <option>Musical</option>
+                            <option>Mystery</option>
+                            <option>Romance</option>
+                            <option>Sci-Fi</option>
+                            <option>Thriller</option>
+                            <option>War</option>
+                            <option>Western</option>
+                            <option>IMAX</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputState">State</label>
+                        <select name="orderBy" id="inputState" class="form-control">
+                            <option selected>Choose...</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+
+            <input type="submit" value="Submit">
+        }
     </div>
 </body>
 </html>

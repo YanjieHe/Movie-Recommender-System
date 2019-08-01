@@ -9,4 +9,8 @@ GET     /                           controllers.HomeController.index
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
 
-GET   /movies/:imdbId          controllers.MovieController.render(imdbId: Int)
+GET   /movies/:imdbId          controllers.MovieController.movie(imdbId: Int)
+
+GET   /leaderboard/user-post            controllers.LeaderboardController.userPost()
+
+GET   /leaderboard            controllers.LeaderboardController.leaderboard()

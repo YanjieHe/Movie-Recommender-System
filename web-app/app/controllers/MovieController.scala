@@ -29,7 +29,7 @@ class MovieController @Inject()(
     Ok(views.html.index())
   }
 
-  def render(imdbId: Int) = Action { implicit request: Request[AnyContent] =>
+  def movie(imdbId: Int) = Action { implicit request: Request[AnyContent] =>
     def processCategory(category: String) = {
       if (category == "self") {
         "character"
