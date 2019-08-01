@@ -4,7 +4,7 @@
 * two arguments, a `String` for the title of the page and an `Html`
 * object to insert into the body of the page.
 *@
-@(title: String)(leaderboardFilters: Form[LeaderboardFilters])(implicit messages: Messages)
+@(title: String)(leaderboardFilters: Form[LeaderboardFilters])(movies: List[Movie])(header: Movie => String)(defaultData: Map[String, String])(implicit messages: Messages)
 <!DOCTYPE html>
 <html lang="en">
 
@@ -45,9 +45,7 @@
                     <div class="form-group col-md-4">
                         <label for="inputState">Year</label>
                         <select name="year" id="inputState" class="form-control">
-                            <option selected>Any Year</option>
-                            <option>2019</option>
-                            <option>2018</option>
+                            <option selected>@defaultData("year")</option>
                             <option>2010s</option>
                             <option>2000s</option>
                             <option>'90s</option>
@@ -60,7 +58,7 @@
                     <div class="form-group col-md-4">
                         <label for="inputState">Sort By</label>
                         <select name="orderBy" id="inputState" class="form-control">
-                            <option selected>Rating Descending</option>
+                            <option selected>@defaultData("orderBy")</option>
                             <option>Popularity Descending</option>
                             <option>Popularity Ascending</option>
                             <option>Rating Descending</option>
@@ -72,7 +70,7 @@
                     <div class="form-group col-md-4">
                         <label for="inputState">Genres</label>
                         <select name="genre" id="inputState" class="form-control">
-                            <option selected>Any Genre</option>
+                            <option selected>@defaultData("genre")</option>
                             <option>Action</option>
                             <option>Adventure</option>
                             <option>Animation</option>
@@ -95,10 +93,71 @@
                         </select>
                     </div>
                 </div>
+                <button type="submit" value="Submit" class="btn btn-primary mb-2 float-right">Discover</button>
             </form>
-
-            <button type="submit" value="Submit" class="btn btn-primary mb-2 float-right">Discover</button>
         }
+        <br/>
+        <br/>
+
+        <div class="container">
+            @for(movieList <- movies.sliding(2, 2)) {
+                @if(movieList.size == 2) {
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <a href="movies/@movieList(0).imdbId"><img src="@movieList(0).posterLink" class="card-img" alt="..."></a>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">@header(movieList(0))</h5>
+                                            <p class="card-text">@movieList(0).overview</p>
+                                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <a href="movies/@movieList(1).imdbId"><img src="@movieList(1).posterLink" class="card-img" alt="..."></a>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">@header(movieList(1))</h5>
+                                            <p class="card-text">@movieList(1).overview</p>
+                                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                } else {
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <a href="movies/@movieList(0).imdbId"><img src="@movieList(0).posterLink" class="card-img" alt="..."></a>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">@header(movieList(0))</h5>
+                                            <p class="card-text">@@movieList(0).overview</p>
+                                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
     </div>
 </body>
 </html>

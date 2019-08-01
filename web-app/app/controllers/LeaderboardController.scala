@@ -12,11 +12,12 @@ import play.api.data.Forms._
 import play.api.i18n.I18nSupport
 
 import models.Movie
+import services.MovieService
 
 case class LeaderboardFilters(
     year: String,
-    genre: String,
-    orderBy: String
+    orderBy: String,
+    genre: String
 )
 
 /**
@@ -24,8 +25,10 @@ case class LeaderboardFilters(
   * application's home page.
   */
 @Singleton
-class LeaderboardController @Inject()(cc: ControllerComponents)
-    extends AbstractController(cc)
+class LeaderboardController @Inject()(
+    cc: ControllerComponents,
+    movieService: MovieService
+) extends AbstractController(cc)
     with I18nSupport {
 
   /**
@@ -42,18 +45,35 @@ class LeaderboardController @Inject()(cc: ControllerComponents)
   val leaderboardForm = Form(
     mapping(
       "year" -> text,
-      "genre" -> text,
-      "orderBy" -> text
+      "orderBy" -> text,
+      "genre" -> text
     )(LeaderboardFilters.apply)(LeaderboardFilters.unapply)
   )
 
+  val defaultData = Map(
+    "year" -> "Any Year",
+    "orderBy" -> "Rating Descending",
+    "genre" -> "Any Genre"
+  )
+  var userData = leaderboardForm.bind(defaultData).get
   val userPost = Action(parse.form(leaderboardForm)) { implicit request =>
-    val userData = request.body
-    println((userData.year, userData.genre, userData.orderBy))
+    userData = request.body
     Redirect(routes.LeaderboardController.leaderboard())
   }
 
   def leaderboard() = Action { implicit request: Request[AnyContent] =>
-    Ok(views.html.leaderboard("Leaderboard")(leaderboardForm))
+    val movies =
+      movieService
+        .filterMovies(userData.year, userData.orderBy, userData.genre)
+    val currentData = Map(
+      "year" -> userData.year,
+      "orderBy" -> userData.orderBy,
+      "genre" -> userData.genre
+    )
+    def header(movie: Movie): String = movie.startYear match {
+      case Some(year) => movie.primaryTitle + " (" + year + ")"
+      case None       => movie.primaryTitle
+    }
+    Ok(views.html.leaderboard("Leaderboard")(leaderboardForm)(movies)(header)(currentData))
   }
 }

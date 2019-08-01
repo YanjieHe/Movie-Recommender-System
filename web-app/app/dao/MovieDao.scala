@@ -85,4 +85,60 @@ class MovieDao extends DataAccessObject {
     }
     result
   }
+
+  def filterMovies(
+      yearCondition: String,
+      sortBy: String,
+      genreCondition: String
+  ): List[Movie] = {
+    var connection: Connection = null
+    var result: List[Movie] = List()
+    try {
+      connection = connect()
+      val statement = connection.createStatement()
+      val columns = List(
+        "Movies.IMDB_ID",
+        "Primary_Title",
+        "Original_Title",
+        "Avg_Rating",
+        "Num_Votes",
+        "Start_Year",
+        "Runtime_Minutes",
+        "Poster_Link",
+        "Overview"
+      ).mkString(", ")
+      val quote = "\""
+      val genre = quote + genreCondition + quote
+      val sql = if (genreCondition == "") {
+        s"SELECT $columns FROM Movies WHERE $yearCondition ORDER BY $sortBy LIMIT 20;"
+      } else {
+        s"SELECT $columns FROM Movies WHERE Movies.IMDB_ID IN (SELECT IMDB_ID FROM Genres WHERE Genre = $genre) AND $yearCondition ORDER BY $sortBy LIMIT 20;"
+      }
+      println(sql)
+      val resultSet = statement.executeQuery(sql)
+      result = collect(
+        resultSet,
+        resultSet => {
+          val col: String => String = resultSet.getString
+          Movie(
+            col("IMDB_ID").toInt,
+            col("Primary_Title"),
+            col("Original_Title"),
+            col("Avg_Rating").toFloat,
+            col("Num_Votes").toInt,
+            toOption(col("Start_Year"), year => year.toInt),
+            col("Runtime_Minutes").toInt,
+            toOption(col("Poster_Link"), link => link),
+            toOption(col("Overview"), overview => overview)
+          )
+        }
+      )
+    } catch {
+      case e: Throwable => e.printStackTrace()
+    }
+    if (connection != null) {
+      connection.close()
+    }
+    result
+  }
 }

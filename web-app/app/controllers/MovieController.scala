@@ -30,13 +30,13 @@ class MovieController @Inject()(
   }
 
   def movie(imdbId: Int) = Action { implicit request: Request[AnyContent] =>
-    def processCategory(category: String) = {
-      if (category == "self") {
-        "character"
-      } else {
-        category
-      }
-    }
+    // def processCategory(category: String) = {
+    //   if (category == "self") {
+    //     "character"
+    //   } else {
+    //     category
+    //   }
+    // }
     val movie = movieService.read(imdbId)
     val header = movie.startYear match {
       case Some(year) => movie.primaryTitle + " (" + year + ")"
@@ -45,7 +45,7 @@ class MovieController @Inject()(
     val posterLink = "/images/posters/" + movie.imdbId + ".jpg"
     val principalsList =
       principalsService.getPrincipalsList(movie.imdbId, 6).map {
-        case (name, principal) => (name, processCategory(principal.category))
+        case (name, principal) => (name, principal.category)
       }
     val firstRow = principalsList.take(3)
     val secondRow = principalsList.drop(3)
