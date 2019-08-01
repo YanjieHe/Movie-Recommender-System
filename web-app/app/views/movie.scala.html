@@ -4,7 +4,7 @@
 * two arguments, a `String` for the title of the page and an `Html`
 * object to insert into the body of the page.
 *@
-@(title: String)(movie: Movie)(header: String)(rating: String)(posterLink: String)(firstRow: List[(String, String)], secondRow: List[(String, String)])(firstRecsRow: List[Movie], secondRecsRow: List[Movie])(content: Html)
+@(title: String)(movie: Movie)(header: String)(rating: String)(firstRow: List[(String, String)], secondRow: List[(String, String)])(firstRecsRow: List[Movie], secondRecsRow: List[Movie])(content: Html)
 
 <!DOCTYPE html>
 <html lang="en">
@@ -40,98 +40,93 @@
             </div>
         </div>
     </nav>
-<br/>
+    <br />
 
     <div class="container">
-    <div class="container">
-    <div class="row">
-    <div class="col-3">
-    <img src="https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_SY1000_CR0,0,675,1000_AL_.jpg" width="100%"/>
-    </div>
-    <div class="col-9">
-    <h5>@header</h5>
-    Rating: @rating<br/><br/>
-    <h5>Overview</h5>
-    Simba idolises his father, King Mufasa, and takes to heart his own royal destiny. But not everyone in the kingdom celebrates the new cub's arrival. Scar, Mufasa's brother—and former heir to the throne—has plans of his own. The battle for Pride Rock is ravaged with betrayal, tragedy and drama, ultimately resulting in Simba's exile. With help from a curious pair of newfound friends, Simba will have to figure out how to grow up and take back what is rightfully his.
-    <br/><br/>
-    <h5>Featured Crew</h5>
-    <div class="container">
-    <div class="row">
-    @for(item <- firstRow) {
-    <div class="col">
-    <strong>@item._1</strong>
-    </div>
-    }
-</div>
-<div class="row">
-    @for(item <- firstRow) {
-    <div class="col">
-    @item._2
-    </div>
-    }
-</div>
-<br/>
-<div class="row">
-    @for(item <- secondRow) {
-    <div class="col">
-    <strong>@item._1</strong>
-    </div>
-    }
-</div>
-<div class="row">
-    @for(item <- secondRow) {
-    <div class="col">
-    @item._2
-    </div>
-    }
-</div>
-    </div>
-    </div>
-    </div>
-<br/>
-    </div>
-        <ul class="nav nav-fill nav-tabs">
-            <li class="nav-item">
-                <a class="nav-link active" href="#">Recommendations</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Reviews</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Images</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Trailers</a>
-            </li>
-        </ul>
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="@movie.posterLink"
+                        width="100%" />
+                </div>
+                <div class="col-9">
+                    <h5>@header</h5>
+                    Rating: @rating<br /><br />
+                    <h5>Overview</h5>
+                    @movie.overview
+                    <br /><br />
+                    <h5>Featured Crew</h5>
+                    <div class="container">
+                        <div class="row">
+                            @for(item <- firstRow) {
+                                <div class="col">
+                                <strong>@item._1</strong>
+                                </div>
+                            }
+                        </div>
+                        <div class="row">
+                            @for(item <- firstRow) {
+                            <div class="col">
+                            @item._2
+                            </div>
+                            }
+                        </div>
+                        <br/>
+                        <div class="row">
+                            @for(item <- secondRow) {
+                            <div class="col">
+                            <strong>@item._1</strong>
+                            </div>
+                            }
+                        </div>
+                        <div class="row">
+                            @for(item <- secondRow) {
+                            <div class="col">
+                            @item._2
+                            </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
         <br/>
-        <div class="card-deck">
-
-  @for(movie <- firstRecsRow) {
-  <div class="card">
-    <img class="card-img-top" src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/or06FN3Dka5tukK1e9sl16pB3iy.jpg" alt="Card image cap">
-    <div class="card-body">
-      <p class="card-text">@movie.primaryTitle</p>
     </div>
-  </div>
-  }
-</div>
-<br/>
-<div class="card-deck">
-  @for(movie <- secondRecsRow) {
-  <div class="card">
-    <img class="card-img-top" src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/or06FN3Dka5tukK1e9sl16pB3iy.jpg" alt="Card image cap">
-    <div class="card-body">
-      <p class="card-text">@movie.primaryTitle</p>
-    </div>
-  </div>
-  }
-</div>
+    <ul class="nav nav-fill nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Recommendations</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Reviews</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Images</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Trailers</a>
+        </li>
+    </ul>
+    <br />
 
+    <div class="card-deck">
+    @for(movie <- firstRecsRow) {
+        <div class="card">
+            <a href=@(movie.imdbId)><img class="card-img-top" src="@movie.posterLink" alt="Card image cap"></a>
+            <div class="card-body">
+                <p class="card-text"><a href=@(movie.imdbId)>@movie.primaryTitle</a></p>
+            </div>
+        </div>
+    }
+    </div>
+    <br/>
+    <div class="card-deck">
+    @for(movie <- secondRecsRow) {
+        <div class="card">
+            <a href=@(movie.imdbId)><img class="card-img-top" src="@movie.posterLink" alt="Card image cap"></a>
+            <div class="card-body">
+                <p class="card-text"><a href=@(movie.imdbId)>@movie.primaryTitle</a></p>
+            </div>
+        </div>
+    }
     </div>
 </body>
-
-
-
-
 </html>

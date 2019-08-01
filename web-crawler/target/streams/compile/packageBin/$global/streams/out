@@ -1,0 +1,19 @@
+[0m[[0m[0minfo[0m] [0m[0mPackaging /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/target/scala-2.12/akka-quickstart-scala_2.12-1.0.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/company/Crawler.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/target/scala-2.12/classes/com/company/Crawler.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/company/AkkaQuickstart$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/target/scala-2.12/classes/com/company/AkkaQuickstart$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/company[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/target/scala-2.12/classes/com/company[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/target/scala-2.12/classes/com[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/company/DatabaseWriter$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/target/scala-2.12/classes/com/company/DatabaseWriter$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/company/Crawler$$anonfun$receive$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/target/scala-2.12/classes/com/company/Crawler$$anonfun$receive$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/company/AkkaQuickstart.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/target/scala-2.12/classes/com/company/AkkaQuickstart.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com/company/DatabaseWriter.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/target/scala-2.12/classes/com/company/DatabaseWriter.class[0m
+[0m[[0m[0minfo[0m] [0m[0mDone packaging.[0m

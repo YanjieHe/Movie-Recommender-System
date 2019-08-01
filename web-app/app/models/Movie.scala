@@ -8,5 +8,6 @@ case class Movie(
     numVotes: Int,
     startYear: Option[Int],
     runtimeMinutes: Int,
-    posterLink: Option[String]
+    posterLink: Option[String],
+    overview: Option[String]
 )

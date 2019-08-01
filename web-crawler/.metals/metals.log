@@ -1,0 +1,276 @@
+INFO  time: initialize in 0.53s
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+INFO  no build target: using presentation compiler with only scala-library
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala' because it doesn't belong to a build target.
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+Aug 01, 2019 10:08:57 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.seenFromType(HoverProvider.scala:106)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:42)
+
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala' because it doesn't belong to a build target.
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala' because it doesn't belong to a build target.
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+something's wrong: no file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala in List[<error>]RangePosition(file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala, 246, 246, 260)
+something's wrong: no file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala in List[<error>]RangePosition(file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala, 246, 246, 253)
+something's wrong: no file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala in List[Int]RangePosition(file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala, 246, 246, 255)
+something's wrong: no file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala in List[Int]RangePosition(file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala, 246, 246, 255)
+something's wrong: no file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala in List[Int]RangePosition(file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala, 246, 246, 255)
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala' because it doesn't belong to a build target.
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+Aug 01, 2019 10:37:37 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: String index out of range: -1
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.<init>(String.java:196)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1230)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1253)
+	at scala.meta.internal.pc.SignatureHelpProvider.$anonfun$treeSymbol$1(SignatureHelpProvider.scala:369)
+	at scala.Option.map(Option.scala:163)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:368)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:197)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:305)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:300)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:269)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:26)
+
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+Aug 01, 2019 10:37:52 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: String index out of range: -1
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.<init>(String.java:196)
+	at scala.tools.nsc.interactive.Global.typeCompletions$1(Global.scala:1230)
+	at scala.tools.nsc.interactive.Global.completionsAt(Global.scala:1253)
+	at scala.meta.internal.pc.SignatureHelpProvider.$anonfun$treeSymbol$1(SignatureHelpProvider.scala:369)
+	at scala.Option.map(Option.scala:163)
+	at scala.meta.internal.pc.SignatureHelpProvider.treeSymbol(SignatureHelpProvider.scala:368)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCall$.unapply(SignatureHelpProvider.scala:197)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:305)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:300)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.$anonfun$visit$5(SignatureHelpProvider.scala:335)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.$anonfun$visit$5$adapted(SignatureHelpProvider.scala:312)
+	at scala.collection.TraversableLike$WithFilter.$anonfun$foreach$1(TraversableLike.scala:792)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:791)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.$anonfun$visit$3(SignatureHelpProvider.scala:312)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.$anonfun$visit$3$adapted(SignatureHelpProvider.scala:311)
+	at scala.collection.TraversableLike$WithFilter.$anonfun$foreach$1(TraversableLike.scala:792)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:791)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.visit(SignatureHelpProvider.scala:311)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.traverse(SignatureHelpProvider.scala:300)
+	at scala.meta.internal.pc.SignatureHelpProvider$MethodCallTraverser.fromTree(SignatureHelpProvider.scala:269)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:26)
+
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/build.sbt
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/build.sbt
+WARN  no build target: 
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/build.sbt
+WARN  no build target: 
+INFO  skipping build import with status 'Dismissed'
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala' because it doesn't belong to a build target.
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala' because it doesn't belong to a build target.
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+Aug 01, 2019 10:52:06 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1948
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/build.sbt
+WARN  no build target: 
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DataAccessObject.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DataAccessObject.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DataAccessObject.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala
+Aug 01, 2019 10:59:59 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.seenFromType(HoverProvider.scala:106)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:42)
+
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala
+Aug 01, 2019 11:00:41 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2534
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DataAccessObject.scala
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DataAccessObject.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DataAccessObject.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DataAccessObject.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DataAccessObject.scala' because it doesn't belong to a build target.
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DataAccessObject.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DataAccessObject.scala' because it doesn't belong to a build target.
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala' because it doesn't belong to a build target.
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/DatabaseWriter.scala
+ERROR scalafmt: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala:10: error: : expected but ) found
+  def processPosterLink(link):String = {
+                            ^
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala' because it doesn't belong to a build target.
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala' because it doesn't belong to a build target.
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-crawler/src/main/scala/com/company/AkkaQuickstart.scala

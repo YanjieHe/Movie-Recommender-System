@@ -169,3 +169,60 @@ WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/we
 INFO  shutting down Metals
 INFO  time: initialize in 0.87s
 INFO  skipping build import with status 'Requested'
+INFO  time: initialize in 3.45s
+INFO  skipping build import with status 'Dismissed'
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/build.sbt
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/MovieDao.scala
+INFO  no build target: using presentation compiler with only scala-library
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/MovieDao.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/MovieDao.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/MovieDao.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/MovieDao.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/MovieDao.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/MovieDao.scala' because it doesn't belong to a build target.
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/DataAccessObject.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/controllers/MovieController.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/controllers/MovieController.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/controllers/MovieController.scala
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/controllers/MovieController.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/controllers/MovieController.scala' because it doesn't belong to a build target.
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/controllers/MovieController.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/controllers/MovieController.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/controllers/MovieController.scala
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/controllers/MovieController.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/controllers/MovieController.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/controllers/MovieController.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/controllers/MovieController.scala' because it doesn't belong to a build target.
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/controllers/MovieController.scala
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/MovieDao.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/MovieDao.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/MovieDao.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/MovieDao.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/MovieDao.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/MovieDao.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/MovieDao.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/MovieDao.scala' because it doesn't belong to a build target.
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/models/Movie.scala
+something's wrong: no file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/models/Movie.scala in Option[<error>]RangePosition(file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/models/Movie.scala, 244, 244, 260)
+something's wrong: no file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/models/Movie.scala in Option[<error>]RangePosition(file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/models/Movie.scala, 244, 244, 253)
+something's wrong: no file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/models/Movie.scala in Option[<error>]RangePosition(file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/models/Movie.scala, 244, 244, 254)
+something's wrong: no file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/models/Movie.scala in Option[<error>]RangePosition(file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/models/Movie.scala, 244, 244, 256)
+something's wrong: no file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/models/Movie.scala in Option[String]RangePosition(file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/models/Movie.scala, 244, 244, 258)
+something's wrong: no file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/models/Movie.scala in Option[String]RangePosition(file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/models/Movie.scala, 244, 244, 258)
+something's wrong: no file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/models/Movie.scala in Option[String]RangePosition(file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/models/Movie.scala, 244, 244, 258)
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/models/Movie.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/MovieDao.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/MovieDao.scala
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/MovieDao.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/MovieDao.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/MovieDao.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/MovieDao.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/MovieDao.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/MovieDao.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/MovieDao.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/MovieDao.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/MovieDao.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/MovieDao.scala' because it doesn't belong to a build target.
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/MovieDao.scala
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/MovieDao.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/MovieDao.scala' because it doesn't belong to a build target.

@@ -24,7 +24,8 @@ class MovieDao extends DataAccessObject {
         "Num_Votes",
         "Start_Year",
         "Runtime_Minutes",
-        "Poster_Link"
+        "Poster_Link",
+        "Overview"
       ).mkString(", ")
       val resultSet = statement.executeQuery(
         s"SELECT $columns FROM Movies WHERE IMDB_ID = $imdbId;"
@@ -42,7 +43,8 @@ class MovieDao extends DataAccessObject {
               col("Num_Votes").toInt,
               toOption(col("Start_Year"), year => year.toInt),
               col("Runtime_Minutes").toInt,
-              toOption(col("Poster_Link"), link => link)
+              toOption(col("Poster_Link"), link => link),
+              toOption(col("Overview"), overview => overview)
             )
           }
         ).head
