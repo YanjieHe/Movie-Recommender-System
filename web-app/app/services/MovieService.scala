@@ -37,8 +37,8 @@ class MovieService @Inject()(movieDao: MovieDao) {
     val orderBySql = orderBy match {
       case "popularity descending" => " Num_Votes DESC "
       case "popularity ascending"  => " Num_Votes ASC "
-      case "rating descending"     => " Avg_Rating DESC "
-      case "rating ascending"      => " Avg_Rating ASC "
+      case "rating descending"     => " Bayesian_Average_Rating DESC "
+      case "rating ascending"      => " Bayesian_Average_Rating ASC "
       case "title (a-z)"           => " Primary_Title ASC "
       case "title (z-a)"           => " Primary_Title DESC "
       case _ =>

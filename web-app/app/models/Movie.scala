@@ -4,7 +4,7 @@ case class Movie(
     imdbId: Int,
     primaryTitle: String,
     originalTitle: String,
-    avgRating: Float,
+    rating: Float,
     numVotes: Int,
     startYear: Option[Int],
     runtimeMinutes: Int,

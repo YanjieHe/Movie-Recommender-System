@@ -1180,3 +1180,38 @@ ERROR scalafmt: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/a
 WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/services/MovieService.scala
 WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/services/MovieService.scala
 WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/services/MovieService.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/MovieDao.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/MovieDao.scala
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/MovieDao.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/MovieDao.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/MovieDao.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/MovieDao.scala' because it doesn't belong to a build target.
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/MovieDao.scala
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/MovieDao.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/MovieDao.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/MovieDao.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/MovieDao.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/MovieDao.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/MovieDao.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/MovieDao.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/MovieDao.scala' because it doesn't belong to a build target.
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/MovieDao.scala
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/MovieDao.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/MovieDao.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/MovieDao.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/MovieDao.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/MovieDao.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/MovieDao.scala' because it doesn't belong to a build target.
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/models/Movie.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/models/Movie.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/controllers/MovieController.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/controllers/LeaderboardController.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/services/MovieService.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/services/MovieService.scala
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/services/MovieService.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/services/MovieService.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/services/MovieService.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/services/MovieService.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/services/MovieService.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/services/MovieService.scala' because it doesn't belong to a build target.
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/services/MovieService.scala

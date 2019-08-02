@@ -56,7 +56,7 @@ class MovieController @Inject()(
 
     Ok(
       views.html
-        .movie("movie")(movie)(header)("%1.1f".format(movie.avgRating))(firstRow, secondRow)(firstRecsRow, secondRecsRow)(html"")
+        .movie("movie")(movie)(header)("%1.1f".format(movie.rating))(firstRow, secondRow)(firstRecsRow, secondRecsRow)(html"")
     )
   }
 }
