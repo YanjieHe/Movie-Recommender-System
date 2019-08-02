@@ -44,13 +44,30 @@ class MovieService @Inject()(movieDao: MovieDao) {
       case _ =>
         throw new Exception("wrong format of order by criteria: " + orderBy)
     }
-    val genreCondition = if (genre == "any genre") {
-      ""
-    } else {
-      genre
+    val genreCondition = genre match {
+      case "any genre"   => ""
+      case "action"      => "Action"
+      case "adventure"   => "Adventure"
+      case "animation"   => "Animation"
+      case "children's"  => "Children"
+      case "comedy"      => "Comedy"
+      case "crime"       => "Crime"
+      case "documentary" => "Documentary"
+      case "drama"       => "Drama"
+      case "fantasy"     => "Fantasy"
+      case "film-noir"   => "Film-Noir"
+      case "horror"      => "Horror"
+      case "musical"     => "Musical"
+      case "mystery"     => "Mystery"
+      case "romance"     => "Romance"
+      case "sci-fi"      => "Sci-Fi"
+      case "thriller"    => "Thriller"
+      case "war"         => "War"
+      case "western"     => "Western"
+      case "imax"        => "IMAX"
     }
     val offset = (page - 1) * 20
     val limit = s" $offset, 20"
-    movieDao.filterMovies(yearCondition, orderBySql, genreCondition,limit)
+    movieDao.filterMovies(yearCondition, orderBySql, genreCondition, limit)
   }
 }

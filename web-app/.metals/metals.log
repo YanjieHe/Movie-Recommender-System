@@ -1159,3 +1159,24 @@ WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/we
 WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/controllers/LeaderboardController.scala
 WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/controllers/LeaderboardController.scala
 WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/controllers/LeaderboardController.scala
+ERROR scalafmt: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/services/MovieService.scala:58: error: end of file expected but } found
+}
+^
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/services/MovieService.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/services/MovieService.scala
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/services/MovieService.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/services/MovieService.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/services/MovieService.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/services/MovieService.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/services/MovieService.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/services/MovieService.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/services/MovieService.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/services/MovieService.scala' because it doesn't belong to a build target.
+Aug 02, 2019 9:50:00 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7808
+ERROR scalafmt: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/services/MovieService.scala:68: error: ; expected but if found
+    }if (genre == "any genre") {
+     ^
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/services/MovieService.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/services/MovieService.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/services/MovieService.scala
