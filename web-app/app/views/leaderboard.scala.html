@@ -4,7 +4,7 @@
 * two arguments, a `String` for the title of the page and an `Html`
 * object to insert into the body of the page.
 *@
-@(title: String)(leaderboardFilters: Form[LeaderboardFilters])(movies: List[Movie])(header: Movie => String)(defaultData: Map[String, String])(page: Int)(compressParameters: Int => String)(implicit messages: Messages)
+@(title: String)(leaderboardFilters: Form[LeaderboardFilters])(movies: List[Movie])(header: Movie => String)(defaultData: Map[String, String])(page: Int)(compressParameters: Int => String)(yearOptions: List[String], orderByOptions: List[String], genreOptions: List[String])(implicit messages: Messages)
 <!DOCTYPE html>
 <html lang="en">
 
@@ -45,6 +45,10 @@
                         <label for="inputState">Year</label>
                         <select name="year" id="inputState" class="form-control">
                             <option selected>@defaultData("year")</option>
+                            @for(year <- yearOptions) {
+                                <option>@year</option>
+                            }
+                            <!--
                             <option>Any Year</option>
                             <option>2010s</option>
                             <option>2000s</option>
@@ -53,24 +57,34 @@
                             <option>'70s</option>
                             <option>'60s</option>
                             <option>Earlier than 1960</option>
+                            -->
                         </select>
                     </div>
                     <div class="form-group col-md-4">
                         <label for="inputState">Sort By</label>
                         <select name="orderBy" id="inputState" class="form-control">
                             <option selected>@defaultData("orderBy")</option>
+                            @for(orderBy <- orderByOptions) {
+                                <option>@orderBy</option>
+                            }
+                            <!--
                             <option>Popularity Descending</option>
                             <option>Popularity Ascending</option>
                             <option>Rating Descending</option>
                             <option>Rating Ascending</option>
                             <option>Title (A-Z)</option>
                             <option>Title (Z-A)</option>
+                            -->
                         </select>
                     </div>
                     <div class="form-group col-md-4">
                         <label for="inputState">Genres</label>
                         <select name="genre" id="inputState" class="form-control">
                             <option selected>@defaultData("genre")</option>
+                            @for(genre <- genreOptions) {
+                                <option>@genre</option>
+                            }
+                            <!--
                             <option>Any Genre</option>
                             <option>Action</option>
                             <option>Adventure</option>
@@ -91,6 +105,7 @@
                             <option>War</option>
                             <option>Western</option>
                             <option>IMAX</option>
+                            -->
                         </select>
                     </div>
                 </div>

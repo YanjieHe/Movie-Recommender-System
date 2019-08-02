@@ -94,10 +94,55 @@ class LeaderboardController @Inject()(
         userData.orderBy
       ) + "&genre=" + process(userData.genre) + "&page=" + page
     }
+    val yearOptions = List(
+      "Any Year",
+      "2010s",
+      "2000s",
+      "'90s",
+      "'80s",
+      "'70s",
+      "'60s",
+      "Earilier than 1960"
+    )
+    val orderByOptions = List(
+      "Popularity Descending",
+      "Popularity Ascending",
+      "Rating Descending",
+      "Rating Ascending",
+      "Title (A-Z)",
+      "Title (Z-A)"
+    )
+    val genreOptions = List(
+      "Any Genre",
+      "Action",
+      "Adventure",
+      "Animation",
+      "Children's",
+      "Comedy",
+      "Crime",
+      "Documentary",
+      "Drama",
+      "Fantasy",
+      "Film-Noir",
+      "Horror",
+      "Musical",
+      "Mystery",
+      "Romance",
+      "Sci-Fi",
+      "Thriller",
+      "War",
+      "Western",
+      "IMAX"
+    )
+
     Ok(
       views.html.leaderboard("Leaderboard")(leaderboardForm)(movies)(header)(
         currentData
-      )(userData.page.toInt)(compressParameters)
+      )(userData.page.toInt)(compressParameters)(
+        yearOptions.filter(year => year != currentData("year")),
+        orderByOptions.filter(orderBy => orderBy != currentData("orderBy")),
+        genreOptions.filter(genre => genre != currentData("genre"))
+      )
     )
   }
 
