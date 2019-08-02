@@ -30,13 +30,6 @@ class MovieController @Inject()(
   }
 
   def movie(imdbId: Int) = Action { implicit request: Request[AnyContent] =>
-    // def processCategory(category: String) = {
-    //   if (category == "self") {
-    //     "character"
-    //   } else {
-    //     category
-    //   }
-    // }
     val movie = movieService.read(imdbId)
     val header = movie.startYear match {
       case Some(year) => movie.primaryTitle + " (" + year + ")"

@@ -46,11 +46,20 @@
             <div class="row">
                 <div class="col-3">
                     <img src="@movie.posterLink"
-                        width="100%" />
+                        width="100%" alt="No available poster"/>
                 </div>
                 <div class="col-9">
                     <h5>@header</h5>
-                    Rating: @rating<br /><br />
+                    @for(_ <- (0 until movie.rating.toInt)) {
+                        <img src="/assets/images/star.png" width="16px">
+                    }
+                    @if(movie.rating.toFloat - movie.rating.toInt > 0.5) {
+                        <img src="/assets/images/star.png" width="16px">
+                    } else {
+                        <img src="/assets/images/half-star.png" width="16px">
+                    }
+                    @rating
+                    <br /><br />
                     <h5>Overview</h5>
                     @movie.overview
                     <br /><br />
@@ -109,7 +118,7 @@
     <div class="card-deck">
     @for(movie <- firstRecsRow) {
         <div class="card">
-            <a href=@(movie.imdbId)><img class="card-img-top" src="@movie.posterLink" alt="Card image cap"></a>
+            <a href=@(movie.imdbId)><img class="card-img-top" src="@movie.posterLink" alt="No available poster"></a>
             <div class="card-body">
                 <p class="card-text"><a href=@(movie.imdbId)>@movie.primaryTitle</a></p>
             </div>
@@ -120,7 +129,7 @@
     <div class="card-deck">
     @for(movie <- secondRecsRow) {
         <div class="card">
-            <a href=@(movie.imdbId)><img class="card-img-top" src="@movie.posterLink" alt="Card image cap"></a>
+            <a href=@(movie.imdbId)><img class="card-img-top" src="@movie.posterLink" alt="No available poster"></a>
             <div class="card-body">
                 <p class="card-text"><a href=@(movie.imdbId)>@movie.primaryTitle</a></p>
             </div>

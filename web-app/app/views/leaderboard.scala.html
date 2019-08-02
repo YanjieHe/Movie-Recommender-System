@@ -123,12 +123,22 @@
                             <div class="card mb-3" style="max-width: 540px;">
                                 <div class="row no-gutters">
                                     <div class="col-md-4">
-                                        <a href="movies/@movieList(0).imdbId"><img src="@movieList(0).posterLink" class="card-img" alt="..."></a>
+                                        <a href="movies/@movieList(0).imdbId"><img src="@movieList(0).posterLink" class="card-img" alt="No available poster"></a>
                                     </div>
                                     <div class="col-md-8">
                                         <div class="card-body">
                                             <h5 class="card-title">@header(movieList(0))</h5>
-                                            <p class="card-text"><small class="text-muted">@movieList(0).runtimeMinutes min</small></p>
+                                            <p class="card-text"><small class="text-muted">
+                                                @for(_ <- (0 until movieList(0).rating.toInt)) {
+                                                    <img src="/assets/images/star.png" width="16px">
+                                                }
+                                                @if(movieList(0).rating.toFloat - movieList(0).rating.toInt > 0.5) {
+                                                    <img src="/assets/images/star.png" width="16px">
+                                                } else {
+                                                    <img src="/assets/images/half-star.png" width="16px">
+                                                }
+                                                @("%1.1f".format(movieList(0).rating)) | 
+                                            @movieList(0).runtimeMinutes min</small></p>
                                             <p class="card-text">@movieList(0).overview</p>
                                         </div>
                                     </div>
@@ -139,12 +149,22 @@
                             <div class="card mb-3" style="max-width: 540px;">
                                 <div class="row no-gutters">
                                     <div class="col-md-4">
-                                        <a href="movies/@movieList(1).imdbId"><img src="@movieList(1).posterLink" class="card-img" alt="..."></a>
+                                        <a href="movies/@movieList(1).imdbId"><img src="@movieList(1).posterLink" class="card-img" alt="No available poster"></a>
                                     </div>
                                     <div class="col-md-8">
                                         <div class="card-body">
                                             <h5 class="card-title">@header(movieList(1))</h5>
-                                            <p class="card-text"><small class="text-muted">@movieList(1).runtimeMinutes min</small></p>
+                                            <p class="card-text"><small class="text-muted">
+                                                @for(_ <- (0 until movieList(1).rating.toInt)) {
+                                                    <img src="/assets/images/star.png" width="16px">
+                                                }
+                                                @if(movieList(1).rating.toFloat - movieList(1).rating.toInt > 0.5) {
+                                                    <img src="/assets/images/star.png" width="16px">
+                                                } else {
+                                                    <img src="/assets/images/half-star.png" width="16px">
+                                                }
+                                                @("%1.1f".format(movieList(1).rating)) | 
+                                            @movieList(1).runtimeMinutes min</small></p>
                                             <p class="card-text">@movieList(1).overview</p>
                                         </div>
                                     </div>
@@ -158,12 +178,22 @@
                             <div class="card mb-3" style="max-width: 540px;">
                                 <div class="row no-gutters">
                                     <div class="col-md-4">
-                                        <a href="movies/@movieList(0).imdbId"><img src="@movieList(0).posterLink" class="card-img" alt="..."></a>
+                                        <a href="movies/@movieList(0).imdbId"><img src="@movieList(0).posterLink" class="card-img" alt="No available poster"></a>
                                     </div>
                                     <div class="col-md-8">
                                         <div class="card-body">
                                             <h5 class="card-title">@header(movieList(0))</h5>
-                                            <p class="card-text"><small class="text-muted">@movieList(0).runtimeMinutes min</small></p>
+                                            <p class="card-text"><small class="text-muted">
+                                                @for(_ <- (0 until movieList(0).rating.toInt)) {
+                                                    <img src="/assets/images/star.png" width="16px">
+                                                }
+                                                @if(movieList(0).rating.toFloat - movieList(0).rating.toInt > 0.5) {
+                                                    <img src="/assets/images/star.png" width="16px">
+                                                } else {
+                                                    <img src="/assets/images/half-star.png" width="16px">
+                                                }
+                                                @("%1.1f".format(movieList(0).rating)) | 
+                                            @movieList(0).runtimeMinutes min</small></p>
                                             <p class="card-text">@@movieList(0).overview</p>
                                         </div>
                                     </div>
