@@ -48,7 +48,7 @@
                             <div class="card mb-3" style="max-width: 540px;">
                                 <div class="row no-gutters">
                                     <div class="col-md-4">
-                                        <a href="movies/@movieList(0).imdbId"><img src="@movieList(0).posterLink" class="card-img" alt="No available poster"></a>
+                                        <a href="@routes.MovieController.movie(movieList(0).imdbId)"><img src="@movieList(0).posterLink" class="card-img" alt="No available poster"></a>
                                     </div>
                                     <div class="col-md-8">
                                         <div class="card-body">
@@ -74,7 +74,7 @@
                             <div class="card mb-3" style="max-width: 540px;">
                                 <div class="row no-gutters">
                                     <div class="col-md-4">
-                                        <a href="movies/@movieList(1).imdbId"><img src="@movieList(1).posterLink" class="card-img" alt="No available poster"></a>
+                                        <a href="@routes.MovieController.movie(movieList(1).imdbId)"><img src="@movieList(1).posterLink" class="card-img" alt="No available poster"></a>
                                     </div>
                                     <div class="col-md-8">
                                         <div class="card-body">
@@ -103,7 +103,7 @@
                             <div class="card mb-3" style="max-width: 540px;">
                                 <div class="row no-gutters">
                                     <div class="col-md-4">
-                                        <a href="movies/@movieList(0).imdbId"><img src="@movieList(0).posterLink" class="card-img" alt="No available poster"></a>
+                                        <a href="@routes.MovieController.movie(movieList(0).imdbId)"><img src="@movieList(0).posterLink" class="card-img" alt="No available poster"></a>
                                     </div>
                                     <div class="col-md-8">
                                         <div class="card-body">
@@ -119,7 +119,7 @@
                                                 }
                                                 @("%1.1f".format(movieList(0).rating)) | 
                                             @movieList(0).runtimeMinutes min</small></p>
-                                            <p class="card-text">@@movieList(0).overview</p>
+                                            <p class="card-text">@movieList(0).overview</p>
                                         </div>
                                     </div>
                                 </div>

@@ -118,9 +118,9 @@
     <div class="card-deck">
     @for(movie <- firstRecsRow) {
         <div class="card">
-            <a href=@(movie.imdbId)><img class="card-img-top" src="@movie.posterLink" alt="No available poster"></a>
+            <a href="@routes.MovieController.movie(movie.imdbId)"><img class="card-img-top" src="@movie.posterLink" alt="No available poster"></a>
             <div class="card-body">
-                <p class="card-text"><a href=@(movie.imdbId)>@movie.primaryTitle</a></p>
+                <p class="card-text"><a href="@routes.MovieController.movie(movie.imdbId)">@movie.primaryTitle</a></p>
             </div>
         </div>
     }
@@ -129,9 +129,9 @@
     <div class="card-deck">
     @for(movie <- secondRecsRow) {
         <div class="card">
-            <a href=@(movie.imdbId)><img class="card-img-top" src="@movie.posterLink" alt="No available poster"></a>
+            <a href="@routes.MovieController.movie(movie.imdbId)"><img class="card-img-top" src="@movie.posterLink" alt="No available poster"></a>
             <div class="card-body">
-                <p class="card-text"><a href=@(movie.imdbId)>@movie.primaryTitle</a></p>
+                <p class="card-text"><a href="@routes.MovieController.movie(movie.imdbId)">@movie.primaryTitle</a></p>
             </div>
         </div>
     }
