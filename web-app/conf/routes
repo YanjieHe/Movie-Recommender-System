@@ -16,3 +16,5 @@ GET   /leaderboard/posts/user-post            controllers.LeaderboardController.
 GET   /leaderboard/query/:parameters            controllers.LeaderboardController.query(parameters)
 
 GET   /leaderboard            controllers.LeaderboardController.leaderboard()
+
+GET   /people/:nameId         controllers.PeopleController.people(nameId: Int)

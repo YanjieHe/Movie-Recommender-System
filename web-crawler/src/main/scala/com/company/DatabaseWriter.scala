@@ -27,7 +27,7 @@ object DatabaseWriter {
       val statement = connection.createStatement()
       val sql =
         s"UPDATE Movies SET Poster_Link = $link, Overview = $text WHERE IMDB_ID = $imdbId;"
-      println(sql)
+      // println(sql)
       statement.execute(sql)
     } catch {
       case e: Throwable => e.printStackTrace

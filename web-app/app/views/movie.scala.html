@@ -4,7 +4,7 @@
 * two arguments, a `String` for the title of the page and an `Html`
 * object to insert into the body of the page.
 *@
-@(title: String)(movie: Movie)(header: String)(rating: String)(firstRow: List[(String, String)], secondRow: List[(String, String)])(firstRecsRow: List[Movie], secondRecsRow: List[Movie])(content: Html)
+@(title: String)(movie: Movie)(header: String)(rating: String)(firstRow: List[(String, Principals)], secondRow: List[(String, Principals)])(firstRecsRow: List[Movie], secondRecsRow: List[Movie])(content: Html)
 
 <!DOCTYPE html>
 <html lang="en">
@@ -68,14 +68,14 @@
                         <div class="row">
                             @for(item <- firstRow) {
                                 <div class="col">
-                                <strong>@item._1</strong>
+                                <strong><a href="@routes.PeopleController.people(item._2.nameId)">@item._1</a></strong>
                                 </div>
                             }
                         </div>
                         <div class="row">
                             @for(item <- firstRow) {
                             <div class="col">
-                            @item._2
+                            @item._2.category
                             </div>
                             }
                         </div>
@@ -83,14 +83,14 @@
                         <div class="row">
                             @for(item <- secondRow) {
                             <div class="col">
-                            <strong>@item._1</strong>
+                            <strong><a href="@routes.PeopleController.people(item._2.nameId)">@item._1</a></strong>
                             </div>
                             }
                         </div>
                         <div class="row">
                             @for(item <- secondRow) {
                             <div class="col">
-                            @item._2
+                            @item._2.category
                             </div>
                             }
                         </div>

@@ -6,6 +6,7 @@ import java.sql.Connection
 import java.sql.ResultSet
 
 import models.People
+import models.Movie
 
 class PeopleDao extends DataAccessObject {
   def read(nameId: Int): Option[People] = {
@@ -38,6 +39,32 @@ class PeopleDao extends DataAccessObject {
             )
           }
         ).head
+      )
+    } catch {
+      case e: Throwable => e.printStackTrace
+    }
+    if (connection != null) {
+      connection.close()
+    }
+    result
+  }
+
+  def knownForTitles(nameId: Int): List[Int] = {
+    var connection: Connection = null
+    var result: List[Int] = List()
+
+    try {
+      connection = connect()
+      val statement = connection.createStatement()
+      val resultSet = statement.executeQuery(
+        s"SELECT IMDB_ID FROM People_Known_For_Titles WHERE Name_ID = $nameId;"
+      )
+      result = collect(
+        resultSet,
+        resultSet => {
+          val col: String => String = resultSet.getString
+          col("IMDB_ID").toInt
+        }
       )
     } catch {
       case e: Throwable => e.printStackTrace

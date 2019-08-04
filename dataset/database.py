@@ -47,6 +47,25 @@ def download_data(table_name, columns):
     return pd.DataFrame(lines, columns=columns)
 
 
+def export_query_result(sql):
+    connection = pymysql.connect(host='localhost',
+                            user='root',
+                            password='123456',
+                            db='mydb',
+                            cursorclass=pymysql.cursors.DictCursor)
+    cur = connection.cursor(pymysql.cursors.DictCursor)
+    cur.execute(sql)
+    columns = [field[0] for field in cur.description]
+    lines = []
+    for row in cur:
+        line = []
+        for i in range(len(columns)):
+            line.append(row[columns[i]])
+        lines.append(line)
+    connection.close()
+    return pd.DataFrame(lines, columns=columns)
+    
+
 def run_sql(sql):
     connection = create_connection()
     try:

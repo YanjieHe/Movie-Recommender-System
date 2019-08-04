@@ -16,7 +16,11 @@ class Crawler extends Actor {
         }
       }
     }
-    link.substring(0, index + 1) + ".jpg"
+    if (index == -1) {
+      link.split("_")(0) + "jpg"
+    } else {
+      link.substring(0, index + 1) + ".jpg"
+    }
   }
   def receive = {
     case imdbId: Int => {
@@ -25,6 +29,7 @@ class Crawler extends Actor {
       val overview = doc.select("div.summary_text").text()
       val compressedPosterLink =
         doc.select("div.poster").select("img").attr("src")
+      println("compressed poster link = " + compressedPosterLink)
       val posterLink = processPosterLink(compressedPosterLink)
       println(overview)
       println(posterLink)
@@ -46,11 +51,11 @@ object AkkaQuickstart extends App {
 
   def getMovieIds(): List[Int] = {
     Source
-      .fromFile("links.csv")
+      .fromFile("ids_to_download.csv")
       .getLines()
       .drop(1)
       .map { line =>
-        line.split(",")(1).toInt
+        line.toInt
       }
       .toList
   }
@@ -62,7 +67,7 @@ object AkkaQuickstart extends App {
     val crawler: ActorRef = system.actorOf(Props[Crawler], "webCrawler")
 
     val movies = getMovieIds()
-    for (movie <- movies) {
+    movies.par.foreach { movie =>
       crawler ! movie
     }
   }

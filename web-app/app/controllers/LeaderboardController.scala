@@ -102,7 +102,7 @@ class LeaderboardController @Inject()(
       "'80s",
       "'70s",
       "'60s",
-      "Earilier than 1960"
+      "Earlier than 1960"
     )
     val orderByOptions = List(
       "Popularity Descending",

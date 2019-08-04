@@ -4,7 +4,7 @@
 		module="web-crawler-build"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20190801095943"
+		publication="20190805040800"
 		e:sbtVersion="1.0" e:scalaVersion="2.12"
 	>
 		<description>

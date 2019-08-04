@@ -38,7 +38,7 @@ class MovieController @Inject()(
     val posterLink = "/images/posters/" + movie.imdbId + ".jpg"
     val principalsList =
       principalsService.getPrincipalsList(movie.imdbId, 6).map {
-        case (name, principal) => (name, principal.category)
+        case (name, principal) => (name, principal)
       }
     val firstRow = principalsList.take(3)
     val secondRow = principalsList.drop(3)
