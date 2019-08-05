@@ -7,7 +7,7 @@ import java.sql.ResultSet
 
 class DataAccessObject {
   protected val driver = "com.mysql.jdbc.Driver"
-  protected val url = "jdbc:mysql://localhost/mydb"
+  protected val url = "jdbc:mysql://localhost/mydb?serverTimezone=UTC"
   protected val username = "root"
   protected val password = "123456"
 

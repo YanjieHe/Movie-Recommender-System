@@ -10,6 +10,8 @@
 <html lang="en">
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     @* Here's where we render the page title `String`. *@
     <title>@title</title>
     <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/bootstrap.min.css")">
@@ -68,14 +70,9 @@
                             @for(item <- firstRow) {
                                 <div class="col">
                                 <strong><a href="@routes.PeopleController.people(item._2.nameId)">@item._1</a></strong>
+                                <br/>
+                                @item._2.category
                                 </div>
-                            }
-                        </div>
-                        <div class="row">
-                            @for(item <- firstRow) {
-                            <div class="col">
-                            @item._2.category
-                            </div>
                             }
                         </div>
                         <br/>
@@ -83,13 +80,7 @@
                             @for(item <- secondRow) {
                             <div class="col">
                             <strong><a href="@routes.PeopleController.people(item._2.nameId)">@item._1</a></strong>
-                            </div>
-                            }
-                        </div>
-                        <div class="row">
-                            @for(item <- secondRow) {
-                            <div class="col">
-                            @item._2.category
+                            <br/>@item._2.category
                             </div>
                             }
                         </div>

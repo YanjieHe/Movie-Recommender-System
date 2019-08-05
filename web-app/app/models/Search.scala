@@ -1,6 +1,6 @@
 package models
 
-// case class Search(
-//     link: String
-//     text: String
-// )
+case class Search(
+    link: String,
+    text: String
+)
