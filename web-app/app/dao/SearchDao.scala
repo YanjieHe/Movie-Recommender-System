@@ -7,9 +7,10 @@ import java.sql.ResultSet
 
 import models.People
 import models.Movie
+import models.Search
 
 class SearchDao extends DataAccessObject {
-  def searchMovies(keyword: Int): List[Search] = {
+  def searchMovies(keyword: String, limit: Int): List[Search] = {
 
     var connection: Connection = null
     var result: List[Search] = List()
@@ -24,7 +25,7 @@ class SearchDao extends DataAccessObject {
         "Death_Year"
       ).mkString(", ")
       val resultSet = statement.executeQuery(
-        s"SELECT IMDB_ID, Primary_Title FROM Movies WHERE Primary_Title LIKE '%$keyword%';"
+        s"SELECT IMDB_ID, Primary_Title FROM Movies WHERE Primary_Title LIKE '%$keyword%' LIMIT $limit;"
       )
       result = collect(
         resultSet,

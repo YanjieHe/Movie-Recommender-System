@@ -27,7 +27,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">Yet Another Movie Recommender</a>
+            <a class="navbar-brand" href="@routes.HomeController.index">Yet Another Movie Recommender</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -45,11 +45,11 @@
     <div class="container">
         <div class="container">
             <div class="row">
-                <div class="col-3">
+                <div class="col-md-3 pull-md-right">
                     <img src="@movie.posterLink"
                         width="100%" alt="No available poster"/>
                 </div>
-                <div class="col-9">
+                <div class="col-md-9">
                     <h5>@header</h5>
                     @for(_ <- (0 until movie.rating.toInt)) {
                         <img src="/assets/images/star.png" width="16px">
@@ -89,6 +89,9 @@
             </div>
         <br/>
     </div>
+    <h5>Recommendations</h5>
+    <hr/>
+    <!--
     <ul class="nav nav-fill nav-tabs">
         <li class="nav-item">
             <a class="nav-link active" href="#">Recommendations</a>
@@ -103,6 +106,7 @@
             <a class="nav-link" href="#">Trailers</a>
         </li>
     </ul>
+    -->
     <br />
 
     <div class="card-deck">

@@ -20,3 +20,6 @@ GET   /leaderboard            controllers.LeaderboardController.leaderboard()
 GET   /people/:nameId         controllers.PeopleController.people(nameId: Int)
 
 GET   /popular                controllers.MovieController.popularMovies()
+
++nocsrf
+POST   /search-movies           controllers.SearchController.searchMovies

@@ -21,7 +21,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">Yet Another Movie Recommender</a>
+            <a class="navbar-brand" href="@routes.HomeController.index">Yet Another Movie Recommender</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -41,16 +41,15 @@
         <hr/>
         @for(movieList <- movies.sliding(2, 2)) {
                 @if(movieList.size == 2) {
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="card mb-3" style="max-width: 540px;">
+                    <div class="card-deck">
+                            <div class="card mb-3">
                                 <div class="row no-gutters">
                                     <div class="col-md-4">
                                         <a href="@routes.MovieController.movie(movieList(0).imdbId)"><img src="@movieList(0).posterLink" class="card-img" alt="No available poster"></a>
                                     </div>
                                     <div class="col-md-8">
                                         <div class="card-body">
-                                            <h5 class="card-title">@header(movieList(0))</h5>
+                                            <a href="@routes.MovieController.movie(movieList(0).imdbId)"><h5 class="card-title">@header(movieList(0))</h5></a>
                                             <p class="card-text"><small class="text-muted">
                                                 @for(_ <- (0 until movieList(0).rating.toInt)) {
                                                     <img src="/assets/images/star.png" width="16px">
@@ -66,17 +65,15 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
                         </div>
-                        <div class="col-6">
-                            <div class="card mb-3" style="max-width: 540px;">
+                            <div class="card mb-3">
                                 <div class="row no-gutters">
                                     <div class="col-md-4">
                                         <a href="@routes.MovieController.movie(movieList(1).imdbId)"><img src="@movieList(1).posterLink" class="card-img" alt="No available poster"></a>
                                     </div>
                                     <div class="col-md-8">
                                         <div class="card-body">
-                                            <h5 class="card-title">@header(movieList(1))</h5>
+                                            <a href="@routes.MovieController.movie(movieList(1).imdbId)"><h5 class="card-title">@header(movieList(1))</h5></a>
                                             <p class="card-text"><small class="text-muted">
                                                 @for(_ <- (0 until movieList(1).rating.toInt)) {
                                                     <img src="/assets/images/star.png" width="16px">
@@ -93,19 +90,17 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
                     </div>
                 } else {
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="card mb-3" style="max-width: 540px;">
+                    <div class="card-deck">
+                            <div class="card mb-3">
                                 <div class="row no-gutters">
                                     <div class="col-md-4">
                                         <a href="@routes.MovieController.movie(movieList(0).imdbId)"><img src="@movieList(0).posterLink" class="card-img" alt="No available poster"></a>
                                     </div>
                                     <div class="col-md-8">
                                         <div class="card-body">
-                                            <h5 class="card-title">@header(movieList(0))</h5>
+                                            <a href="@routes.MovieController.movie(movieList(0).imdbId)"><h5 class="card-title">@header(movieList(0))</h5></a>
                                             <p class="card-text"><small class="text-muted">
                                                 @for(_ <- (0 until movieList(0).rating.toInt)) {
                                                     <img src="/assets/images/star.png" width="16px">
@@ -123,7 +118,6 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
                 }
             }
     </div>

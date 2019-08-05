@@ -37,50 +37,12 @@
   padding-left: 0;
 }
     </style>
-
-    <style>
-* {
-  box-sizing: border-box;
-}
-
-#myInput {
-  background-image: url('/css/searchicon.png');
-  background-position: 10px 12px;
-  background-repeat: no-repeat;
-  width: 100%;
-  font-size: 16px;
-  padding: 12px 20px 12px 40px;
-  border: 1px solid #ddd;
-  margin-bottom: 12px;
-}
-
-#myUL {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-#myUL li a {
-  border: 1px solid #ddd;
-  margin-top: -1px; /* Prevent double borders */
-  background-color: #f6f6f6;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px;
-  color: black;
-  display: block
-}
-
-#myUL li a:hover:not(.header) {
-  background-color: #eee;
-}
-</style>
 </head>
 
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">Yet Another Movie Recommender</a>
+            <a class="navbar-brand" href="@routes.HomeController.index">Yet Another Movie Recommender</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -103,18 +65,18 @@
           <div class="row mb-4">
             <div class="form-group col-md-9">
               <input id="search-box" type="text" placeholder="Search for a movie" onkeyup="myFunction()" class="form-control form-control-underlined">
-
-  <ul id="myUL">
-  <li><a href="@Movie">Adele</a></li>
-  <li><a href="#">Agnes</a></li>
-
-  <li><a href="#">Billy</a></li>
-  <li><a href="#">Bob</a></li>
-
-  <li><a href="#">Calvin</a></li>
-  <li><a href="#">Christina</a></li>
-  <li><a href="#">Cindy</a></li>
-</ul>
+              <div id="search-results" class="list-group">
+                <a href="#" class="list-group-item list-group-item-action" style="display:none;"></a>
+                <a href="#" class="list-group-item list-group-item-action" style="display:none;"></a>
+                <a href="#" class="list-group-item list-group-item-action" style="display:none;"></a>
+                <a href="#" class="list-group-item list-group-item-action" style="display:none;"></a>
+                <a href="#" class="list-group-item list-group-item-action" style="display:none;"></a>
+                <a href="#" class="list-group-item list-group-item-action" style="display:none;"></a>
+                <a href="#" class="list-group-item list-group-item-action" style="display:none;"></a>
+                <a href="#" class="list-group-item list-group-item-action" style="display:none;"></a>
+                <a href="#" class="list-group-item list-group-item-action" style="display:none;"></a>
+                <a href="#" class="list-group-item list-group-item-action" style="display:none;"></a>
+              </div>
             </div>
           </div>
           
@@ -126,20 +88,37 @@
 
   <script>
 function myFunction() {
-    var input, filter, ul, li, a, i, txtValue;
-    input = document.getElementById("search-box");
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("myUL");
-    li = ul.getElementsByTagName("li");
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        txtValue = a.textContent || a.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
+  var input = document.getElementById("search-box");
+  var keyword = input.value.toUpperCase();
+  var listGroup = document.getElementById("search-results");
+  var items = listGroup.getElementsByTagName("a");
+  $.ajax({
+    url: "@routes.SearchController.searchMovies",
+    type: "POST",
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    data: JSON.stringify({
+      "keyword": keyword
+    }),
+    success: function (data, textStatus, jqXHR) {
+      for(var i = 0; i < items.length; i++) {
+        var item = items[i];
+        if(i < data.length) {
+          item.innerText = data[i].text;
+          item.setAttribute("href", data[i].link)
+          item.style.display = "";
         } else {
-            li[i].style.display = "none";
+          item.innerText = "";
+          item.setAttribute("href", "#")
+          item.style.display = "none";
         }
+      }
+    },
+    error: function (jqXHR, textStatus, errorThrown) {
+      console.log(errorThrown)
     }
+  });
 }
 </script>
 
