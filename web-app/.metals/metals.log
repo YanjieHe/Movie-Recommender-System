@@ -1393,3 +1393,9 @@ WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/we
 WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/controllers/SearchController.scala
 WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/controllers/HomeController.scala
 WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/models/Movie.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/DataAccessObject.scala
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/DataAccessObject.scala' because it doesn't belong to a build target.
+WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/DataAccessObject.scala' because it doesn't belong to a build target.
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/DataAccessObject.scala
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/DataAccessObject.scala
+something's wrong: no file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/DataAccessObject.scala in List[A]RangePosition(file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/DataAccessObject.scala, 679, 679, 686)

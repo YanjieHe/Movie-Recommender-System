@@ -52,12 +52,12 @@
                 <div class="col-md-9">
                     <h5>@header</h5>
                     @for(_ <- (0 until movie.rating.toInt)) {
-                        <img src="/assets/images/star.png" width="16px">
+                        <img src='@routes.Assets.versioned("images/star.png")' width="16px">
                     }
                     @if(movie.rating.toFloat - movie.rating.toInt > 0.5) {
-                        <img src="/assets/images/star.png" width="16px">
+                        <img src='@routes.Assets.versioned("images/star.png")' width="16px">
                     } else {
-                        <img src="/assets/images/half-star.png" width="16px">
+                        <img src='@routes.Assets.versioned("images/half-star.png")' width="16px">
                     }
                     @rating
                     <br /><br />

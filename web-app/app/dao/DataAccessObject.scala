@@ -7,9 +7,9 @@ import java.sql.ResultSet
 
 class DataAccessObject {
   protected val driver = "com.mysql.jdbc.Driver"
-  protected val url = "jdbc:mysql://localhost/mydb?serverTimezone=UTC"
+  protected val url = "jdbc:mysql://database-1.cnmjgtuoxnmk.us-east-1.rds.amazonaws.com:3306/mydb?serverTimezone=UTC"
   protected val username = "root"
-  protected val password = "123456"
+  protected val password = "DATABASE123456"
 
   protected def connect(): Connection = {
     Class.forName(driver)
