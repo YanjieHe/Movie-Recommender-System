@@ -18,3 +18,5 @@ GET   /leaderboard/query/:parameters            controllers.LeaderboardControlle
 GET   /leaderboard            controllers.LeaderboardController.leaderboard()
 
 GET   /people/:nameId         controllers.PeopleController.people(nameId: Int)
+
+GET   /popular                controllers.MovieController.popularMovies()

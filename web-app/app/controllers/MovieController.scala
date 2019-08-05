@@ -6,6 +6,7 @@ import play.api.mvc._
 import play.twirl.api.StringInterpolation
 import services.MovieService
 import services.PrincipalsService
+import models.Movie
 
 /**
   * This controller creates an `Action` to handle HTTP requests to the
@@ -49,7 +50,20 @@ class MovieController @Inject()(
 
     Ok(
       views.html
-        .movie("movie")(movie)(header)("%1.1f".format(movie.rating))(firstRow, secondRow)(firstRecsRow, secondRecsRow)(html"")
+        .movie("movie")(movie)(header)("%1.1f".format(movie.rating))(
+          firstRow,
+          secondRow
+        )(firstRecsRow, secondRecsRow)(html"")
     )
+  }
+
+  def popularMovies() = Action { implicit request: Request[AnyContent] =>
+    val movies = movieService
+      .filterMovies("2010s", "popularity descending", "any genre", 1)
+      def header(movie: Movie): String = movie.startYear match {
+        case Some(year) => movie.primaryTitle + " (" + year + ")"
+        case None       => movie.primaryTitle
+      }
+    Ok(views.html.popular(movies)(header))
   }
 }
