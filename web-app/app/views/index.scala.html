@@ -36,10 +36,31 @@
   border-radius: 0;
   padding-left: 0;
 }
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url('@routes.Assets.versioned("images/wallpaper.jpg")');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#search-box {
+  background: white;
+}
     </style>
 </head>
 
-  <body>
+  <body class="bg">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="@routes.HomeController.index">Yet Another Movie Recommender</a>
@@ -55,8 +76,7 @@
             </div>
         </div>
     </nav>
-    <br />
-
+    <br/>
 
  <div class="row mb-5">
     <div class="col-lg-5 mx-auto">
@@ -83,8 +103,6 @@
           </form>
     </div>
   </div>
-  
-
 
   <script>
 function myFunction() {
@@ -92,6 +110,15 @@ function myFunction() {
   var keyword = input.value.toUpperCase();
   var listGroup = document.getElementById("search-results");
   var items = listGroup.getElementsByTagName("a");
+  if(keyword.trim() == '') {
+    for(var i = 0; i < items.length; i++) {
+        var item = items[i];
+        item.innerText = "";
+        item.setAttribute("href", "#")
+        item.style.display = "none";
+      }
+    return;
+  }
   $.ajax({
     url: "@routes.SearchController.searchMovies",
     type: "POST",
