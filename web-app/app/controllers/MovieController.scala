@@ -60,10 +60,13 @@ class MovieController @Inject()(
   def popularMovies() = Action { implicit request: Request[AnyContent] =>
     val movies = movieService
       .filterMovies("2010s", "popularity descending", "any genre", 1)
-      def header(movie: Movie): String = movie.startYear match {
-        case Some(year) => movie.primaryTitle + " (" + year + ")"
-        case None       => movie.primaryTitle
-      }
+    def header(movie: Movie): String = movie.startYear match {
+      case Some(year) => movie.primaryTitle + " (" + year + ")"
+      case None       => movie.primaryTitle
+    }
     Ok(views.html.popular(movies)(header))
   }
+
+  // def searchMovies(keyword: String) = Action { implicit request: Request[AnyContent] =>
+  // }
 }

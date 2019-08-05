@@ -68,7 +68,7 @@ class MovieDao extends DataAccessObject {
         "Movie_2"
       ).mkString(", ")
       val resultSet = statement.executeQuery(
-        s"SELECT $columns FROM Similiar_Movies WHERE Movie_1 = $imdbId ORDER BY Similarity DESC LIMIT $limit;"
+        s"SELECT $columns FROM Similar_Movies WHERE Movie_1 = $imdbId ORDER BY Similarity DESC LIMIT $limit;"
       )
       result = collect(
         resultSet,

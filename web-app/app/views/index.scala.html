@@ -37,6 +37,44 @@
   padding-left: 0;
 }
     </style>
+
+    <style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+</style>
 </head>
 
   <body>
@@ -49,9 +87,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link" href="/leaderboard">Discover</a>
-                    <a class="nav-item nav-link" href="#">Popular</a>
-                    <a class="nav-item nav-link" href="#">People</a>
+                    <a class="nav-item nav-link" href="@routes.LeaderboardController.leaderboard()">Discover</a>
+                    <a class="nav-item nav-link" href="@routes.MovieController.popularMovies()">Popular</a>
                 </div>
             </div>
         </div>
@@ -65,12 +102,46 @@
         <form>
           <div class="row mb-4">
             <div class="form-group col-md-9">
-              <input id="exampleFormControlInput5" type="text" placeholder="Search for a movie" class="form-control form-control-underlined">
+              <input id="search-box" type="text" placeholder="Search for a movie" onkeyup="myFunction()" class="form-control form-control-underlined">
+
+  <ul id="myUL">
+  <li><a href="@Movie">Adele</a></li>
+  <li><a href="#">Agnes</a></li>
+
+  <li><a href="#">Billy</a></li>
+  <li><a href="#">Bob</a></li>
+
+  <li><a href="#">Calvin</a></li>
+  <li><a href="#">Christina</a></li>
+  <li><a href="#">Cindy</a></li>
+</ul>
             </div>
           </div>
-        </form>
+          
+          </form>
     </div>
   </div>
+  
+
+
+  <script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("search-box");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
 
   </body>
 </html>
