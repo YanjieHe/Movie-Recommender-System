@@ -1399,3 +1399,8 @@ WARN  code navigation does not work for the file '/home/yanjie/Documents/GitHub/
 WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/DataAccessObject.scala
 WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/DataAccessObject.scala
 something's wrong: no file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/DataAccessObject.scala in List[A]RangePosition(file:///home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/dao/DataAccessObject.scala, 679, 679, 686)
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/controllers/PeopleController.scala
+INFO  shutting down Metals
+INFO  time: initialize in 1.12s
+WARN  no build target: /home/yanjie/Documents/GitHub/Movie-Recommender-System/web-app/app/controllers/PeopleController.scala
+INFO  shutting down Metals
